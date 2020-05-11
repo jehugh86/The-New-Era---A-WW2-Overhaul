@@ -1,0 +1,171 @@
+spriteTypes = {
+
+
+	### Soviet Aircrafts ###
+	
+	
+	SpriteType = {
+		name = "GFX_SOV_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/sov_sb2m.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SOV_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/sov_tu2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SOV_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/sov_tu-10.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SOV_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/sov_pe-8.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_pe-10.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SOV_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/sov_tu-4.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SOV_CAS1_medium"
+		texturefile = "gfx/interface/technologies/SOV_r10.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_CAS2_medium"
+		texturefile = "gfx/interface/technologies/sov_il-2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_CAS3_medium"
+		texturefile = "gfx/interface/technologies/sov_il-10.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SOV_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/SOV_pe-2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/SOV_pe-3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_SOV_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/SOV_tu-2Sch.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/sov_db3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/sov_il-4.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/sov_il-6.dds"
+	}	
+
+	
+	SpriteType = {
+		name = "GFX_SOV_fighter1_medium"
+		texturefile = "gfx/interface/technologies/sov_i-16.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_fighter2_medium"
+		texturefile = "gfx/interface/technologies/sov_lagg-3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_fighter3_medium"
+		texturefile = "gfx/interface/technologies/sov_yak-3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/sov_i-15.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/sov_ant4.dds"
+	}
+	
+
+	### Sovjet tanks ####	
+
+	SpriteType = {
+		name = "GFX_SOV_gwtank_medium"
+		texturefile = "gfx/interface/technologies/sov_t18.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/sov_t26.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/sov_BT-7.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/sov_t-60.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/sov_T28.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/sov_T34.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/sov_t34-85.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/sov_T-54.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/sov_T-35.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/sov_KV1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/sov_IS-1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/sov_kv4.dds"
+	}
+	
+}

@@ -1,0 +1,82 @@
+#######
+# CHINA
+#######
+
+	
+	
+#--------------------------------------------------------------------------------------------------------------------------------------------	
+#--------------------------------------------------------------------------------------------------------------------------------------------	
+
+#Mechanized
+
+	
+	entity = {
+		clone = "mechanized_entity"
+		name = "CHI_mechanized_entity"
+
+		attach = { name = "vehicle" vehicle = "USA_mechanized_entity" }
+		attach = { name = "infantry" infantry = "CHI_infantry_entity" }
+	}
+	
+	entity = {
+		clone = "mechanized_entity"
+		name = "CHI_mechanized_0_entity"
+
+		attach = { name = "vehicle" vehicle = "USA_mechanized_entity" }
+		attach = { name = "infantry" infantry = "CHI_infantry_1_entity" }
+	}
+	
+	entity = {
+		clone = "mechanized_entity"
+		name = "CHI_mechanized_1_entity"
+
+		attach = { name = "vehicle" vehicle = "USA_mechanized_entity" }
+		attach = { name = "infantry" infantry = "CHI_infantry_2_entity" }
+	}
+	
+	entity = {
+		clone = "mechanized_entity"
+		name = "CHI_mechanized_2_entity"
+
+		attach = { name = "vehicle" vehicle = "USA_mechanized_entity" }
+		attach = { name = "infantry" infantry = "CHI_infantry_3_entity" }
+	}
+
+	
+#--------------------------------------------------------------------------------------------------------------------------------------------	
+#--------------------------------------------------------------------------------------------------------------------------------------------	
+
+#Motorized
+	
+	entity = {
+		clone = "CHI_motorized_entity"
+		name = "CHI_motorized_0_entity"
+		
+		attach = { 	name = "vehicle" vehicle = "CHI_motorized_vehicle_entity" }
+		attach = { 	name = "infantry" infantry = "CHI_infantry_0_entity" }	
+	}
+	
+	entity = {
+		clone = "CHI_motorized_entity"
+		name = "CHI_motorized_1_entity"
+		
+		attach = { 	name = "vehicle" vehicle = "CHI_motorized_vehicle_entity" }
+		attach = { 	name = "infantry" infantry = "CHI_infantry_1_entity" }	
+	}
+	
+	entity = {
+		clone = "CHI_motorized_entity"
+		name = "CHI_motorized_2_entity"
+		
+		attach = { 	name = "vehicle" vehicle = "CHI_motorized_vehicle_entity" }
+		attach = { 	name = "infantry" infantry = "CHI_infantry_2_entity" }	
+	}
+
+	entity = {
+		clone = "CHI_motorized_entity"
+		name = "CHI_motorized_3_entity"
+		
+		attach = { 	name = "vehicle" vehicle = "CHI_motorized_vehicle_entity" }
+		attach = { 	name = "infantry" infantry = "CHI_infantry_3_entity" }	
+	}
+	

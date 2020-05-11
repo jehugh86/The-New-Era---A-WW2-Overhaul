@@ -1,0 +1,73 @@
+spriteTypes = {
+
+
+	### Japanese tanks ####	
+
+	SpriteType = {
+		name = "GFX_JAP_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/jap_type94_te-ke.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/jap_type95_ha-go.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_JAP_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/jap_Type-98_Ke-Ni.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_JAP_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/jap_Type97_Chi-Ha.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_JAP_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/jap_Type3_Chi_Nu.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/jap_Type-5_Chi-Ri.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/jap_Type97_Chi-Ha.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_JAP_advanced_main_tank_medium"
+		texturefile = "gfx/interface/technologies/jap_Type_61.dds.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/jap_type95.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_JAP_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/jap_O-l-100.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/jap_O-l-120.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_superheavy_tank.dds"
+	}
+	
+	### Generic Aircrafts ###
+	
+	SpriteType = {
+		name = "GFX_JAP_suicide_craft_medium"
+		texturefile = "gfx/interface/technologies/JAP_MXY7.dds"
+	}
+
+}

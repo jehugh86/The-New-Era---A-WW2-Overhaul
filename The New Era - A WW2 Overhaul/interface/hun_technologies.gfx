@@ -1,0 +1,164 @@
+spriteTypes = {
+
+
+
+	### HUN aircraft ###	
+
+	SpriteType = {
+		name = "GFX_HUN_CAS1_medium"
+		texturefile = "gfx/interface/technologies/HUN_CAS1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_CAS2_medium"
+		texturefile = "gfx/interface/technologies/HUN_CAS2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_CAS3_medium"
+		texturefile = "gfx/interface/technologies/HUN_CAS3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/HUN_early_bomber.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/HUN_early_fighter.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_fighter1_medium"
+		texturefile = "gfx/interface/technologies/HUN_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_fighter2_medium"
+		texturefile = "gfx/interface/technologies/HUN_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_fighter3_medium"
+		texturefile = "gfx/interface/technologies/HUN_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/HUN_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/HUN_heavy_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/HUN_heavy_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/HUN_naval_bomber1.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_HUN_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/HUN_naval_bomber2.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_HUN_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/HUN_naval_bomber3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/HUN_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/HUN_strategic_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/HUN_strategic_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_HUN_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/HUN_tactical_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/HUN_tactical_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/HUN_tactical_bomber3.dds"
+	}	
+
+	### HUN tanks ###	
+
+	SpriteType = {
+		name = "GFX_HUN_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/HUN_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/HUN_imp_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/HUN_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/HUN_basic_main_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/HUN_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/HUN_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/HUN_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_HUN_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/HUN_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/HUN_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/HUN_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HUN_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/HUN_superheavy_tank.dds"
+	}
+	
+}

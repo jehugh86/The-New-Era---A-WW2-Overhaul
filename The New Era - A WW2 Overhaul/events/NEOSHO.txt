@@ -1,0 +1,23 @@
+﻿add_namespace = usa
+
+################################################
+## USS NEOSHO
+################################################
+country_event = {
+	id = usa.300
+	title = usa.300.t
+	desc = usa.300.d
+	picture = GFX_report_event_300
+
+fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1936.01.02
+	}
+	
+	option = {
+		name = usa.300.a
+		add_war_support = 0.001
+	}
+}

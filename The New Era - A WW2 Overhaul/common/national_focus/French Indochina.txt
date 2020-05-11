@@ -1,0 +1,44 @@
+﻿focus_tree = {
+	id = Indochina_Focus
+
+	country = {
+		factor	0
+		modifier = {
+		add = 10
+		tag = INC
+		}
+	}
+
+	defailt = no
+
+	focus = {
+		id = INC_Form_Indochinese_Democratic_Front
+		icon = GFX_goal_generic_national_unity
+	x = 0
+	y = 0
+	
+	cost = 10
+
+	ai_will_do = { factor = 1 }
+
+	available = {
+		Democratic more_than_20_support  
+	}
+
+	bypass = {
+		INC = { has_government Democratic }
+	}
+
+	available_if_capitulated = no
+
+	complete_tooltip = {
+		custom_effect_tooltip = INC_Demo_Front_tt
+	}
+
+	completion_reward = {
+		INC = { country_event = { id = indochina.1 }}
+	}
+}
+
+
+

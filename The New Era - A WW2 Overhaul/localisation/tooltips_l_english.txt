@@ -1,0 +1,2 @@
+﻿l_english:0 
+	INC_Demo_Front_tt:0 "This focus Will start the Indochinese Democratic Front ecent chain."

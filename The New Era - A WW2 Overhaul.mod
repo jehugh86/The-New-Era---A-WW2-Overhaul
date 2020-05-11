@@ -15,5 +15,5 @@ tags={
 	"Map"
 }
 name="The New Era - A WW2 Overhaul"
-supported_version="1.9.1"
+supported_version="1.9.2"
 path="C:/Users/Username/Documents/Paradox Interactive/Hearts of Iron IV/mod/The-New-Era---A-WW2-Overhaul/The New Era - A WW2 Overhaul"

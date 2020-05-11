@@ -1,0 +1,320 @@
+avia_decisions = {
+	allowed = {
+		original_tag = CZE
+	}
+    visible = {
+        original_tag = CZE
+    } 
+}
+avro_decisions = {
+	allowed = {
+		original_tag = ENG
+	}
+    visible = {
+        original_tag = ENG
+    }   
+}
+blackburn_decisions = {
+	allowed = {
+		original_tag = ENG
+	}
+    visible = {
+        original_tag = ENG
+    }     
+}
+dehavilland_decisions = {
+	allowed = {
+		original_tag = ENG
+	}
+    visible = {
+        original_tag = ENG
+    }     
+}
+fairey_decisions = {
+	allowed = {
+		original_tag = ENG
+	}
+    visible = {
+        original_tag = ENG
+    }     
+}
+handley_page_decisions = {
+	allowed = {
+		original_tag = ENG
+	}
+    visible = {
+        original_tag = ENG
+    }   
+}
+hawker_decisions = {
+	allowed = {
+		original_tag = ENG
+	}
+    visible = {
+        original_tag = ENG
+    }   
+}
+supermarine_decisions = {
+	allowed = {
+		original_tag = ENG
+	}
+    visible = {
+        original_tag = ENG
+    }   
+}
+vickers_decisions = {
+	allowed = {
+		original_tag = ENG
+	}
+    visible = {
+        original_tag = ENG
+    }   
+}
+sncao_decisions = {
+	allowed = {
+		original_tag = FRA
+	}
+    visible = {
+        original_tag = FRA
+    }   
+}
+arado_decisions = {
+	allowed = {
+		original_tag = GER
+	}
+    visible = {
+        original_tag = GER
+    }   
+}
+dornier_decisions = {
+	allowed = {
+		original_tag = GER
+	}
+    visible = {
+        original_tag = GER
+    }   
+}
+fockewulf_decisions = {
+	allowed = {
+		original_tag = GER
+	}
+    visible = {
+        original_tag = GER
+    }   
+}
+heinkel_decisions = {
+	allowed = {
+		original_tag = GER
+	}
+    visible = {
+        original_tag = GER
+    }   
+}
+junkers_decisions = {
+	allowed = {
+		original_tag = GER
+	}
+    visible = {
+        original_tag = GER
+    } 
+}
+messerschmitt_decisions = {
+	allowed = {
+		original_tag = GER
+	}
+    visible = {
+        original_tag = GER
+    } 
+}
+fiat_decisions = {
+	allowed = {
+		original_tag = ITA
+	}
+    visible = {
+        original_tag = ITA
+    } 
+}
+macchi_decisions = {
+	allowed = {
+		original_tag = ITA
+	}
+    visible = {
+        original_tag = ITA
+    } 
+}
+reggiane_decisions = {
+	allowed = {
+		original_tag = ITA
+	}
+    visible = {
+        original_tag = ITA
+    }     
+}
+savoia_decisions = {
+	allowed = {
+		original_tag = ITA
+	}
+    visible = {
+        original_tag = ITA
+    } 
+}
+aichi_decisions = {
+	allowed = {
+		original_tag = JAP
+	}
+    visible = {
+        original_tag = JAP
+    }     
+}
+mitsubishi_decisions = {
+	allowed = {
+		original_tag = JAP
+	}
+    visible = {
+        original_tag = JAP
+    } 
+}
+nakajima_decisions = {
+	allowed = {
+		original_tag = JAP
+	}
+    visible = {
+        original_tag = JAP
+    }     
+}
+yokosuka_decisions = {
+	allowed = {
+		original_tag = JAP
+	}
+    visible = {
+        original_tag = JAP
+    }     
+}
+ilyushin_decisions = {
+	allowed = {
+		original_tag = SOV
+	}
+    visible = {
+        original_tag = SOV
+    }     
+}
+lavochkin_decisions = {
+	allowed = {
+		original_tag = SOV
+	}
+    visible = {
+        original_tag = SOV
+    }     
+}
+mikoyan_decisions = {
+	allowed = {
+		original_tag = SOV
+	}
+    visible = {
+        original_tag = SOV
+    }     
+}
+petlyakov_decisions = {
+	allowed = {
+		original_tag = SOV
+	}
+    visible = {
+        original_tag = SOV
+    }       
+}
+polikarpov_decisions = {
+	allowed = {
+		original_tag = SOV
+	}
+    visible = {
+        original_tag = SOV
+    }     
+}
+sukhoi_decisions = {
+	allowed = {
+		original_tag = SOV
+	}
+    visible = {
+        original_tag = SOV
+    }     
+}
+yakovlev_decisions = {
+	allowed = {
+		original_tag = SOV
+	}
+    visible = {
+        original_tag = SOV
+    }     
+}
+bell_decisions = {
+	allowed = {
+		original_tag = USA
+	}
+    visible = {
+        original_tag = USA
+    } 
+}
+boeing_decisions = {
+	allowed = {
+		original_tag = USA
+	}
+    visible = {
+        original_tag = USA
+    } 
+}
+consolidated_decisions = {
+	allowed = {
+		original_tag = USA
+	}
+    visible = {
+        original_tag = USA
+    } 
+}
+douglas_decisions = {
+	allowed = {
+		original_tag = USA
+	}
+    visible = {
+        original_tag = USA
+    } 
+}
+grumman_decisions = {
+	allowed = {
+		original_tag = USA
+	}
+    visible = {
+        original_tag = USA
+    } 
+}
+lockheed_decisions = {
+	allowed = {
+		original_tag = USA
+	}
+    visible = {
+        original_tag = USA
+    } 
+}
+north_american_decisions = {
+	allowed = {
+		original_tag = USA
+	}
+    visible = {
+        original_tag = USA
+    } 
+}
+republic_decisions = {
+	allowed = {
+		original_tag = USA
+	}
+    visible = {
+        original_tag = USA
+    } 
+}
+vought_decisions = {
+	allowed = {
+		original_tag = USA
+	}
+    visible = {
+        original_tag = USA
+    }     
+}

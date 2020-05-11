@@ -1,0 +1,489 @@
+sub_units = {
+	#Czech Units
+	avia_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { avia_fighter_equipment = 1 }
+		categories = { category_fighter } 		
+	}
+	#French Units
+	sncao_CAS = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { sncao_CAS_equipment = 1 }
+		categories = { category_cas } 		
+	}		
+	sncao_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { sncao_fighter_equipment = 1 }
+		categories = { category_fighter } 		
+	}		
+	#German Units
+	arado_tac_bomber = {
+		sprite = medium_plane
+		priority = 4
+		active = yes
+		type = { tactical_bomber }
+		need = { arado_tac_bomber_equipment = 1 }
+		categories = { category_tac_bomber }
+	}
+	dornier_heavy_fighter = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { dornier_heavy_fighter_equipment = 1 }
+		categories = { category_heavy_fighter } 		
+	}	
+	dornier_tac = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { tactical_bomber strategic_bomber}
+		need = { dornier_tac_equipment = 1 }
+		categories = { category_tac_bomber } 		
+	}	
+	fockewulf_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { fockewulf_fighter_equipment = 1 }
+		categories = { category_fighter } 		
+	}		
+	fockewulf_fighter_bomber = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { fockewulf_fighter_bomber_equipment = 1 }
+		categories = { category_fighter }    
+	}	
+	fockewulf_long_range_fighter_bomber = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { fockewulf_long_range_fighter_bomber_equipment = 1 }
+		categories = { category_fighter }       
+	}	
+	fockewulf_strategic_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber naval_bomber}
+		need = { fockewulf_strategic_bomber_equipment = 1 }	      
+		categories = { category_strat_bomber } 		
+	}		
+	heinkel_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { heinkel_fighter_equipment = 1 }
+		categories = { category_fighter } 		
+	}	
+	heinkel_nav = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { tactical_bomber strategic_bomber}
+		need = { heinkel_nav_equipment = 1 }	
+		categories = { category_nav_bomber } 		
+	}	
+	heinkel_strategic = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { heinkel_strategic_equipment = 1 }
+		categories = { category_strat_bomber }	
+	}	
+	heinkel_tac = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { tactical_bomber strategic_bomber}
+		need = { heinkel_tac_equipment = 1 }
+		categories = { category_tac_bomber }	
+	}
+	junkers_CAS = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { junkers_CAS_equipment = 1 }
+		categories = { category_cas }	
+	}
+	junkers_tac = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { tactical_bomber }
+		need = { junkers_tac_equipment = 1 }	
+		categories = { category_tac_bomber }				
+	}
+	junkers_transport = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { air_transport }
+		need = { junkers_transport_equipment = 1 }		
+	}
+	messerschmitt_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { messerschmitt_fighter_equipment = 1 }
+		categories = { category_fighter }       
+	}
+	messerschmitt_fighter_bomber = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { messerschmitt_fighter_bomber_equipment = 1 }
+		categories = { category_fighter }       
+	}		
+	messerschmitt_heavy_fighter = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { messerschmitt_heavy_fighter_equipment = 1 }
+		categories = { category_fighter }       
+	}		
+	#ITA units
+	fiat_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas  }
+		need = { fiat_fighter_equipment = 1 }
+		categories = { category_fighter } 		
+	}
+	fiat_tac = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { tactical_bomber }
+		need = { fiat_tac_equipment = 1 }
+		categories = { category_tac_bomber }				
+	}	
+	macchi_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas}
+		need = { macchi_fighter_equipment = 1 }
+		categories = { category_fighter } 		
+	}
+	reggiane_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas}
+		need = { reggiane_fighter_equipment = 1 }
+		categories = { category_fighter } 		
+	}	
+	savoia_nav = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { tactical_bomber }
+		need = { savoia_nav_equipment = 1 }	
+		categories = { category_nav_bomber }			
+	}	 
+	#JAP Units	
+	mitsubishi_CAS = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { mitsubishi_CAS_equipment = 1 }
+		categories = { category_cas }	
+	}	
+	mitsubishi_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas}
+		need = { mitsubishi_fighter_equipment = 1 }
+		categories = { category_fighter } 		
+	}	
+	mitsubishi_nav_bomber = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { tactical_bomber strategic_bomber}
+		need = { mitsubishi_nav_bomber_equipment = 1 }
+		categories = { category_nav_bomber } 		
+	}	
+	mitsubishi_tac_bomber = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { tactical_bomber strategic_bomber}
+		need = { mitsubishi_tac_bomber_equipment = 1 }
+		categories = { category_tac_bomber } 		
+	}	
+	nakajima_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter }
+		need = { nakajima_fighter_equipment = 1 }
+		categories = { category_fighter } 		
+	}	
+	nakajima_strategic_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { nakajima_strat_bomber_equipment = 1 }	      
+		categories = { category_strat_bomber }
+	}	
+	#SOV Units
+	ilyushin_CAS = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { ilyushin_CAS_equipment = 1 }
+		categories = { category_cas }	
+	}	
+	lavochkin_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { lavochkin_fighter_equipment = 1 }
+		categories = { category_fighter }  		
+	}	
+	mikoyan_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { mikoyan_fighter_equipment = 1 }
+		categories = { category_fighter }  		
+	}	
+	petlyakov_CAS = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { petlyakov_CAS_equipment = 1 }
+		categories = { category_fighter } 		
+	}
+	petlyakov_heavy_fighter = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { fighter cas tactical_bomber }
+		need = { petlyakov_heavy_fighter_equipment = 1 }
+		categories = { category_heavy_fighter }
+	}	
+	petlyakov_strategic_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { petlyakov_strategic_bomber_equipment = 1 }	      
+		categories = { category_strat_bomber }
+	}	
+	polikarpov_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { polikarpov_fighter_equipment = 1 }
+		categories = { category_fighter }  		
+	}
+	yakovlev_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { yakovlev_fighter_equipment = 1 }
+		categories = { category_fighter }  		
+	}
+	sukhoi_cas = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { sukhoi_cas_equipment = 1 }
+		categories = { category_cas }	
+	}
+	yakovlev_fighter_bomber = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { yakovlev_fighter_bomber_equipment = 1 }
+		categories = { category_fighter }  		
+	}
+	#UK units
+	avro_strategic_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { avro_strategic_bomber_equipment = 1 }	      
+		categories = { category_strat_bomber }
+	}
+	dehavilland_heavy_fighter = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { dehavilland_heavy_fighter_equipment = 1 }
+		categories = { category_heavy_fighter }
+	}
+	handley_page_strat_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { handley_page_strat_bomber_equipment = 1 }	      
+		categories = { category_strat_bomber }
+	}
+	hawker_fighter_bomber = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { hawker_fighter_bomber_equipment = 1 }
+		categories = { category_fighter }  		
+	}		
+	supermarine_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { supermarine_fighter_equipment = 1 }
+		categories = { category_fighter }  		
+	}	
+	vickers_strat_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { vickers_strat_bomber_equipment = 1 }	      
+		categories = { category_strat_bomber }
+	}			
+	#USA units	
+	bell_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { bell_fighter_equipment = 1 }
+		categories = { category_fighter }  		
+	}
+	boeing_strategic_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { boeing_strategic_bomber_equipment = 1 }	      
+		categories = { category_strat_bomber }
+	}	
+	consolidated_strat_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { consolidated_strat_bomber_equipment = 1 }	      
+	}
+	consolidated_nav_bomber = {
+		sprite = heavy_plane
+		priority = 3
+		active = yes
+		type = { naval_bomber strategic_bomber }
+		need = { consolidated_nav_bomber_equipment = 1 }	      
+	}			
+	lockheed_heavy_fighter = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { fighter cas tactical_bomber }
+		need = { lockheed_heavy_fighter_equipment = 1 }
+		categories = { category_heavy_fighter }
+	}				
+	north_american_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas  }
+		need = { north_american_fighter_equipment = 1 }
+		categories = { category_fighter }   
+	}
+	north_american_heavy_fighter = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { north_american_heavy_fighter_equipment = 1 }
+		categories = { category_heavy_fighter } 		
+	}		
+	north_american_tac_bomber = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { tactical_bomber strategic_bomber}
+		need = { north_american_tac_bomber_equipment = 1 }
+		categories = { category_tac_bomber }
+	}	
+	republic_fighter_bomber = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { republic_fighter_bomber_equipment = 1 }
+		categories = { category_fighter }   
+	}	
+	
+	# CV planes are treated in a generic way to avoid UI limitations
+	ram_cv_cas = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { ram_cv_cas_equipment = 1 }
+		categories = { category_cas }		
+	}
+	ram_cv_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { ram_cv_fighter_equipment = 1 }
+		categories = { category_fighter }
+	}
+	ram_cv_fighter_alt = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { ram_cv_fighter_alt_equipment = 1 }
+		categories = { category_fighter }
+	}	
+	ram_cv_nav_bomber = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas naval_bomber }
+		need = { ram_cv_nav_bomber_equipment = 1 }
+		categories = { category_nav_bomber } 
+	}
+}

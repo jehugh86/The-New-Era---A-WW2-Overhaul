@@ -1,0 +1,345 @@
+equipments = {
+
+	f4f_3 = {
+		year = 1940
+		
+		archetype = ram_cv_fighter_equipment
+		priority = 50
+
+		air_range = 1360
+		maximum_speed = 530 
+		air_agility = 45
+		air_attack = 24 # 4 50 cal MGs 
+		air_defence = 30 #
+		air_ground_attack = 8 #only 100 lb bombs 
+
+		naval_strike_attack = 4
+		naval_strike_targetting = 10		
+
+		build_cost_ic = 28
+		fuel_consumption = 0.24  #1x1200 hp engine, .02 per 100 hp		
+		resources = {
+			aluminium = 1
+			rubber = 1
+		}			
+	}
+	f4f_4 = {
+		year = 1940
+		
+		archetype = ram_cv_fighter_equipment
+		priority = 50
+		parent = f4f_3
+
+		air_range = 1360
+		maximum_speed = 530 
+		air_agility = 45
+		air_attack = 36 # 6 50 cal MGs 
+		air_defence = 30 #
+		air_ground_attack = 8 
+
+		naval_strike_attack = 4
+		naval_strike_targetting = 10		
+
+		build_cost_ic = 28
+		fuel_consumption = 0.24  #1x1200 hp engine, .02 per 100 hp		
+		resources = {
+			aluminium = 1
+			rubber = 1
+		}				
+	}	
+	f6f_3 = {
+		year = 1942
+		
+		archetype = ram_cv_fighter_equipment
+		priority = 30
+		parent = f4f_4
+
+		air_range = 1360
+		maximum_speed = 605 
+		air_agility = 58
+		air_attack = 36 # 6 50 cal MGs (6 attack for each 50 cal)
+		air_defence = 32 #
+		air_ground_attack = 36 #could carry 2x1000 lb bombs and 6 HVARs 
+
+		naval_strike_attack = 9
+		naval_strike_targetting = 7		
+
+		build_cost_ic = 28
+		fuel_consumption = 0.44  #1x2200 hp engine, .02 per 100 hp				
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}	
+	f6f_5 = {
+		year = 1943
+		
+		archetype = ram_cv_fighter_equipment
+		priority = 30
+		parent = f6f_3
+
+		air_range = 1360
+		maximum_speed = 630 
+		air_agility = 60
+		air_attack = 48 # 4x50 cal MGs, 2xAN/M2 cannon (6 attack for each 50 cal, 12 attack for AN/M2)
+		air_defence = 32 #
+		air_ground_attack = 36 #could carry 2x1000 lb bombs and 6 HVARs  
+
+		naval_strike_attack = 9
+		naval_strike_targetting = 7		
+
+		build_cost_ic = 32
+		fuel_consumption = 0.44  #1x2200 hp engine, .02 per 100 hp				
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}				
+	}
+	f8f_1 = {
+		year = 1945
+		
+		archetype = ram_cv_fighter_equipment
+		priority = 30
+		parent = f6f_5
+
+		air_range = 1800
+		maximum_speed = 700 
+		air_agility = 75
+		air_attack = 56 ##4xAN/M3 cannon (14 attack for AN/M3)
+		air_defence = 36  #
+		air_ground_attack = 55 #up to 3x1000 lb bombs + 20 mm cannons
+
+		naval_strike_attack = 14
+		naval_strike_targetting = 7			
+
+		build_cost_ic = 30
+		fuel_consumption = 0.46  #1x2300 hp engine, .02 per 100 hp	 
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}		
+	f8f_2 = {
+		year = 1947
+		
+		archetype = ram_cv_fighter_equipment
+		priority = 30
+		parent = f8f_1
+
+		air_range = 1800
+		maximum_speed = 730 
+		air_agility = 80
+		air_attack = 56 ##4xAN/M3 cannon (14 attack for AN/M3)
+		air_defence = 36  #
+		air_ground_attack = 55 #up to 3x1000 lb bombs + 20 mm cannons
+
+		naval_strike_attack = 14
+		naval_strike_targetting = 7			
+
+		build_cost_ic = 30 
+		fuel_consumption = 0.46  #1x2300 hp engine, .02 per 100 hp	 
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}			
+	}	
+	f9f_2 = {
+		year = 1947
+		
+		archetype = ram_cv_fighter_equipment
+		priority = 30
+		parent = f8f_2
+
+		air_range = 2200
+		maximum_speed = 925 
+		air_agility = 62
+		air_attack = 56 ##4 AN/M3 cannon (14 attack for AN/M3)
+		air_defence = 38  #
+		air_ground_attack = 56 #6x500lb (7 for 500lb, 14 from guns) 
+
+		naval_strike_attack = 14
+		naval_strike_targetting = 5		
+
+		build_cost_ic = 45
+		fuel_consumption = 0.663 #1x26.5kN jet engine, .025 per 1 kN    				
+		resources = {
+			aluminium = 3
+			tungsten = 3
+			rubber = 1
+		}			
+	}	
+	f9f_5 = {
+		year = 1947
+		
+		archetype = ram_cv_fighter_equipment
+		priority = 30
+		parent = f9f_2
+
+		air_range = 2100
+		maximum_speed = 975 
+		air_agility = 64
+		air_attack = 56 ##4 AN/M3 cannon (14 attack for AN/M3)
+		air_defence = 38  #
+		air_ground_attack = 56 #6x500lb (7 for 500lb, 14 from guns) 
+
+		naval_strike_attack = 14
+		naval_strike_targetting = 5		
+
+		build_cost_ic = 55
+		fuel_consumption = 0.775 #1x31kN jet engine, .025 per 1 kN    						
+		resources = {
+			aluminium = 3
+			tungsten = 3
+			rubber = 1
+		}			
+	}	
+	f9f_6 = {
+		year = 1951
+		
+		archetype = ram_cv_fighter_equipment
+		priority = 30
+		parent = f9f_5
+
+		air_range = 1500
+		maximum_speed = 1050 
+		air_agility = 65
+		air_attack = 56 ##4 AN/M3 cannon (14 attack for AN/M3)
+		air_defence = 38  #
+		air_ground_attack = 56 #6x500lb (7 for 500lb, 14 from guns) 
+
+		naval_strike_attack = 14
+		naval_strike_targetting = 5		
+
+		build_cost_ic = 65
+		fuel_consumption = 0.8 #1x32.2kN jet engine, .025 per 1 kN    								
+		resources = {
+			aluminium = 3
+			tungsten = 3
+			rubber = 1
+		}			
+	}	
+	f9f_8 = {
+		year = 1953
+		
+		archetype = ram_cv_fighter_equipment
+		priority = 30
+		parent = f9f_6
+
+		air_range = 1500
+		maximum_speed = 1135 
+		air_agility = 72
+		air_attack = 56 ##4 AN/M3 cannon (14 attack for AN/M3)
+		air_defence = 38  #
+		air_ground_attack = 58 #2x1000lb,2x500lb (15 for 1000lb, 7 for 500lb, 14 from guns) 
+
+		naval_strike_attack = 14
+		naval_strike_targetting = 5		
+
+		build_cost_ic = 65
+		fuel_consumption = 0.8 #1x32.2kN jet engine, .025 per 1 kN    								
+		resources = {
+			aluminium = 3
+			tungsten = 3
+			rubber = 1
+		}			
+	}	
+	f11_a = {
+		year = 1953
+		
+		archetype = ram_cv_fighter_equipment
+		priority = 30
+		parent = f9f_8
+
+		air_range = 2050
+		maximum_speed = 1215 
+		air_agility = 75
+		air_attack = 72 #4xrevolver 20 mm cannons (18 attack for each 20 mm revolver)
+		air_defence = 38  
+		air_ground_attack = 66 #2x1000lb,2x500lb (15 for 1000lb, 7 for 500lb, 18 from guns) - this is a guess, it had 4 hardpoints but payload may be ahistoric
+
+		naval_strike_attack = 14
+		naval_strike_targetting = 5		
+
+		build_cost_ic = 75
+		fuel_consumption = 0.823 #1x32.9kN jet engine, .025 per 1 kN    												
+		resources = {
+			aluminium = 3
+			tungsten = 3
+			rubber = 1
+		}			
+	}	
+	f11_b = {
+		year = 1953
+		
+		archetype = ram_cv_fighter_equipment
+		priority = 30
+		parent = f11_a
+
+		air_range = 2050
+		maximum_speed = 2255 
+		air_agility = 75
+		air_attack = 72 #4xrevolver 20 mm cannons (18 attack for each 20 mm revolver)
+		air_defence = 38  
+		air_ground_attack = 66 #2x1000lb,2x500lb (15 for 1000lb, 7 for 500lb, 18 from guns) - this is a guess, it had 4 hardpoints but payload may be ahistoric
+
+		naval_strike_attack = 14
+		naval_strike_targetting = 5		
+
+		build_cost_ic = 95
+		fuel_consumption = 1.333 #1x53.3kN jet engine, .025 per 1 kN    												
+		resources = {
+			aluminium = 3
+			tungsten = 3
+			rubber = 1
+		}			
+	}		
+
+	#Grumman CV nav bombers
+	tbf_1 = {
+		year = 1942
+		
+		archetype = ram_cv_nav_bomber_equipment
+		priority = 80
+
+		air_range = 2000
+		maximum_speed = 435 
+		air_agility = 35
+		air_attack = 18 # 2 front 50 cal MGs, 1 rear 30 cal 
+		air_defence = 22 #
+		air_ground_attack = 30 #4 x 500lb 
+
+		naval_strike_attack = 14 #1xMark 13 mod 0 torp (180kg) (1 nav atk per 13 kg ) 
+		naval_strike_targetting = 8 #(early US torpedoes had difficulties) 		
+
+		build_cost_ic = 27
+		fuel_consumption = 0.34  #1x1700 hp engine, .02 per 100 hp		
+		resources = {
+			aluminium = 1
+			rubber = 1
+		}			
+	}	
+	tbf_3 = {
+		year = 1943
+		
+		archetype = ram_cv_nav_bomber_equipment
+		priority = 80
+		parent = tbf_1
+
+		air_range = 2000
+		maximum_speed = 455 #total guess, 3 variant had a more powerful engine 
+		air_agility = 38
+		air_attack = 18 # 2 front 50 cal MGs, 1 rear 30 cal
+		air_defence = 22 
+		air_ground_attack = 30 #4 x 500lb 
+
+		naval_strike_attack = 20 #1xMark 13 mod 10 torp (270kg) (1 nav atk per 13 kg ) 
+		naval_strike_targetting = 10 #(base torpedo accuracy) 		
+
+		build_cost_ic = 25 #tbm-3 was simplified
+		fuel_consumption = 0.38  #1x1900 hp engine, .02 per 100 hp		
+		resources = {
+			aluminium = 1
+			rubber = 1
+		}			
+	}						
+}

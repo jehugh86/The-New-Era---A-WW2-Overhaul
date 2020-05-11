@@ -1,0 +1,744 @@
+equipments = {
+    heinkel_fighter_equipment = {
+        year = 1940
+		
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_fighter_equipment
+		is_buildable = no
+		type = { fighter interceptor }
+		group_by = archetype
+		sprite = light_plane
+		air_map_icon_frame = 1
+		
+		interface_category = interface_category_air
+		
+		# Fighter-Bomber
+		interface_overview_category_index = 1
+
+		upgrades = {
+			drop_tank_upgrade
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+
+		naval_strike_attack = 5
+		naval_strike_targetting = 10
+
+		#Space taken in convoy
+		lend_lease_cost = 8
+		
+		build_cost_ic = 26
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}
+		
+		manpower = 20
+		fuel_consumption = 0.21  					
+	}
+
+	he46 = {
+		year = 1933
+		
+		archetype = heinkel_fighter_equipment
+		priority = 500
+
+		air_range = 1000
+		maximum_speed = 250 
+		air_agility = 35
+		air_attack = 3 #1 7.62 MGs
+		air_defence = 10 #it's a fabric biplane
+		air_ground_attack = 8 #up to 200 kg of bombs
+
+		build_cost_ic = 11
+		fuel_consumption = 0.132  #1x660 hp engine, .02 per 100 hp				
+		resources = {
+			aluminium = 1
+			rubber = 1
+		}			
+	}
+
+	he51 = {
+		year = 1933
+		
+		archetype = heinkel_fighter_equipment
+		parent = he46
+		priority = 500
+		
+		air_range = 390
+		maximum_speed = 330 
+		air_agility = 45
+		air_attack = 10 #2 7.62 MGs
+		air_defence = 12 #it's a fabric biplane
+		air_ground_attack = 4
+
+		build_cost_ic = 12
+		fuel_consumption = 0.15  #1x750 hp engine, .02 per 100 hp					
+		resources = {
+			aluminium = 1
+			rubber = 1
+		}			
+	}
+
+	he112 = {
+		year = 1938
+		
+		archetype = heinkel_fighter_equipment
+		parent = he51
+		priority = 500
+
+		air_range = 1100
+		maximum_speed = 488 
+		air_agility = 68
+		air_attack = 34 #2xMG FF,2xMG17 (12 for each MG FF, 5 for each MG17)
+		air_defence = 24 
+		air_ground_attack = 9 #(9 from guns) 
+
+		build_cost_ic = 24
+		fuel_consumption = 0.132  #1x660 hp engine, .02 per 100 hp					
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}
+	he100 = {
+		year = 1939
+		
+		archetype = heinkel_fighter_equipment
+		parent = he112
+		priority = 500
+
+		air_range = 1010
+		maximum_speed = 670 
+		air_agility = 70
+		air_attack = 44 #2xMG FF,4xMG17 (12 for each MG FF, 5 for each MG17)
+		air_defence = 20 #the he100 used evaporative cooling, efficient but vulnerable
+		air_ground_attack = 11 #(11 from guns) 
+
+		build_cost_ic = 21 #should be on the efficent side, many production savings were made on the he100
+		fuel_consumption = 0.232  #1x1159 hp engine, .02 per 100 hp					
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}	
+	he280 = {
+		year = 1939
+		
+		archetype = heinkel_fighter_equipment
+		parent = he112
+		priority = 500
+
+		air_range = 400
+		maximum_speed = 820 
+		air_agility = 62
+		air_attack = 45 #3xMG151(15 for MG151)
+		air_defence = 30 
+		air_ground_attack = 11 #(11 from guns) 
+
+		build_cost_ic = 37
+		fuel_consumption = 0.295 #2x5.9kN jet engine, .025 per 1 kN		
+		resources = {
+			aluminium = 3
+			tungsten = 3
+			rubber = 1
+		}			
+	}	
+
+	heinkel_tac_equipment = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment		
+		is_buildable = no
+		type = { tactical_bomber }
+		group_by = archetype
+		sprite = medium_plane
+		air_map_icon_frame = 6
+		
+		manpower = 40
+		
+		interface_category = interface_category_air
+		
+		# Tactical bomber
+		interface_overview_category_index = 4
+		
+		upgrades = {
+
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+
+		naval_strike_attack = 15
+		naval_strike_targetting = 6
+
+		#Space taken in convoy
+		lend_lease_cost = 10
+		
+		build_cost_ic = 35
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}		
+		fuel_consumption = 1.0
+	}
+
+	he111_a0 = {
+		year = 1936
+		
+		archetype = heinkel_tac_equipment
+		priority = 5
+
+		air_range = 1100
+		maximum_speed = 330 
+		air_agility = 16
+		air_attack = 12 #3x7.7 mg (4 attack for  7.7 MG)		
+		air_defence = 16 
+		air_ground_attack = 20 #680 kg assume roughly 3 250 kgs (7 for 250 kg) 
+
+		air_bombing = 7 #680kg bomb load (1 air_bombing per 100 kg)
+
+		build_cost_ic = 30
+		fuel_consumption = 0.231 #2x578 hp engines, .02 per 100 hp    			
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}	
+
+	he111_b2 = {
+		year = 1937
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_a0
+		priority = 5
+
+		air_range = 1150
+		maximum_speed = 370 
+		air_agility = 18
+		air_attack = 12 #3x7.7 mg (4 attack for  7.7 MG)		
+		air_defence = 16 
+		air_ground_attack = 20 #680 kg assume roughly 3 250 kgs (7 for 250 kg) 
+
+		air_bombing = 7 #680kg bomb load (1 air_bombing per 100 kg)		
+
+		build_cost_ic = 32
+		fuel_consumption = 0.311 #2x778 hp engines, .02 per 100 hp    		
+
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}
+
+	he111_e1 = {
+		year = 1938
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_b2
+		priority = 5
+
+		air_range = 1000
+		maximum_speed = 390 
+		air_agility = 20
+		air_attack = 12 #3x7.7 mg (4 attack for  7.7 MG)		
+		air_defence = 18 
+		air_ground_attack = 56 #8x250kg (7 for 250 kg) 
+
+		air_bombing = 20 #2000kg bomb load (1 air_bombing per 100 kg)
+
+
+		build_cost_ic = 33 
+		fuel_consumption = 0.38 #2x950 hp engines, .02 per 100 hp    		
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}		
+
+	he111_e3 = {
+		year = 1938
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_e1
+		priority = 5
+
+		air_range = 1600 #extra fuel tanks installed in e-3's wings 50% more fuel 
+		maximum_speed = 390 
+		air_agility = 22
+		air_attack = 12 #3x7.7 mg (4 attack for  7.7 MG)		
+		air_defence = 18 
+		air_ground_attack = 56 #8x250kg (7 for 250 kg) 
+
+		air_bombing = 20 #2000kg bomb load (1 air_bombing per 100 kg)
+
+
+		build_cost_ic = 35
+		fuel_consumption = 0.38 #2x950 hp engines, .02 per 100 hp    		
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}			
+
+	he111_f = {
+		year = 1938
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_e3
+		priority = 5
+
+		air_range = 1600
+		maximum_speed = 390 
+		air_agility = 22
+		air_attack = 12 #3x7.7 mg (4 attack for  7.7 MG)		
+		air_defence = 18 
+		air_ground_attack = 56 #8x250kg (7 for 250 kg) 
+
+		air_bombing = 20 #2000kg bomb load (1 air_bombing per 100 kg)
+
+
+		build_cost_ic = 30 #wing was more efficient to construct going forward
+		fuel_consumption = 0.38 #2x950 hp engines, .02 per 100 hp    		
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}	
+
+	he111_p1 = {
+		year = 1939
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_f
+		priority = 5
+
+		air_range = 1600
+		maximum_speed = 475 #higher speed from stepless nose
+		air_agility = 25
+		air_attack = 12 #3x7.7 mg (4 attack for  7.7 MG)
+		air_defence = 18 
+		air_bombing = 15
+		air_ground_attack = 56 #8x250kg (7 for 250 kg) 
+
+		air_bombing = 20 #2000kg bomb load (1 air_bombing per 100 kg)
+ 
+		
+		build_cost_ic = 32
+		fuel_consumption = 0.434 #2x1085 hp engines, .02 per 100 hp    		
+		
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}	
+
+	he111_p2 = {
+		year = 1930
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_p1
+		priority = 5
+
+		air_range = 1600
+		maximum_speed = 460 
+		air_agility = 25
+		air_attack = 20 #5x7.7 mg (4 attack for  7.7 MG)
+		air_defence = 28 #added armor
+		air_bombing = 18
+		air_ground_attack = 56 #8x250kg (7 for 250 kg) 
+
+		air_bombing = 20 #2000kg bomb load (1 air_bombing per 100 kg)
+
+		
+
+		build_cost_ic = 32
+		fuel_consumption = 0.434 #2x1085 hp engines, .02 per 100 hp    		
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}		
+
+	he111_p4 = {
+		year = 1939
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_p2
+		priority = 5
+
+		air_range = 1500
+		maximum_speed = 460 
+		air_agility = 24
+		air_attack = 20 #5x7.7 mg (4 attack for  7.7 MG)
+		air_defence = 28  
+		air_ground_attack = 56 #8x250kg (7 for 250 kg) 
+
+		air_bombing = 20 #2000kg bomb load (1 air_bombing per 100 kg)
+
+
+		build_cost_ic = 32
+		fuel_consumption = 0.434 #2x1085 hp engines, .02 per 100 hp    		
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}			
+
+	he111_h2 = {
+		year = 1939
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_p4
+		priority = 5
+
+		air_range = 1600 
+		maximum_speed = 430 
+		air_agility = 28
+		air_attack = 20 #5x7.7 mg (4 attack for  7.7 MG)
+		air_defence = 28 
+		air_ground_attack = 56 #8x250kg (7 for 250 kg) 
+
+		air_bombing = 20 #2000kg bomb load (1 air_bombing per 100 kg)
+
+		build_cost_ic = 30
+		fuel_consumption = 0.44 #2x1100 hp engines, .02 per 100 hp    		
+		resources = {
+			aluminium = 4
+			rubber = 1
+		}			
+	}	
+
+	he111_h3 = {
+		year = 1940
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_h2
+		priority = 5
+
+		air_range = 1500
+		maximum_speed = 430 
+		air_agility = 28
+		air_attack = 21 #1 13mm, 3x7.7 mg ( 6 for 13mm,5 attack for rapid 7.7 MG)
+		air_defence = 28 
+		air_ground_attack = 56 #8x250kg (7 for 250 kg) 
+
+		air_bombing = 20 #2000kg bomb load (1 air_bombing per 100 kg)
+
+
+		build_cost_ic = 30
+		fuel_consumption = 0.44 #2x1100 hp engines, .02 per 100 hp    		
+		resources = {
+			aluminium = 4
+			rubber = 1
+		}			
+	}	
+
+	he111_h5 = {
+		year = 1941
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_h3
+		priority = 5
+
+		air_range = 1400
+		maximum_speed = 430 
+		air_agility = 28
+		air_attack = 21 #1 13mm, 3x7.7 mg ( 6 for 13mm,5 attack for rapid 7.7 MG)
+		air_defence = 28 
+		air_ground_attack = 56 #8x250kg (7 for 250 kg) 
+
+		air_bombing = 20 #2000kg bomb load (1 air_bombing per 100 kg)
+
+
+		build_cost_ic = 30
+		fuel_consumption = 0.48 #2x1200 hp engines, .02 per 100 hp    				
+		resources = {
+			aluminium = 4
+			rubber = 1
+		}			
+	}		
+
+	he111_h11 = {
+		year = 1942
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_h5
+		priority = 5
+
+		air_range = 2000
+		maximum_speed = 430 
+		air_agility = 28
+		air_attack = 21 #1 13mm, 3x7.7 mg ( 6 for 13mm,5 attack for rapid 7.7 MG)
+		air_defence = 28 
+		air_ground_attack = 67 #2x1000kg,1x250kg (30 for 1000kg, 7 for 250 kg) 
+
+		air_bombing = 23 #2250kg bomb load (1 air_bombing per 100 kg)
+
+
+		build_cost_ic = 30
+		fuel_consumption = 0.48 #2x1200 hp engines, .02 per 100 hp    				
+		resources = {
+			aluminium = 4
+			rubber = 1
+		}			
+	}	
+
+	he111_h16 = {
+		year = 1943
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_h11
+		priority = 5
+
+		air_range = 2000
+		maximum_speed = 435
+		air_agility = 28
+		air_attack = 21 #1 13mm, 3x7.7 mg ( 6 for 13mm,5 attack for rapid 7.7 MG)
+		air_defence = 28 
+		air_ground_attack = 67 #2x1000kg,1x250kg (30 for 1000kg, 7 for 250 kg) 
+
+		air_bombing = 23 #2250kg bomb load (1 air_bombing per 100 kg)
+
+		build_cost_ic = 30
+		fuel_consumption = 0.536 #2x1340 hp engines, .02 per 100 hp    					
+		resources = {
+			aluminium = 4
+			rubber = 1
+		}			
+	}				
+
+	he111_h20 = {
+		year = 1944
+		
+		archetype = heinkel_tac_equipment
+		parent = he111_h16
+		priority = 5
+
+		air_range = 2000
+		maximum_speed = 435
+		air_agility = 31 # engine upgrade
+		air_attack = 23 #3x13mm, 1x7.7 mg (6 for 13mm,5 attack for rapid 7.7 MG)
+		air_defence = 30 
+		air_ground_attack = 67 #2x1000kg,1x250kg (30 for 1000kg, 7 for 250 kg) 
+
+		air_bombing = 23 #2250kg bomb load (1 air_bombing per 100 kg)
+
+
+		build_cost_ic = 30
+		fuel_consumption = 0.536 #2x1340 hp engines, .02 per 100 hp    					
+		resources = {
+			aluminium = 4
+			rubber = 1
+		}			
+	}
+
+	heinkel_nav_equipment = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment		
+		is_buildable = no
+		type = { tactical_bomber }
+		group_by = archetype
+		sprite = medium_plane
+		air_map_icon_frame = 6
+		
+		manpower = 40
+		
+		interface_category = interface_category_air
+		
+		# Tactical bomber
+		interface_overview_category_index = 4
+		
+		upgrades = {
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+
+		naval_strike_attack = 15
+		naval_strike_targetting = 6
+
+		#Space taken in convoy
+		lend_lease_cost = 10
+		
+		build_cost_ic = 35
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}		
+	}
+
+	he111_j = {
+		year = 1939
+		
+		archetype = heinkel_nav_equipment
+		priority = 5
+
+		air_range = 1600
+		maximum_speed = 390 
+		air_agility = 22
+		air_attack = 10 
+		air_defence = 18 
+		air_bombing = 18
+		air_ground_attack = 20
+
+		naval_strike_attack = 15
+		naval_strike_targetting = 5
+
+		build_cost_ic = 33 
+		fuel_consumption = 0.414 #2x1036 hp engines, .02 per 100 hp    							
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}		
+	}
+	
+	he111_h6 = {
+		year = 1943
+		
+		archetype = heinkel_nav_equipment
+		parent = he111_j
+		priority = 5
+
+		air_range = 1400
+		maximum_speed = 430 
+		air_agility = 28
+		air_attack = 28 #7x7.7 MG, 1 MG151/20mm (4 attack for 7.7 MG)
+		air_defence = 28 
+		air_ground_attack = 67 #2x1000kg,1x250kg (30 for 1000kg, 7 for 250 kg) 
+
+		naval_strike_attack = 23
+		naval_strike_targetting = 12
+
+		air_bombing = 23 #2250kg bomb load (1 air_bombing per 100 kg)
+
+		build_cost_ic = 38
+		fuel_consumption = 0.54 #2x1350 hp engines, .02 per 100 hp    							
+
+		resources = {
+			aluminium = 4
+			rubber = 1
+		}			
+	}	
+	he111_z2 = {
+		year = 1943
+		
+		archetype = heinkel_nav_equipment
+		parent = he111_h6
+		priority = 5
+
+		air_range = 1100
+		maximum_speed = 315 
+		air_agility = 12 #the Z-2 is formed out of combining 4 H-6s together, not at all very agile
+		air_attack = 62 #14x7.7 MG, 1 MG151/20mm (14 attack for 20mm Mß cannon,4 attack for 7.7 MG)
+		air_defence = 42
+		air_ground_attack = 35
+
+		naval_strike_attack = 60 #the Z2s could carry 4 powerful anti ship missiles
+		naval_strike_targetting = 6 #not the most accurate/reliable
+
+		air_bombing = 72 #7200 bomb load (1 air_bombing per 100 kg)
+
+		build_cost_ic = 110
+		fuel_consumption = 1.332 #5x1322 hp engines, .02 per 100 hp    									
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}			
+	}			
+
+	heinkel_strategic_equipment = {
+		year = 1942
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment		
+		is_buildable = no
+		type = { tactical_bomber }
+		group_by = archetype
+		sprite = medium_plane
+		air_map_icon_frame = 6
+		
+		manpower = 40
+		
+		interface_category = interface_category_air
+		
+		# Tactical bomber
+		interface_overview_category_index = 4
+		
+		upgrades = {
+			strategic_bomber_fuel_tank_upgrade
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+
+		# Air vs Navy - high damage / low hit chance / hard to hurt
+		naval_strike_attack = 15
+		naval_strike_targetting = 6
+
+		#Space taken in convoy
+		lend_lease_cost = 10
+		
+		build_cost_ic = 35
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}		
+		fuel_consumption = 0.80
+	}
+
+	he177_a1 = {
+		year = 1942
+		
+		archetype = heinkel_strategic_equipment
+		priority = 5
+
+		air_range = 4500
+		maximum_speed = 565  
+		air_agility = 15
+		air_attack = 47 #2xMG151/20mm,2x13mm,1x7.7MG (14 for 20mm Mß cannon,7 attack for 13mm MG,5 attack for rapid 7.7 MG)
+		air_defence = 60 #new engine's cooling system was more vulnerable
+
+		air_bombing = 50 #5000kg bomb load (1 air_bombing per 100 kg)
+
+
+		build_cost_ic = 75
+		fuel_consumption = 0.927 #2x2317 hp engines, .02 per 100 hp    											
+		resources = {
+			aluminium = 5
+			rubber = 2
+		}			
+	}	
+
+	he177_a3 = {
+		year = 1943
+		
+		archetype = heinkel_strategic_equipment
+		parent = he177_a1
+		priority = 5
+
+		air_range = 4500
+		maximum_speed = 565  
+		air_agility = 15
+		air_attack = 47 #2xMG151/20mm,2x13mm,1x7.7MG (14 for 20mm Mß cannon,7 attack for 13mm MG,5 attack for rapid 7.7 MG)
+		air_defence = 75 
+
+		air_bombing = 50 #5000kg bomb load (1 air_bombing per 100 kg)
+
+		build_cost_ic = 75
+		fuel_consumption = 0.927 #2x2317 hp engines, .02 per 100 hp    											
+		resources = {
+			aluminium = 5
+			rubber = 2
+		}			
+	}
+
+}

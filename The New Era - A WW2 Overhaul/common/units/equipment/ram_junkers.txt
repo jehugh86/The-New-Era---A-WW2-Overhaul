@@ -1,0 +1,541 @@
+equipments = {
+	junkers_CAS_equipment = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_CAS_equipment
+		is_buildable = no
+		type = { cas fighter }
+		group_by = archetype
+		sprite = light_plane
+		air_map_icon_frame = 2
+		
+		interface_category = interface_category_air
+		
+		# CAS
+		interface_overview_category_index = 0
+
+		upgrades = {
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+		
+		# Air vs Ground
+		air_ground_attack = 1.0
+
+		naval_strike_attack = 3
+		naval_strike_targetting = 10
+
+		build_cost_ic = 14
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}
+		
+		manpower = 20
+		fuel_consumption = 0.26					
+	}
+
+	ju87_a1 = {
+		year = 1936
+
+		archetype = junkers_CAS_equipment
+		priority = 20
+
+		air_range = 750
+		maximum_speed = 290 
+		air_agility = 20
+		air_attack = 4
+		air_defence = 18
+		air_ground_attack = 25 # 1x 500kg
+
+		naval_strike_attack = 7
+		naval_strike_targetting = 10	
+
+		build_cost_ic = 14
+		fuel_consumption = 0.15  #1x600 hp engine, .025 per 100 hp						
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}
+
+	ju87_a2 = {
+		year = 1937
+
+		archetype = junkers_CAS_equipment
+		priority = 20
+		parent = ju87_a1
+
+		air_range = 750
+		maximum_speed = 300 
+		air_agility = 24
+		air_attack = 4
+		air_defence = 18
+		air_ground_attack = 25 # 1x 500kg
+
+		naval_strike_attack = 7
+		naval_strike_targetting = 10	
+
+		build_cost_ic = 15
+		fuel_consumption = 0.168  #1x670 hp engine, .025 per 100 hp						
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}				
+	}   
+
+	ju87_b1 = {
+		year = 1938
+
+		archetype = junkers_CAS_equipment
+		priority = 20
+		parent = ju87_a2
+
+		air_range = 600
+		maximum_speed = 340 
+		air_agility = 30
+		air_attack = 6
+		air_defence = 20
+		air_ground_attack = 27
+
+		naval_strike_attack = 7
+		naval_strike_targetting = 10	
+
+		build_cost_ic = 18
+		fuel_consumption = 0.296  #1x600 hp engine, .025 per 100 hp						
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}  	 
+
+	ju87_b2 = {
+		year = 1938
+
+		archetype = junkers_CAS_equipment
+		priority = 20
+		parent = ju87_b1
+
+		air_range = 600
+		maximum_speed = 340 
+		air_agility = 32
+		air_attack = 6
+		air_defence = 20
+		air_ground_attack = 27
+
+		naval_strike_attack = 7
+		naval_strike_targetting = 10	
+
+		build_cost_ic = 19
+		fuel_consumption = 0.296  #1x600 hp engine, .025 per 100 hp								
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	} 	
+
+	ju87_r1 = {
+		year = 1938
+
+		archetype = junkers_CAS_equipment
+		priority = 20
+		parent = ju87_b2
+
+		air_range = 1100
+		maximum_speed = 310 
+		air_agility = 30
+		air_attack = 6
+		air_defence = 19
+		air_ground_attack = 27
+
+		naval_strike_attack = 7
+		naval_strike_targetting = 10
+
+		build_cost_ic = 22
+		fuel_consumption = 0.296  #1x600 hp engine, .025 per 100 hp								
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}				
+	}  
+
+	ju87_r2 = {
+		year = 1938
+
+		archetype = junkers_CAS_equipment
+		priority = 20
+		parent = ju87_r1
+
+		air_range = 1460
+		maximum_speed = 310 
+		air_agility = 30
+		air_attack = 6
+		air_defence = 19
+		air_ground_attack = 27
+
+		naval_strike_attack = 7
+		naval_strike_targetting = 10
+
+		build_cost_ic = 22
+		fuel_consumption = 0.296  #1x600 hp engine, .025 per 100 hp								
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}					
+	}  		
+
+	ju87_d1 = {
+		year = 1941
+
+		archetype = junkers_CAS_equipment
+		priority = 20
+		parent = ju87_r2
+
+		air_range = 800
+		maximum_speed = 354  
+		air_agility = 40
+		air_attack = 6
+		air_defence = 20
+		air_ground_attack = 34 #D variant began additional payload
+
+		naval_strike_attack = 14
+		naval_strike_targetting = 10	
+
+		build_cost_ic = 21
+		fuel_consumption = 0.35  #1x1400 hp engine, .025 per 100 hp								
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}  
+
+	ju87_d3 = {
+		year = 1942
+
+		archetype = junkers_CAS_equipment
+		priority = 20
+		parent = ju87_d1
+
+		air_range = 800
+		maximum_speed = 354  
+		air_agility = 40
+		air_attack = 6
+		air_defence = 24
+		air_ground_attack = 34
+
+		naval_strike_attack = 14
+		naval_strike_targetting = 10	
+
+		build_cost_ic = 23
+		fuel_consumption = 0.35  #1x1400 hp engine, .025 per 100 hp										
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}  		
+
+	ju87_d5 = {
+		year = 1942
+
+		archetype = junkers_CAS_equipment
+		priority = 20
+		parent = ju87_d3
+
+		can_convert_from = { 
+			ju87_d1 
+			ju87_d3
+			#many d1s and d3s were upgraded to d5
+		}			
+
+		air_range = 750
+		maximum_speed = 354  
+		air_agility = 40
+		air_attack = 24
+		air_defence = 24 #2x20 MM cannon
+		air_ground_attack = 38
+
+		naval_strike_attack = 14
+		naval_strike_targetting = 10
+
+		build_cost_ic = 23
+		fuel_consumption = 0.35  #1x1400 hp engine, .025 per 100 hp									
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}				
+	}  	
+ 	 
+	ju87_g2 = {
+		year = 1943
+
+		archetype = junkers_CAS_equipment
+		priority = 20
+		parent = ju87_d5
+
+		can_convert_from = { 
+			ju87_d1 
+			ju87_d3
+			ju87_d5
+		}			
+
+		air_range = 700
+		maximum_speed = 325 
+		air_agility = 25 #lots of drag from cannons
+		air_attack = 6 
+		air_defence = 24
+		air_ground_attack = 50
+
+		#G2s cannons are accurate but wont do much against a ship
+		naval_strike_attack = 4
+		naval_strike_targetting = 14
+
+		build_cost_ic = 26
+		fuel_consumption = 0.35  #1x1400 hp engine, .025 per 100 hp									
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}				
+	}  	
+
+	#Junkers CV Cas Ju 87 C -> D4
+	ju87_c = {
+		year = 1936
+
+		archetype = ram_cv_cas_equipment
+		priority = 300	
+
+		air_range = 600
+		maximum_speed = 340 
+		air_agility = 35
+		air_attack = 6
+		air_defence = 20
+		air_ground_attack = 10
+
+		naval_strike_attack = 8
+		naval_strike_targetting = 10		
+
+		build_cost_ic = 21
+		fuel_consumption = 0.296  #1x600 hp engine, .025 per 100 hp									
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}		
+	}  	
+
+	ju87_d4 = {
+		year = 1942
+
+		archetype = ram_cv_cas_equipment
+		priority = 300
+		parent = ju87_c
+
+		air_range = 700
+		maximum_speed = 354  
+		air_agility = 40
+		air_attack = 25 #2x20 MM cannon
+		air_defence = 25
+		air_ground_attack = 34
+
+		naval_strike_attack = 15
+		naval_strike_targetting = 10
+
+		build_cost_ic = 27
+		fuel_consumption = 0.35  #1x1400 hp engine, .025 per 100 hp										
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}				
+	}  		
+    junkers_tac_equipment = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment		
+		is_buildable = no
+		type = { tactical_bomber }
+		group_by = archetype
+		sprite = medium_plane
+		air_map_icon_frame = 6
+		
+		manpower = 40
+		
+		interface_category = interface_category_air
+		
+		# Tactical bomber
+		interface_overview_category_index = 4
+		
+		upgrades = {			
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+
+		# Air vs Navy - high damage / low hit chance / hard to hurt
+		naval_strike_attack = 15
+		naval_strike_targetting = 6
+
+		#Space taken in convoy
+		lend_lease_cost = 10
+		
+		build_cost_ic = 35
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}
+
+		fuel_consumption = 1.0
+    }
+	ju52 = {
+		year = 1933
+
+		archetype = junkers_tac_equipment
+		priority = 110
+
+		air_range = 1000
+		maximum_speed = 265 
+		air_agility = 14
+		air_attack = 8
+		air_defence = 25
+		air_ground_attack = 8
+
+		naval_strike_attack = 15
+		naval_strike_targetting = 5
+
+		build_cost_ic = 30
+
+		fuel_consumption = 0.34 #2x680 hp engines, .025 per 100 hp    				
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}	
+	}	
+	ju88_a1 = {
+		year = 1937
+		
+		archetype = junkers_tac_equipment
+		priority = 110
+		parent = ju52
+
+		air_range = 2430
+		maximum_speed = 450 
+		air_agility = 25
+		air_attack = 12 #3x7.7 mg (4 attack for  7.7 MG)		
+		air_defence = 16 
+		air_ground_attack = 35 # assume roughly 5 250 kgs (7 for 250 kg) 
+
+		naval_strike_attack = 18
+		naval_strike_targetting = 7 #it's a dive bomber
+
+		build_cost_ic = 32
+		fuel_consumption = 0.6 #2x1200 hp engines, .025 per 100 hp    		
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}
+	ju88_a4 = {
+		year = 1937
+		
+		archetype = junkers_tac_equipment
+		priority = 110
+		parent = ju88_a1
+
+		air_range = 2430
+		maximum_speed = 510 
+		air_agility = 26
+		air_attack = 12 #3x7.7 mg (4 attack for  7.7 MG)		
+		air_defence = 18 
+		air_ground_attack = 42 #1400 kg assume roughly 6 250 kgs (7 for 250 kg) 
+
+		naval_strike_attack = 21
+		naval_strike_targetting = 7
+		
+		build_cost_ic = 32
+		fuel_consumption = 0.705 #2x1200 hp engines, .025 per 100 hp    				
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}			
+	}			
+	ju288 = {
+		year = 1940
+		
+		archetype = junkers_tac_equipment
+		priority = 110
+		parent = ju88_a4
+
+		air_range = 2700
+		maximum_speed = 620 
+		air_agility = 30
+		air_attack = 43 #1xMG151,4xMG131 (15 for MG151,7 for MG131)		
+		air_defence = 23 
+		air_ground_attack = 80 #3000 kg payload
+
+		naval_strike_attack = 40
+		naval_strike_targetting = 7
+		
+		build_cost_ic = 46
+		fuel_consumption = 1.332 #2x2663 hp engines, .025 per 100 hp    		
+		resources = {
+			aluminium = 5
+			rubber = 1
+		}		
+	}	
+
+	junkers_transport_equipment = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		is_buildable = no
+		picture = archetype_strat_bomber_equipment			
+		type = air_transport
+		group_by = archetype
+		sprite = heavy_plane
+		air_map_icon_frame = 12
+
+		
+		interface_category = interface_category_air
+		
+		# Transport
+		interface_overview_category_index = 6
+		
+		air_superiority = 0
+		reliability = 0.8
+
+		naval_strike_attack = 0.0
+		naval_strike_targetting = 0.0
+		
+		build_cost_ic = 70
+		resources = {
+			aluminium = 3
+			rubber = 2
+		}
+		
+		manpower = 80
+		
+	}
+
+	ju52_transport = {
+		year = 1933
+
+		archetype = junkers_transport_equipment
+		priority = 170
+		
+		can_convert_from = { 
+			junkers_ju52 
+		}
+
+		air_range = 1000
+		maximum_speed = 300
+		air_agility = 10
+		air_defence = 20
+
+		fuel_consumption = 0.272 #2x680 hp engines, .02 per 100 hp    			
+	}	
+
+}

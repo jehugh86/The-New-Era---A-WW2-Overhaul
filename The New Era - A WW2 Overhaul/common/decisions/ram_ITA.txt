@@ -1,0 +1,299 @@
+fiat_decisions = {
+    cr32_contract = {
+        icon = generic_industry
+
+		available = {
+		}    
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 0 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_cr32 = 1 }
+            }
+        }
+    }    
+    cr42_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1938.4.1 
+		}
+        visible = {
+            has_tech = ram_cr32
+        }     
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 0 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_cr42 = 1 }
+            }
+        }
+    }
+    g50_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = fighter1
+		}    
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_g50 = 1 }
+            }
+        }
+    }     
+    g55_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = fighter2
+		}  
+        visible = {
+        }           
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_g55 = 1 }
+            }
+        }
+    }  
+    g56_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1944.4.1 
+		}
+        visible = {
+            has_tech = ram_g55
+        }           
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_g56 = 1 }
+            }
+        }
+    } 
+    g82_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = jet_fighter1 
+		}
+        visible = {
+        }           
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_g82 = 1 }
+            }
+        }
+    }
+    g91_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = jet_fighter2 
+		}
+        visible = {
+        }           
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_g91 = 1 }
+            }
+        }
+    }
+    br20_contract = {
+        icon = generic_industry
+
+		available = {
+		}          
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_br20 = 1 }
+            }
+        }
+    } 
+    br20_m_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1938.3.1 
+		} 
+        visible = {
+            has_tech = ram_br20
+        }           
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_br20_m = 1 }
+            }
+        }
+    }               
+}
+macchi_decisions = {
+    mc200_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = fighter1
+		}          
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_mc200 = 1 }
+            }
+        }
+    } 
+    mc202_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = fighter2
+		}                  
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_mc202 = 1 }
+            }
+        }
+    } 
+    mc205_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = fighter3
+		}      
+
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_mc205 = 1 }
+            }
+        }
+    }         
+}
+reggiane_decisions = {
+    re2000_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = fighter1
+		}    
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_re2000 = 1 }
+            }
+        }
+    } 
+    re2001_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1940.8.1  
+		} 
+        visible = {
+            has_tech = ram_re2000
+        }            
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_re2001 = 1 }
+            }
+        }
+    }          
+    re2002_contract = {
+        icon = generic_industry
+
+		available = {
+		}   
+        visible = {
+            has_tech = ram_re2001
+        } 
+        fire_only_once = yes
+        cost = 5
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_re2002 = 1 }
+            }
+        }
+    }     
+    re2005_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = fighter2
+		}    
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_re2005 = 1 }
+            }
+        }
+    }     
+}
+savoia_decisions = {
+    sm79_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = naval_bomber1
+		}          
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_sm79 = 1 }
+            }
+        }
+    } 
+}

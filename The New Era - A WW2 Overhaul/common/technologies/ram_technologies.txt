@@ -1,0 +1,1826 @@
+technologies = { 
+    #czech Techs
+    ram_b-534  = {
+        enable_equipments = { 
+            b-534
+        }       
+    } 
+    ram_b-35 = {
+        enable_equipments = { 
+            b-35 
+        }         
+    } 
+    ram_b-135 = {
+        enable_equipments = { 
+            b-135 
+        }         
+    }        
+
+    #French Techs
+    ram_loire46 = {
+        enable_equipments = {
+            loire46
+        }
+    }   
+
+    ram_breguet693 = {
+        enable_equipments = {
+            breguet693 
+        }
+    }  
+    # British Techs - Avro
+    ram_manchester = {
+        enable_equipments = {
+            manchester
+        }
+    }  
+    ram_lancaster = {
+        enable_equipments = {
+            lancaster
+        }
+    }         
+    ram_lincoln = {
+        enable_equipments = {
+            lincoln
+        }
+    }       
+    # British Techs - Blackburn
+    ram_skua = {
+        enable_equipments = {
+            skua
+        }
+    }   
+    ram_firebrand = {
+        enable_equipments = {
+            firebrand
+        }
+    }
+    ram_firecrest = {
+        enable_equipments = {
+            firecrest
+        }
+    }
+    ram_buccaneer = {
+        enable_equipments = {
+            buccaneer
+        }
+    } 
+    # British Techs - de Havilland
+    ram_mosquito_f2 = {
+        enable_equipments = {
+            mosquito_f2
+        }
+    } 
+    ram_mosquito_fb6 = {
+        enable_equipments = {
+            mosquito_fb6
+        }
+    } 
+    ram_vampire_f1 = {
+        enable_equipments = {
+            vampire_f1
+        }
+    } 
+    ram_vampire_fb5 = {
+        enable_equipments = {
+            vampire_fb5
+        }
+    } 
+    ram_venom_fb1 = {
+        enable_equipments = {
+            venom_fb1
+        }
+    } 
+    # British Techs - Fairey
+    ram_swordfish = {
+        enable_equipments = {
+            swordfish
+        }
+    } 
+    ram_albacore = {
+        enable_equipments = {
+            albacore
+        }
+    } 
+    ram_barracuda = {
+        enable_equipments = {
+            barracuda
+        }
+    } 
+    # British Techs - Hawker
+    ram_gladiator_mk2 = {
+        enable_equipments = {
+            gladiator_mk2 
+        }
+    }    
+    ram_hurricane_mk1 = {
+        enable_equipments = {
+            hurricane_mk1
+        }
+    }
+    ram_hurricane_mk1_late = {
+        enable_equipments = {
+            hurricane_mk1_late
+        }
+    } 
+    ram_hurricane_mk2_a = {
+        enable_equipments = {
+            hurricane_mk2_a
+        }
+    }
+    ram_hurricane_mk2_c = {
+        enable_equipments = {
+            hurricane_mk2_c
+        }
+    } 
+    ram_typhoon_mk1a = {
+        enable_equipments = {
+            typhoon_mk1a
+        }
+    }
+    ram_typhoon_mk1b = {
+        enable_equipments = {
+            typhoon_mk1b
+        }
+    }
+    ram_typhoon_mk1b_late = {
+        enable_equipments = {
+            typhoon_mk1b_late
+        }
+    } 
+    ram_tempest_mk5 = {
+        enable_equipments = {
+            tempest_mk5
+        }
+    } 
+    ram_tempest_mk2 = {
+        enable_equipments = {
+            tempest_mk2
+        }
+    } 
+    ram_meteor_f1 = {
+        enable_equipments = {
+            meteor_f1
+        }
+    } 
+    ram_meteor_f4 = {
+        enable_equipments = {
+            meteor_f4
+        }
+    }   
+    ram_meteor_f8 = {
+        enable_equipments = {
+            meteor_f8
+        }
+    } 
+    ram_hunter_f1 = {
+        enable_equipments = {
+            hunter_f1
+        }
+    } 
+    ram_hunter_f4 = {
+        enable_equipments = {
+            hunter_f4
+        }
+    }
+    ram_hunter_f6 = {
+        enable_equipments = {
+            hunter_f6
+        }
+    }
+    ram_sea_gladiator = {
+        enable_equipments = {
+            sea_gladiator
+        }
+    }    
+    ram_sea_hurricane_mk1 = {
+        enable_equipments = {
+            sea_hurricane_mk1
+        }
+    }
+    ram_sea_hurricane_mk2 = {
+        enable_equipments = {
+            sea_hurricane_mk2
+        }
+    }
+    ram_sea_fury = {
+        enable_equipments = {
+            sea_fury
+        }
+    }
+    ram_sea_hawk = {
+        enable_equipments = {
+            sea_hawk
+        }
+    }
+    # British Techs - Handley Page
+    ram_halifax_b3= {
+        enable_equipments = {
+            halifax_b3
+        }
+    } 
+    # British Techs - Supermarine
+    ram_spitfire_mk1 = {
+        enable_equipments = {
+            spitfire_mk1
+        }
+    }    
+    ram_spitfire_mk2 = {
+        enable_equipments = {
+            spitfire_mk2
+        }
+    }  
+    ram_spitfire_mk5a = {
+        enable_equipments = {
+            spitfire_mk5a
+        }
+    }  
+    ram_spitfire_mk5b = {
+        enable_equipments = {
+            spitfire_mk5b
+        }
+    }  
+    ram_spitfire_mk5c = {
+        enable_equipments = {
+            spitfire_mk5c
+        }
+    } 
+    ram_spitfire_mk8 = {
+        enable_equipments = {
+            spitfire_mk8
+        }
+    }  
+    ram_spitfire_mk9 = {
+        enable_equipments = {
+            spitfire_mk9
+        }
+    }  
+    ram_spitfire_mk12 = {
+        enable_equipments = {
+            spitfire_mk12
+        }
+    }  
+    ram_spitfire_mk14 = {
+        enable_equipments = {
+            spitfire_mk14
+        }
+    }  
+    ram_spitfire_mk22 = {
+        enable_equipments = {
+            spitfire_mk22
+        }
+    }     
+    ram_spitfire_mk24 = {
+        enable_equipments = {
+            spitfire_mk24
+        }
+    }  
+    ram_spiteful = {
+        enable_equipments = {
+            spiteful
+        }
+    }   
+    ram_swift = {
+        enable_equipments = {
+            swift
+        }
+    } 
+    #supermarine CV fighters
+    ram_seafire_mk2c = {
+        enable_equipments = {
+            seafire_mk2c
+        }
+    }  
+    ram_seafire_mk15 = {
+        enable_equipments = {
+            seafire_mk15
+        }
+    }      
+    ram_seafire_mk17 = {
+        enable_equipments = {
+            seafire_mk17
+        }
+    }      
+    ram_seafire_mk46 = {
+        enable_equipments = {
+            seafire_mk46
+        }
+    }   
+    ram_seafang = {
+        enable_equipments = {
+            seafang
+        }
+    } 
+    ram_attacker = {
+        enable_equipments = {
+            attacker
+        }
+    }              
+    # British Techs - Vickers
+    ram_wellington = {
+        enable_equipments = {
+            wellington
+        }
+    }  
+    # Germany Arado Techs
+    ram_ar234_b = {
+        enable_equipments = { 
+            ar234_b 
+        }         
+    } 
+    ram_ar234_c = {
+        enable_equipments = { 
+            ar234_c 
+        }         
+    }  
+    # Germany Dornier Techs
+    ram_do335 = {
+        enable_equipments = { 
+            do335 
+        }         
+    }     
+    ram_do17_e = {
+        enable_equipments = { 
+            do17_e 
+        }         
+    } 
+    ram_do17_z = {
+        enable_equipments = { 
+            do17_z 
+        }         
+    }
+    ram_do217_e = {
+        enable_equipments = { 
+            do217_e 
+        }         
+    } 
+    ram_do217_k = {
+        enable_equipments = { 
+            do217_k 
+        }         
+    }              
+    # German FockeWulf Techs
+    ram_fw190_a1 = {
+        enable_equipments = { 
+            fw190_a1 
+        }         
+    } 
+    ram_fw190_a2 = {
+        enable_equipments = { 
+            fw190_a2 
+        }         
+    } 
+    ram_fw190_a3 = {
+        enable_equipments = { 
+            fw190_a3 
+        }         
+    }     
+    ram_fw190_a4 = {
+        enable_equipments = { 
+            fw190_a4
+        }         
+    } 
+    ram_fw190_a5 = {
+        enable_equipments = { 
+            fw190_a5
+        }         
+    } 
+    ram_fw190_a5_u12 = {
+        enable_equipments = { 
+            fw190_a5_u12
+        }         
+    }     
+    ram_fw190_a6 = {
+        enable_equipments = { 
+            fw190_a6
+        }         
+    } 
+    ram_fw190_a7 = {
+        enable_equipments = { 
+            fw190_a7 
+        }         
+    } 
+    ram_fw190_a8 = {
+        enable_equipments = { 
+            fw190_a8 
+        }         
+    } 
+    ram_fw190_a9 = {
+        enable_equipments = { 
+            fw190_a9 
+        }         
+    } 
+    ram_fw190_a10 = {
+        enable_equipments = { 
+            fw190_a10
+        }         
+    } 
+    ram_fw190_d9 = {
+        enable_equipments = { 
+            fw190_d9
+        }         
+    } 
+    ram_fw190_d11 = {
+        enable_equipments = { 
+            fw190_d11
+        }         
+    } 
+    ram_fw190_d13 = {
+        enable_equipments = { 
+            fw190_d13
+        }         
+    }     
+    ram_fw_ta152 = {
+        enable_equipments = { 
+            fw_ta152
+        }         
+    }       
+    ram_fw190_f1 = {
+        enable_equipments = { 
+            fw190_f1
+        }         
+    }  
+    ram_fw190_f2 = {
+        enable_equipments = { 
+            fw190_f2
+        }         
+    }  
+    ram_fw190_f3 = {
+        enable_equipments = { 
+            fw190_f3
+        }         
+    }  
+    ram_fw190_f8 = {
+        enable_equipments = { 
+            fw190_f8
+        }         
+    } 
+    ram_fw190_f8_u2 = {
+        enable_equipments = { 
+            fw190_f8_u2
+        }         
+    }    
+    ram_fw190_f9 = {
+        enable_equipments = { 
+            fw190_f9
+        }         
+    }
+    ram_fw190_g1 = {
+        enable_equipments = { 
+            fw190_g1
+        }         
+    }
+    ram_fw190_g2 = {
+        enable_equipments = { 
+            fw190_g2
+        }         
+    }
+    ram_fw190_g3 = {
+        enable_equipments = { 
+            fw190_g3
+        }         
+    }
+    ram_fw190_g8 = {
+        enable_equipments = { 
+            fw190_g8
+        }         
+    }
+    ram_fw190_a4t = {
+        enable_equipments = { 
+            fw190_a4t
+        }         
+    }
+    ram_fw190_f9t = {
+        enable_equipments = { 
+            fw190_f9t
+        }         
+    }
+    ram_fw200_c3 = {
+        enable_equipments = { 
+            fw200_c3
+        }         
+    }    
+    # German Heinkel Fighter Techs  
+    ram_he46 = {
+        enable_equipments = { 
+            he46
+        }         
+    } 
+    ram_he51 = {
+        enable_equipments = { 
+            he51
+        }         
+    } 
+    ram_he112 = {
+        enable_equipments = { 
+            he112
+        }         
+    } 
+    ram_he100 = {
+        enable_equipments = { 
+            he100
+        }         
+    }         
+    ram_he280 = {
+        enable_equipments = { 
+            he280
+        }         
+    }
+    # German Heinkel Strategic Bomber Techs
+    ram_he177_a1 = {
+        enable_equipments = { 
+            he177_a1
+        }         
+    } 
+    ram_he177_a3 = {
+        enable_equipments = { 
+            he177_a3
+        }         
+    }
+
+    # German Heinkel TAC Techs
+    ram_he111_a0 = {
+        enable_equipments = { 
+            he111_a0
+        }         
+    } 
+    ram_he111_b2 = {
+        enable_equipments = { 
+            he111_b2
+        }         
+    }
+    ram_he111_e1 = {
+        enable_equipments = { 
+            he111_e1
+        }         
+    }     
+    ram_he111_e3 = {
+        enable_equipments = { 
+            he111_e3
+        }         
+    } 
+    ram_he111_f = {
+        enable_equipments = { 
+            he111_f
+        }         
+    } 
+    ram_he111_p1 = {
+        enable_equipments = { 
+            he111_p1
+        }         
+    } 
+    ram_he111_p2 = {
+        enable_equipments = { 
+            he111_p2
+        }         
+    }
+    ram_he111_p4 = {
+        enable_equipments = { 
+            he111_p4
+        }         
+    } 
+    ram_he111_h2 = {
+        enable_equipments = { 
+            he111_h2
+        }         
+    }     
+    ram_he111_h3 = {
+        enable_equipments = { 
+            he111_h3
+        }         
+    } 
+    ram_he111_h5 = {
+        enable_equipments = { 
+            he111_h5
+        }         
+    } 
+    ram_he111_h11 = {
+        enable_equipments = { 
+            he111_h11
+        }         
+    } 
+    ram_he111_h16 = {
+        enable_equipments = { 
+            he111_h16
+        }         
+    }      
+    ram_he111_h20 = {
+        enable_equipments = { 
+            he111_h20
+        }         
+    }  
+    ram_he111_z2 = {
+        enable_equipments = { 
+            he111_z2
+        }         
+    }                   
+    # German Heinkel NAV Techs
+    ram_he111_j = {
+        enable_equipments = { 
+            he111_j
+        }         
+    } 
+    ram_he111_h6 = {
+        enable_equipments = { 
+            he111_h6
+        }         
+    }         
+    # German Junkers Tac Tec
+    ram_ju52 = {
+        enable_equipments = { 
+            ju52
+        }         
+    }  
+    ram_ju52_transport = {
+        enable_equipments = { 
+            ju52_transport
+        }         
+    }  
+    # German Junkers CAS Techs
+    ram_ju87_a1 = {
+        enable_equipments = { 
+            ju87_a1
+        }         
+    }  
+    ram_ju87_a2 = {
+        enable_equipments = { 
+            ju87_a2
+        }         
+    }  
+    ram_ju87_b1 = {
+        enable_equipments = { 
+            ju87_b1
+        }         
+    } 
+    ram_ju87_b2 = {
+        enable_equipments = { 
+            ju87_b2
+        }         
+    }           
+    ram_ju87_r1 = {
+        enable_equipments = { 
+            ju87_r1
+        }         
+    }   
+    ram_ju87_r2 = {
+        enable_equipments = { 
+            ju87_r2
+        }         
+    }   
+    ram_ju87_d1 = {
+        enable_equipments = { 
+            ju87_d1
+        }         
+    }                    
+    ram_ju87_d3 = {
+        enable_equipments = { 
+            ju87_d3
+        }         
+    }   
+    ram_ju87_d5 = {
+        enable_equipments = { 
+            ju87_d5
+        }         
+    }   
+    ram_ju87_g2 = {
+        enable_equipments = { 
+            ju87_g2
+        }         
+    }      
+    #German Junkers carrier CAS Techs
+    ram_ju87_c = {
+        enable_equipments = { 
+            ju87_c
+        }         
+    }   
+    ram_ju87_d4 = {
+        enable_equipments = { 
+            ju87_d4
+        }         
+    }           
+    #German Junkers Tac Techs
+    ram_ju88_a1 = {
+        enable_equipments = { 
+            ju88_a1
+        }         
+    }       
+    ram_ju88_a4 = {
+        enable_equipments = { 
+            ju88_a4
+        }         
+    }  
+    ram_ju288 = {
+        enable_equipments = { 
+            ju288
+        }         
+    }      
+    # German Messerschmitt Fighter Techs   
+    ram_bf109_a = {
+        enable_equipments = { 
+            bf109_a
+        }        
+    }    
+    ram_bf109_b2 = {
+        enable_equipments = { 
+            bf109_b2
+        }        
+    }
+    ram_bf109_c1 = {
+        enable_equipments = { 
+            bf109_c1
+        }        
+    }
+    ram_bf109_d1 = {
+        enable_equipments = { 
+            bf109_d1
+        }        
+    }
+    ram_bf109_e1 = {
+        enable_equipments = { 
+            bf109_e1
+        }        
+    }
+    ram_bf109_e1b = {
+        enable_equipments = { 
+            bf109_e1b
+        }        
+    }    
+    ram_bf109_e3 = {
+        enable_equipments = { 
+            bf109_e3
+        }        
+    }
+    ram_bf109_e4 = {
+        enable_equipments = { 
+            bf109_e4
+        }        
+    }
+    ram_bf109_f2 = {
+        enable_equipments = { 
+            bf109_f2
+        }        
+    }
+    ram_bf109_f4 = {
+        enable_equipments = { 
+            bf109_f4
+        }        
+    }
+    ram_bf109_g2 = {
+        enable_equipments = { 
+            bf109_g2
+        }        
+    }
+    ram_bf109_g6 = {
+        enable_equipments = { 
+            bf109_g6
+        }        
+    }    
+    ram_bf109_g10 = {
+        enable_equipments = { 
+            bf109_g10
+        }        
+    }
+    ram_bf109_g14 = {
+        enable_equipments = { 
+            bf109_g14
+        }        
+    }
+    ram_bf109_k4 = {
+        enable_equipments = { 
+            bf109_k4
+        }        
+    }    
+    ram_bf109_k14 = {
+        enable_equipments = { 
+            bf109_k14
+        }        
+    } 
+    ram_me262_a1 = {
+        enable_equipments = { 
+            me262_a1
+        }        
+    } 
+    ram_me262_hg = {
+        enable_equipments = { 
+            me262_hg
+        }        
+    }
+    ram_me1110 = {
+        enable_equipments = { 
+            me1110
+        }        
+    }               
+    # German Messerschmitt Fighter-Bomber Techs   
+    ram_bf109_e4b = {
+        enable_equipments = { 
+            bf109_e4b
+        }        
+    } 
+    ram_bf109_f4b = {
+        enable_equipments = { 
+            bf109_f4b
+        }        
+    }   
+    ram_bf109_g2_r1 = {
+        enable_equipments = { 
+            bf109_g2_r1
+        }        
+    }    
+    ram_bf109_g6_r1 = {
+        enable_equipments = { 
+            bf109_g6_r1
+        }        
+    } 
+    ram_bf109_g10_r1 = {
+        enable_equipments = { 
+            bf109_g10_r1
+        }        
+    }                
+    ram_bf109_g14_r1 = {
+        enable_equipments = { 
+            bf109_g14_r1
+        }        
+    } 
+    ram_bf109_k4_r1 = {
+        enable_equipments = { 
+            bf109_k4_r1
+        }        
+    }   
+    ram_me262_a2 = {
+        enable_equipments = { 
+            me262_a2
+        }        
+    }        
+    ram_bf109_t1 = {
+        enable_equipments = { 
+            bf109_t1
+        }        
+    }  
+    ram_me155 = {
+        enable_equipments = { 
+            me155
+        }        
+    }        
+    ram_bf110_b1 = {
+        enable_equipments = { 
+            bf110_b1
+        }        
+    }  
+    ram_bf110_c1 = {
+        enable_equipments = { 
+            bf110_c1
+        }        
+    }
+    ram_bf110_c7b = {
+        enable_equipments = { 
+            bf110_c7b
+        }        
+    }   
+    ram_bf110_e1 = {
+        enable_equipments = { 
+            bf110_e1
+        }        
+    }       
+    ram_bf110_f1 = {
+        enable_equipments = { 
+            bf110_f1
+        }        
+    } 
+    ram_bf110_g2 = {
+        enable_equipments = { 
+            bf110_g2
+        }        
+    }     
+    ram_me210 = {
+        enable_equipments = { 
+            me210
+        }        
+    }  
+    ram_me410 = {
+        enable_equipments = { 
+            me410
+        }        
+    }                     
+    #Italian Techs
+     ram_cr32 = {
+        enable_equipments = { 
+            cr32
+        }        
+    }     
+     ram_cr42 = {
+        enable_equipments = { 
+            cr42
+        }        
+    }  
+    ram_g50 = {
+        enable_equipments = { 
+            g50
+        }        
+    }
+    ram_g55 = {
+        enable_equipments = { 
+            g55
+        }        
+    } 
+    ram_g56 = {
+        enable_equipments = { 
+            g56
+        }        
+    } 
+    ram_g82 = {
+        enable_equipments = { 
+            g82
+        }        
+    } 
+    ram_g91 = {
+        enable_equipments = { 
+            g91
+        }        
+    } 
+    ram_br20 = {
+        enable_equipments = { 
+            br20
+        }        
+    }
+    ram_br20_m = {
+        enable_equipments = { 
+            br20_m
+        }        
+    } 
+    ram_mc200 = {
+        enable_equipments = { 
+            mc200
+        }        
+    } 
+    ram_mc202 = {
+        enable_equipments = { 
+            mc202
+        }        
+    } 
+    ram_mc205 = {
+        enable_equipments = { 
+            mc205
+        }        
+    }    
+    #regianne 
+    ram_re2000 = {
+        enable_equipments = { 
+            re2000
+        }        
+    }
+    ram_re2001 = {
+        enable_equipments = { 
+            re2001
+        }        
+    } 
+    ram_re2002 = {
+        enable_equipments = { 
+            re2002
+        }        
+    } 
+    ram_re2005 = {
+        enable_equipments = { 
+            re2005
+        }        
+    }                           
+    #savoia
+    ram_sm79 = {
+        enable_equipments = { 
+            sm79
+        }        
+    }                                   
+    #Japan Techs
+    #Aichi cv CAS
+    ram_d1a1 = {
+        enable_equipments = {
+            d1a1
+        }
+    }
+    ram_d1a2 = {
+        enable_equipments = {
+            d1a2
+        }
+    }  
+    ram_d3a1 = {
+        enable_equipments = {
+            d3a1
+        }
+    }   
+    ram_d3a2 = {
+        enable_equipments = {
+            d3a2
+        }
+    }  
+    ram_b7a = {
+        enable_equipments = {
+            b7a
+        }
+    }                         
+    #Mitsub CAS
+    ram_ki_30 = {
+        enable_equipments = {
+            ki_30
+        }
+    }     
+    #Mitsub cv Fighter    
+    ram_a5m4 = {
+        enable_equipments = {
+            a5m4
+        }
+    }    
+    ram_a6m2 = {
+        enable_equipments = {
+            a6m2
+        }
+    } 
+    ram_a6m3_model32 = {
+        enable_equipments = {
+            a6m3_model32
+        }
+    } 
+    ram_a6m3_model22 = {
+        enable_equipments = {
+            a6m3_model22
+        }
+    } 
+    ram_a6m5_model52 = {
+        enable_equipments = {
+            a6m5_model52
+        }
+    }   
+    ram_a6m8 = {
+        enable_equipments = {
+            a6m8
+        }
+    }  
+    ram_a7m2 = {
+        enable_equipments = {
+            a7m2
+        }
+    } 
+    ram_j2m3 = {
+        enable_equipments = {
+            j2m3
+        }
+    } 
+    ram_j2m5 = {
+        enable_equipments = {
+            j2m5
+        }
+    }
+    ram_g3m1 = {
+        enable_equipments = {
+            g3m1
+        }
+    }      
+    ram_g3m2 = {
+        enable_equipments = {
+            g3m2
+        }
+    }       
+    ram_g3m3 = {
+        enable_equipments = {
+            g3m3
+        }
+    }      
+    ram_g4m1 = {
+        enable_equipments = {
+            g4m1
+        }
+    }      
+    ram_g4m2 = {
+        enable_equipments = {
+            g4m2
+        }
+    }        
+    ram_g4m3 = {
+        enable_equipments = {
+            g4m3
+        }
+    } 
+    ram_ki_21_1 = {
+        enable_equipments = {
+            ki_21_1
+        }
+    }  
+    ram_ki_21_2 = {
+        enable_equipments = {
+            ki_21_2
+        }
+    }     
+    #Nakajima cv NAV
+    ram_b5n = {
+        enable_equipments = {
+            b5n
+        }
+    }  
+    ram_b6n = {
+        enable_equipments = {
+            b6n
+        }
+    }     
+    #Nakajima Fighter 
+    ram_ki_27 = {
+        enable_equipments = {
+            ki_27
+        }
+    } 
+    ram_ki_43_1 = {
+        enable_equipments = {
+            ki_43_1
+        }
+    } 
+    ram_ki_43_2 = {
+        enable_equipments = {
+            ki_43_2
+        }
+    } 
+    ram_ki_43_3 = {
+        enable_equipments = {
+            ki_43_3
+        }
+    } 
+    ram_ki_44_1 = {
+        enable_equipments = {
+            ki_44_1
+        }
+    } 
+    ram_ki_44_2 = {
+        enable_equipments = {
+            ki_44_2
+        }
+    } 
+    ram_ki_84 = {
+        enable_equipments = {
+            ki_84
+        }
+    } 
+    ram_ki_94_2 = {
+        enable_equipments = {
+            ki_94_2
+        }
+    }  
+    ram_kikka = {
+        enable_equipments = {
+            kikka
+        }
+    }  
+    ram_g8n = {
+        enable_equipments = {
+            g8n
+        }
+    }  
+    #Yokosuka CV CAS 
+    ram_b4y = {
+        enable_equipments = {
+            b4y
+        }
+    } 
+    ram_d4y1 = {
+        enable_equipments = {
+            d4y1
+        }
+    } 
+    ram_d4y2 = {
+        enable_equipments = {
+            d4y2
+        }
+    } 
+    ram_d4y3 = {
+        enable_equipments = {
+            d4y3
+        }
+    } 
+    #Soviet Techs
+    ram_il_2 = {
+        enable_equipments = {
+            il_2
+        }
+    } 
+    ram_il_2m = {
+        enable_equipments = {
+            il_2m
+        }
+    } 
+    ram_il_10 = {
+        enable_equipments = {
+            il_10
+        }
+    } 
+    ram_il_28 = {
+        enable_equipments = {
+            il_28
+        }
+    }     
+    # lavochkin
+    ram_lagg_3 = {
+        enable_equipments = {
+            lagg_3
+        }        
+    }
+    ram_la_5 = {
+        enable_equipments = {
+            la_5
+        }        
+    }    
+    ram_la_5fn = {
+        enable_equipments = {
+            la_5fn
+        }        
+    } 
+    ram_la_7 = {
+        enable_equipments = {
+            la_7
+        }        
+    } 
+    ram_la_9 = {
+        enable_equipments = {
+            la_9
+        }        
+    }  
+    ram_la_11 = {
+        enable_equipments = {
+            la_11
+        }        
+    }        
+    ## mikoyan
+    ram_mig_1 = {
+        enable_equipments = {
+            mig_1
+        }
+    }  
+    ram_mig_3 = {
+        enable_equipments = {
+            mig_3
+        }
+    } 
+    ram_mig_7 = {
+        enable_equipments = {
+            mig_7
+        }
+    }  
+    ram_mig_9 = {
+        enable_equipments = {
+            mig_9
+        }
+    }     
+    ram_mig_15 = {
+        enable_equipments = {
+            mig_15
+        }
+    } 
+    ram_mig_15bis = {
+        enable_equipments = {
+            mig_15bis
+        }
+    }    
+    ram_mig_17a = {
+        enable_equipments = {
+            mig_17a
+        }
+    } 
+    ram_mig_17f = {
+        enable_equipments = {
+            mig_17f
+        }
+    } 
+    ram_mig_19 = {
+        enable_equipments = {
+            mig_19
+        }
+    }   
+    # petlyakov   
+    ram_pe_2 = {
+        enable_equipments = {
+            pe_2
+        }        
+    } 
+    ram_pe_2i = {
+        enable_equipments = {
+            pe_2i
+        }        
+    }            
+    ram_pe_3 = {
+        enable_equipments = {
+            pe_3
+        }        
+    }  
+    ram_pe_3bis = {
+        enable_equipments = {
+            pe_3bis
+        }        
+    }  
+    ram_pe_8 = {
+        enable_equipments = {
+            pe_8
+        }        
+    }           
+    ## polikarpov
+    ram_i15 = {
+        enable_equipments = {
+            i15
+        }
+    } 
+    ram_i15bis = {
+        enable_equipments = {
+            i15bis
+        }
+    }    
+    ram_i153 = {
+        enable_equipments = {
+            i153
+        }
+    }             
+    ram_i16_type5 = {
+        enable_equipments = {
+            i16_type5
+        }
+    }
+    ram_i16_type6 = {
+        enable_equipments = {
+            i16_type6
+        }
+    }    
+    ram_i16_type10 = {
+        enable_equipments = {
+            i16_type10
+        }
+    }    
+    ram_i16_type17 = {
+        enable_equipments = {
+            i16_type17
+        }
+    }
+    ram_i16_type18 = {
+        enable_equipments = {
+            i16_type18
+        }
+    }
+    ram_i16_type24 = {
+        enable_equipments = {
+            i16_type24
+        }
+    }
+    #Sukhoi
+    ram_su2 = {
+         enable_equipments = {
+            su2
+        }          
+    }
+    ram_su6 = {
+         enable_equipments = {
+            su6
+        }          
+    }
+    ram_su7b = {
+         enable_equipments = {
+            su7b
+        }          
+    }
+    #Yakovlevs
+    ram_yak1 = {
+        enable_equipments = {
+            yak1
+        }        
+    }
+    ram_yak1_b = {
+        enable_equipments = {
+            yak1_b
+        }        
+    }
+    ram_yak9 = {
+        enable_equipments = {
+            yak9
+        }        
+    }
+    ram_yak9_td = {
+        enable_equipments = {
+            yak9_td
+        }        
+    }
+    ram_yak9_u = {
+        enable_equipments = {
+            yak9_u
+        }        
+    }
+    ram_yak3 = {
+        enable_equipments = {
+            yak3
+        }        
+    }    
+    ram_yak15 = {
+        enable_equipments = {
+            yak15
+        }        
+    }
+    ram_yak23 = {
+        enable_equipments = {
+            yak23
+        }        
+    }
+    #US Techs
+    ram_p39_c = {
+        enable_equipments = {
+            p39_c
+        }
+    } 
+    ram_p400 = {
+        enable_equipments = {
+            p400
+        }
+    }    
+    ram_p39_d2 = {
+        enable_equipments = {
+            p39_d2
+        }
+    }   
+    ram_p39_n = {
+        enable_equipments = {
+            p39_d2
+        }
+    }  
+    ram_p39_q1 = {
+        enable_equipments = {
+            p39_q1
+        }
+    }     
+    ram_p39_q10 = {
+        enable_equipments = {
+            p39_q10
+        }
+    } 
+    ram_p63 = {
+        enable_equipments = {
+            p63
+        }
+    }    
+    # US Techs - Boeing
+    ram_b17_d = {
+        enable_equipments = {
+            b17_d
+        }
+    } 
+    ram_b17_e = {
+        enable_equipments = {
+            b17_e
+        }
+    }    
+    ram_b17_f = {
+        enable_equipments = {
+            b17_f
+        }
+    }    
+    ram_b17_g = {
+        enable_equipments = {
+            b17_g
+        }
+    }  
+    ram_b29_a = {
+        enable_equipments = {
+            b29_a
+        }
+    }  
+    ram_b47_e = {
+        enable_equipments = {
+            b47_e
+        }
+    }
+    ram_b52_d = {
+        enable_equipments = {
+            b52_d
+        }
+    }   
+    # US Techs - Consolidated
+    ram_b24_d = {
+        enable_equipments = {
+            b24_d
+        }
+    } 
+    ram_pb4y = {
+        enable_equipments = {
+            pb4y
+        }
+    }  
+    # US Techs - Douglas
+    ram_sbd_3 = {
+        enable_equipments = {
+            sbd_3
+        }
+    } 
+    ram_sbd_5 = {
+        enable_equipments = {
+            sbd_5
+        }
+    }   
+    ram_ad_2 = {
+        enable_equipments = {
+            ad_2
+        }
+    }   
+    ram_ad_4 = {
+        enable_equipments = {
+            ad_4
+        }
+    }  
+    ram_tbd = {
+        enable_equipments = {
+            tbd
+        }
+    } 
+    ram_btd = {
+        enable_equipments = {
+            btd
+        }
+    }  
+    ram_tb2d = {
+        enable_equipments = {
+            tb2d
+        }
+    }  
+    # US Techs - Grumman                                   
+    ram_f4f_3 = {
+        enable_equipments = {
+            f4f_3
+        }
+    }
+    ram_f4f_4 = {
+        enable_equipments = {
+            f4f_4
+        }
+    }    
+    ram_f6f_3 = {
+        enable_equipments = {
+            f6f_3
+        }
+    } 
+    ram_f6f_5 = {
+        enable_equipments = {
+            f6f_5
+        }
+    } 
+    ram_f8f_1 = {
+        enable_equipments = {
+            f8f_1
+        }
+    }      
+    ram_f8f_2 = {
+        enable_equipments = {
+            f8f_2
+        }
+    }
+    ram_f9f_2 = {
+        enable_equipments = {
+            f9f_2
+        }
+    }  
+    ram_f9f_5 = {
+        enable_equipments = {
+            f9f_5
+        }
+    }      
+    ram_f9f_6 = {
+        enable_equipments = {
+            f9f_6
+        }
+    } 
+    ram_f9f_8 = {
+        enable_equipments = {
+            f9f_8
+        }
+    }   
+    ram_f11_a = {
+        enable_equipments = {
+            f11_a
+        }
+    }  
+    ram_f11_b = {
+        enable_equipments = {
+            f11_b
+        }
+    }                      
+    ram_tbf_1 = {
+        enable_equipments = {
+            tbf_1
+        }
+    } 
+    ram_tbf_3 = {
+        enable_equipments = {
+            tbf_3
+        }
+    }  
+    # US Techs - Lockheed
+    ram_p38_e = {
+        enable_equipments = {
+            p38_e
+        }
+    } 
+    ram_p38_f = {
+        enable_equipments = {
+            p38_f
+        }
+    }       
+    ram_p38_g = {
+        enable_equipments = {
+            p38_g
+        }
+    }  
+    ram_p38_h = {
+        enable_equipments = {
+            p38_h
+        }
+    }  
+    ram_p38_j = {
+        enable_equipments = {
+            p38_j
+        }
+    }  
+    ram_p38_k = {
+        enable_equipments = {
+            p38_k
+        }
+    }  
+    # US Techs - North American
+    ram_p51_a = {
+        enable_equipments = {
+            p51_a
+        }
+    } 
+    ram_p51_b = {
+        enable_equipments = {
+            p51_b
+        }
+    }  
+    ram_p51_d5 = {
+        enable_equipments = {
+            p51_d5
+        }
+    } 
+    ram_p51_d30 = {
+        enable_equipments = {
+            p51_d30
+        }
+    } 
+    ram_p51_h = {
+        enable_equipments = {
+            p51_h
+        }
+    }       
+    ram_f86_a = {
+        enable_equipments = {
+            f86_a
+        }
+    }  
+    ram_f86_f25 = {
+        enable_equipments = {
+            f86_f25
+        }
+    } 
+    ram_f86_f40 = {
+        enable_equipments = {
+            f86_f40
+        }
+    }  
+    ram_f100_d = {
+        enable_equipments = {
+            f100_d
+        }
+    }     
+    ram_f82 = {
+        enable_equipments = {
+            f82
+        }
+    }       
+    ram_b25_a = {
+        enable_equipments = {
+            b25_a
+        }
+    } 
+    ram_b25_b = {
+        enable_equipments = {
+            b25_b
+        }
+    }       
+    ram_b25_c = {
+        enable_equipments = {
+            b25_c
+        }
+    }   
+    ram_b25_g = {
+        enable_equipments = {
+            b25_g
+        }
+    }    
+    ram_b45_c = {
+        enable_equipments = {
+            b45_c
+        }
+    }                                          
+    # US Techs - Republic                                            
+    ram_p35 = {
+        enable_equipments = {
+            p35
+        }
+    } 
+    ram_p43 = {
+        enable_equipments = {
+            p43
+        }
+    } 
+    ram_p47_b15 = {
+        enable_equipments = {
+            p47_b15
+        }
+    } 
+    ram_p47_c = {
+        enable_equipments = {
+            p47_c
+        }
+    }      
+    ram_p47_d22 = {
+        enable_equipments = {
+            p47_d22
+        }
+    } 
+    ram_p47_d30 = {
+        enable_equipments = {
+            p47_d30
+        }
+    }      
+    ram_p47_d40 = {
+        enable_equipments = {
+            p47_d40
+        }
+    }     
+    ram_p47_m = {
+        enable_equipments = {
+            p47_m
+        }
+    }      
+    ram_p47_n = {
+        enable_equipments = {
+            p47_n
+        }
+    }
+    ram_p72 = {
+        enable_equipments = {
+            p72
+        }
+    }  
+    ram_f84_b = {
+        enable_equipments = {
+            f84_b
+        }
+    }      
+    ram_f84_g = {
+        enable_equipments = {
+            f84_g
+        }
+    }   
+    ram_f84_f = {
+        enable_equipments = {
+            f84_f
+        }
+    }         
+    ram_f105_d = {
+        enable_equipments = {
+            f105_d
+        }
+    } 
+    #US techs - Vought
+    ram_f4u_1 = {
+        enable_equipments = {
+            f4u_1
+        }
+    } 
+    ram_f4u_1a = {
+        enable_equipments = {
+            f4u_1a
+        }
+    }      
+    ram_f4u_1d = {
+        enable_equipments = {
+            f4u_1d
+        }
+    } 
+    ram_f4u_1c = {
+        enable_equipments = {
+            f4u_1c
+        }
+    }    
+    ram_f4u_4b = {
+        enable_equipments = {
+            f4u_4b
+        }
+    }     
+    ram_f4u_5 = {
+        enable_equipments = {
+            f4u_5
+        }
+    }     
+    ram_f4u_6 = {
+        enable_equipments = {
+            f4u_6
+        }
+    } 
+}
+

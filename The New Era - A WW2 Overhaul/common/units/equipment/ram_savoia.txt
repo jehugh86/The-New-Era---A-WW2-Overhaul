@@ -1,0 +1,68 @@
+equipments = {
+	savoia_nav_equipment = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment		
+		is_buildable = no
+		type = { tactical_bomber }
+		group_by = archetype
+		sprite = medium_plane
+		air_map_icon_frame = 6
+		
+		manpower = 40
+		
+		interface_category = interface_category_air
+		
+		# Tactical bomber
+		interface_overview_category_index = 4
+		
+		upgrades = {
+			#plane_tac_bomb_upgrade
+			#plane_range_upgrade
+			#plane_engine_upgrade
+			#plane_reliability_upgrade
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+
+		naval_strike_attack = 3
+		naval_strike_targetting = 5
+
+		#Space taken in convoy
+		lend_lease_cost = 10
+		
+		build_cost_ic = 35
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}	
+		fuel_consumption = 1.0	
+	}	
+    sm79 = {
+		year = 1933
+		
+		archetype = savoia_nav_equipment
+		priority = 5
+
+		air_range = 2600
+		maximum_speed = 460 
+		air_agility = 32
+		air_attack = 32 #1 20 MG 151 cannon, 2x50 cal MG turrets, 2x7.7 MG (12 for cannon, 6 for each 50 cal, 4 for each 7.7 MG)
+		air_defence = 22 #hybrid wood/sheet metal
+		air_ground_attack = 24 #1600kg payload
+
+		naval_strike_attack = 30 #2xF200 (200kg) (1 nav atk per 13 kg ) 
+		naval_strike_targetting = 10 # base accuracy
+
+
+		build_cost_ic = 30
+		fuel_consumption = 0.54 #2x1350 hp engines, .02 per 100 hp    		
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}       
+    }	    
+}

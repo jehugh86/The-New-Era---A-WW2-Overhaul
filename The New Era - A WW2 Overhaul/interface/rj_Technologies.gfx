@@ -1,0 +1,311 @@
+spriteTypes = {
+
+	### German Jets ###
+	
+	SpriteType = {
+		name = "GFX_GER_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/GER_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_GER_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/GER_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/GER_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/GER_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/GER_jet_tactical_bomber1.dds"
+	}
+	
+	
+	### Soviet Jets ###
+	
+	
+	SpriteType = {
+		name = "GFX_SOV_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_tactical_bomber1.dds"
+	}
+	
+	
+	### British Jets ###
+	
+	SpriteType = {
+		name = "GFX_ENG_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ENG_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_tactical_bomber1.dds"
+	}
+	
+	### AST Jets ###
+	
+	SpriteType = {
+		name = "GFX_AST_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/AST_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_AST_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/AST_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_AST_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/AST_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_AST_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/AST_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_AST_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/AST_jet_tactical_bomber1.dds"
+	}
+	
+	### CAN Jets ###
+	
+	SpriteType = {
+		name = "GFX_CAN_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/CAN_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CAN_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/CAN_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CAN_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/CAN_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CAN_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/CAN_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CAN_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/CAN_jet_tactical_bomber1.dds"
+	}
+	
+	### NZL Jets ###
+	
+	SpriteType = {
+		name = "GFX_NZL_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/NZL_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_NZL_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/NZL_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NZL_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/NZL_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NZL_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/NZL_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NZL_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/NZL_jet_tactical_bomber1.dds"
+	}
+	
+	### RAJ Jets ###
+	
+	SpriteType = {
+		name = "GFX_RAJ_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/RAJ_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_RAJ_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/RAJ_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_RAJ_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/RAJ_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_RAJ_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/RAJ_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_RAJ_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/RAJ_jet_tactical_bomber1.dds"
+	}
+	
+	
+	### SAF Jets ###
+	
+	SpriteType = {
+		name = "GFX_SAF_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/SAF_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SAF_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/SAF_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SAF_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SAF_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SAF_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SAF_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SAF_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SAF_jet_tactical_bomber1.dds"
+	}
+	
+	### Japan Jets ###
+	
+	SpriteType = {
+		name = "GFX_JAP_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/JAP_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_JAP_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/JAP_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/JAP_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/JAP_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/JAP_jet_tactical_bomber1.dds"
+	}
+	
+	### USA Jets ###
+	
+	SpriteType = {
+		name = "GFX_USA_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/USA_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_USA_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/USA_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/USA_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/USA_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/USA_jet_tactical_bomber1.dds"
+	}
+	
+	### FRA Jets ###
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/FRA_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/FRA_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/FRA_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/FRA_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/FRA_jet_tactical_bomber1.dds"
+	}
+	
+	### ITA Jets ###
+	
+	SpriteType = {
+		name = "GFX_ITA_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/ITA_jet_fighter1.dds"
+	}
+	
+}

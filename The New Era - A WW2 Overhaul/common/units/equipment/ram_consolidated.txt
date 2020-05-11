@@ -1,0 +1,131 @@
+equipments = {
+	
+	consolidated_strat_bomber_equipment = {
+		year = 1933
+		
+		is_archetype = yes
+		is_convertable = yes		  
+		picture = archetype_strat_bomber_equipment
+		is_buildable = no
+		type = strategic_bomber
+		group_by = archetype
+		sprite = heavy_plane
+		air_map_icon_frame = 11				 
+		
+		interface_category = interface_category_air
+		
+		# Strategic bomber
+		interface_overview_category_index = 5
+		
+		upgrades = {
+			strategic_bomber_fuel_tank_upgrade
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+
+		naval_strike_attack = 2.5
+		naval_strike_targetting = 0.6
+
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 60
+		resources = {
+			aluminium = 3
+			rubber = 2
+		}
+		
+		manpower = 80
+		fuel_consumption = 0.8		
+	}
+
+	b24_d = {
+		year = 1942
+		
+		archetype = consolidated_strat_bomber_equipment
+		priority = 15
+
+		air_range = 3300
+		maximum_speed = 470  
+		air_agility = 20
+		air_attack = 60 #10x50cal (6 attack for 50 cal)
+		air_defence = 55
+
+		air_bombing = 36 #3600kg bomb load (1 air_bombing per 100 kg)
+
+
+		build_cost_ic = 44
+		fuel_consumption = 0.96 #4x1200 hp engines, .02 per 100 hp    		
+		resources = {
+			aluminium = 3
+			rubber = 2
+		}				
+	}  
+
+	consolidated_nav_bomber_equipment = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_heavy_fighter_equipment		
+		is_buildable = no
+		type = naval_bomber
+		group_by = archetype
+		sprite = light_plane
+		air_map_icon_frame = 3
+		
+		interface_category = interface_category_air
+		
+		# Naval bomber
+		interface_overview_category_index = 2
+
+		upgrades = {
+			strategic_bomber_fuel_tank_upgrade
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+
+		# Air vs Navy - high damage / medium hit chance / easy to hurt
+		naval_strike_attack = 15
+		naval_strike_targetting = 7.5
+		
+		build_cost_ic = 26
+		resources = {
+			#oil = 1
+			aluminium = 2
+			rubber = 1
+		}
+		
+		manpower = 20
+		fuel_consumption = 0.28
+	}
+
+	pb4y = {
+		year = 1942
+		
+		archetype = consolidated_nav_bomber_equipment
+		priority = 125
+
+		air_range = 4540
+		maximum_speed = 482  
+		air_agility = 16
+		air_attack = 72 #12x50cal (6 attack for 50 cal)
+		air_defence = 65
+
+		air_bombing = 58 #5800kg bomb load (1 air_bombing per 100 kg)
+
+		naval_strike_attack = 84 #6xMark 13 mod 10 torp (270kg) (1 nav atk per 13 kg ) 
+		naval_strike_targetting = 8 #reduced from base value of 10 		
+
+
+		build_cost_ic = 55
+		fuel_consumption = 1.08 #4x1350 hp engines, .02 per 100 hp    		
+		resources = {
+			aluminium = 3
+			rubber = 2
+		}				
+	}  
+
+}

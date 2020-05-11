@@ -1,0 +1,25 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+# 
+
+involved_major_conflict_sov = {
+	AND = {
+		tag = SOV
+		has_war = yes
+		any_enemy_country = {
+			is_major = yes 
+		}
+		casualties > 1000000
+	}
+}

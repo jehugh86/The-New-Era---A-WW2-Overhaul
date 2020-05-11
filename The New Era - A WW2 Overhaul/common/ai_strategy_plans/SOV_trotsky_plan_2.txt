@@ -1,0 +1,85 @@
+SOV_trotsky_plan_2 = {
+	name = "Trotsky at War"
+	desc = "Trotsky plan but when at war with a major"
+
+	enable = {
+		original_tag = SOV
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_TROTSKY
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = TROTSKY
+			}
+		}
+		has_war = yes
+		any_enemy_country = {
+			is_major = yes
+		}
+	}
+	abort = {
+		OR = {
+			has_war = no
+			is_subject = yes
+		}
+	}
+
+	ai_national_focuses = {
+		#ASAP
+		SOV_defense_of_moscow
+		SOV_move_industry_to_urals
+		SOV_Leningrad_Fort_Region			#new
+		SOV_Volga_River_Defense				#new
+		SOV_heroes_of_the_union				#new
+		
+		#Important
+		SOV_permanent_revolution	#in case of very early def.war
+		SOV_collectivist_propaganda
+		SOV_extra_tech_slot_early
+		SOV_dictatorship_of_the_proletariat		#new
+		SOV_soviet_democracy					#new
+		SOV_militarized_schools
+		SOV_rehabilitated_military
+		SOV_military_reorganization
+		SOV_lessons_of_war
+		SOV_internationalism					#new
+		
+		#Less Important
+		SOV_production_effort
+		SOV_stalin_constitution2	
+		
+		#For later dates
+		SOV_State_defense_committee		#new
+		SOV_diversify_the_programme
+		SOV_Air_Combat_Experience		#new
+		SOV_War_Production_Targets		#new
+		
+		#Less Important
+		SOV_workers_culture
+		SOV_Rubber_Industry
+		#SOV_claims_on_poland	#not to be forced
+		SOV_offer_poland_protection	
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		captain_of_industry = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

@@ -1,0 +1,125 @@
+SOV_historical_plan = {
+	name = "SOV historical plan"
+	desc = ""
+
+	enable = {
+		original_tag = SOV
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = SOV_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_HISTORICAL
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			has_war_with = GER
+			has_war_with = JAP
+		}
+	}
+
+	ai_national_focuses = {
+		#ASAP
+		SOV_defense_of_moscow
+		SOV_move_industry_to_urals
+		SOV_Leningrad_Fort_Region		#new
+		SOV_lessons_of_war
+		SOV_Volga_River_Defense			#new IF focus
+		SOV_State_defense_committee		#new
+		SOV_heroes_of_the_union			#new IF focus
+		SOV_Molotov_Line				#new
+		#1936
+		SOV_stalin_constitution2
+		SOV_positive_heroism
+		SOV_finish_five_year_plan
+		SOV_improve_railway
+		SOV_production_effort
+		#1937
+		SOV_transpolar_flights
+		SOV_Approve_next_five_year_plan	#new
+		SOV_plan_civilian_focus			#new
+		SOV_Rubber_Industry				#new
+		SOV_great_purge
+		#1938
+		SOV_ocean_going_navy
+		SOV_expand_navy_industry		#new
+		SOV_aviation_cult
+		SOV_peoples_commissariat
+		#1939	LOT of focuses skipped by Molotov Pact
+		SOV_anti_fascist_diplomacy
+		SOV_far_east_fortification
+		SOV_operation_zet
+		SOV_KV_Heavy_Tank				#new
+		SOV_improve_stalin_line
+		SOV_claims_on_baltic
+		SOV_baltic_security
+		SOV_claims_on_poland
+		SOV_claim_bessarabia
+		#1940
+		SOV_the_flying_tank				#new
+		SOV_socialist_realism
+		SOV_progress_cult		#SOV_militarized_schools
+		SOV_socialist_science2	#SOV_workers_culture
+		#1941
+		SOV_extra_tech_slot
+		SOV_nkvd_primacy
+		SOV_anti_capitalist_diplomacy
+		SOV_expand_red_fleet
+		#1942
+		SOV_anti_colonialist_rebels
+		#SOV_infrastructure_effort
+		#SOV_continue_urbanisation		#new
+		SOV_demand_eastern_poland
+		SOV_nkvd_divisions
+		SOV_diversify_the_programme
+		SOV_Test_New_Rocket_Weapons		#new
+		SOV_Air_Combat_Experience		#new
+		SOV_Kazan_Aviation_Factory		#new
+		#1943
+		SOV_annex_tannu_tuva
+		SOV_War_Production_Targets		#new	
+		SOV_Uralvagonzavod				#new
+		SOV_smersh
+		SOV_Next_Generation_Aircraft	#new
+		SOV_Functional_Engineering		#new
+		#1944
+		SOV_research_city_experiment
+		SOV_closed_city_network
+		#SOV_Industrial_Mass_Production	#new
+		#1945
+		SOV_war_with_japan
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

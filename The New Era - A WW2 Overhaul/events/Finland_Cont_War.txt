@@ -1,0 +1,841 @@
+﻿###########################
+# New Soviet Events
+###########################
+
+add_namespace = ContWar
+##### Part 1 #####
+# Germany plans to attack USSR, do we want finnish help?
+country_event = {
+	id = ContWar.1
+	picture = GFX_report_event_military_planning
+	title = ContWar.1.t
+	desc = ContWar.1.d
+	
+	trigger = {	
+		original_tag = GER
+		GER = {
+			focus_progress = {
+				focus = GER_ussr_war_goal
+				progress > 0.01
+			}
+			NOT = { has_war_with = SOV } #should prevent a case where USSR is simply dragged to war by FRA, which was dragged by CZE and the focus is bypassed
+		}
+		NOT = { 
+			FIN = { 
+				OR = { 
+					has_government = communism
+					has_war = yes
+					is_in_faction_with = GER
+					is_in_faction_with = SOV
+				}
+			} 
+		}
+	}
+	mean_time_to_happen = {
+		days = 7
+	}
+	fire_only_once = yes
+	
+	option = {	#yes
+		name = ContWar.1.a
+		ai_chance = { factor = 90 }
+		FIN = {
+			country_event = {
+				id = ContWar.2
+				days = 1
+			}
+		}
+	}
+	option = {	#no
+		name = ContWar.1.b
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		add_political_power = 10
+	}
+}
+
+# Finland asked to help vs USSR
+country_event = {
+	id = ContWar.2
+	picture = GFX_report_event_generic_conference
+	title = ContWar.2.t
+	desc = {                             
+		text = ContWar2_hadwar.d		#this is the localisable text name, which needs to be unique.
+		trigger = {						#this is needed trigger.
+			NOT = { has_full_control_of_state = 146 }    		
+		}
+	}
+	desc = {                             
+		text = ContWar2_nowar.d        #this is the localisable text name, which needs to be unique.
+		trigger = {                    #this is needed trigger.
+			has_full_control_of_state = 146    		
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {	#yes, but we need german help
+		name = ContWar.2.a
+		ai_chance = { 
+			factor = 70
+			modifier = {
+				factor = 0.1
+				has_full_control_of_state = 146
+			}
+			modifier = { 
+				factor = 0.5
+				has_idea = neutrality_idea
+			}
+			modifier = {	#very bad idea
+				factor = 0.1
+				POL = {
+					exists = yes
+					is_subject = no
+					has_war = no
+				}
+			}
+		}
+		GER = {
+			country_event = {
+				id = ContWar.3
+				days = 3
+			}
+			diplomatic_relation = {
+					country = FIN
+					relation = military_access
+					active = yes
+			}
+		}
+	}
+	option = {	#no, too risky
+		name = ContWar.2.b
+		ai_chance = { 
+			factor = 30 
+			modifier = {
+				factor = 0.8
+				has_full_control_of_state = 147
+				NOT = { has_full_control_of_state = 146 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { has_full_control_of_state = 147 }
+				NOT = { has_full_control_of_state = 146 }
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = { has_full_control_of_state = 146 }	
+			}
+			modifier = { 
+				factor = 3
+				has_idea = neutrality_idea
+			}
+		}
+		GER = {
+			country_event = {
+				id = ContWar.4
+				days = 3
+			}
+		}
+		GER = { add_opinion_modifier = { target = FIN modifier = ger_disappointed } }
+		SOV = {	add_opinion_modifier = { target = FIN modifier = refused_continue_war } }
+	}
+}
+##### Part 2 #####
+# Finland agrees to join the war cause
+country_event = {
+	id = ContWar.3
+	picture = GFX_report_event_finnish_letter
+	title = ContWar.3.t
+	desc = ContWar.3.d
+	
+	is_triggered_only = yes
+	
+	option = {	#great, send the aid
+		name = ContWar.3.a
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_equipment = { infantry_equipment > 15000 } # This option will only appear if the condition is fulfilled.
+		}
+		send_equipment = {
+				target = FIN
+				equipment = infantry_equipment
+				amount = 15000
+		}
+			if = {
+				limit = { has_equipment = { support_equipment > 500 } }
+				send_equipment = {
+					target = FIN
+					equipment = support_equipment
+					amount = 500
+				}
+			}
+			if = {
+				limit = { has_equipment = { artillery_equipment > 250 } }
+				send_equipment = {
+					target = FIN
+					equipment = artillery_equipment
+					amount = 250
+					old_prioritised = yes
+				}
+			}
+			if = {
+				limit = { has_equipment = { fighter_equipment > 120 } }
+				send_equipment = {
+					target = FIN
+					equipment = fighter_equipment
+					amount = 120
+					old_prioritised = yes
+				}
+			}
+		add_timed_idea = {
+			idea = GER_supporting_finns
+			days = 270
+		}
+		FIN = {
+			country_event = {
+				id = ContWar.5
+				days = 10
+			}
+			add_timed_idea = {
+				idea = FIN_strengthen_fascists
+				days = 730
+			}
+		}
+		add_ai_strategy = {
+			type = support
+			id = FIN
+			value = 100
+		}
+		add_ai_strategy = {
+			type = protect
+			id = FIN
+			value = 25
+		}
+	}
+	option = {	#great, but send minimum
+		name = ContWar.3.b
+		ai_chance = { factor = 50 }
+		send_equipment = {
+				target = FIN
+				equipment = infantry_equipment
+				amount = 5000
+				old_prioritised = yes
+		}
+		if = {
+			limit = { has_equipment = { support_equipment > 200 } }
+			send_equipment = {
+				target = FIN
+				equipment = support_equipment
+				amount = 200
+			}
+		}
+		if = {
+			limit = { has_equipment = { artillery_equipment > 100 } }
+			send_equipment = {
+				target = FIN
+				equipment = artillery_equipment
+				amount = 100
+				old_prioritised = yes
+			}
+		}
+		add_timed_idea = {
+			idea = GER_supporting_finns
+			days = 180
+		}
+		FIN = {
+			country_event = {
+				id = ContWar.6
+				days = 10
+			}
+			add_timed_idea = {
+				idea = FIN_strengthen_fascists
+				days = 365
+			}
+		}
+		add_ai_strategy = {
+			type = support
+			id = FIN
+			value = 100
+		}
+		add_ai_strategy = {
+			type = protect
+			id = FIN
+			value = 25
+		}
+	}
+}
+
+# Finland refuses, We are disappointed
+country_event = {
+	id = ContWar.4
+	picture = GFX_report_event_finnish_letter
+	title = ContWar.4.t
+	desc = ContWar.4.d
+	
+	is_triggered_only = yes
+	
+	option = {	# they will regret this opportunity!
+		name = ContWar.4.a
+		add_opinion_modifier = { target = FIN modifier = ger_disappointed }
+	}
+	
+}
+##### Part 3 #####
+# Germany sends equipment (a lot)
+country_event = {
+	id = ContWar.5
+	picture = GFX_report_event_generic_lend_lease
+	title = ContWar.5.t
+	desc = ContWar.5.d
+	
+	is_triggered_only = yes
+	
+	option = {	# This will come in handy
+		name = ContWar.5.a
+		hidden_effect = {
+			add_opinion_modifier = { target = GER modifier = FIN_equipment_received }
+			set_country_flag = FIN_preparing_ww
+		}
+		
+		if = {
+			limit = {
+				OR = { has_idea = volunteer_only has_idea = limited_conscription}
+			}
+			add_ideas = { extensive_conscription }
+			add_political_power = -75
+		}
+		add_timed_idea = {
+			idea = FIN_German_support
+			days = 270
+		}
+		add_timed_idea = {
+			idea = FIN_German_advisors
+			days = 730
+		}
+		add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 1.0
+			uses = 2
+			category = land_doctrine	
+		}
+		add_state_claim = 213
+		add_state_claim = 215
+		add_state_claim = 216
+		add_state_claim = 195
+	}
+	
+}
+
+# Germany sends limited amount
+country_event = {
+	id = ContWar.6
+	picture = GFX_report_event_generic_lend_lease
+	title = ContWar.6.t
+	desc = ContWar.6.d
+	
+	is_triggered_only = yes
+	
+	option = {	#well, whatever
+		name = ContWar.6.a
+		hidden_effect = {
+			set_country_flag = FIN_preparing_ww
+		}
+		if = {
+			limit = {
+				OR = { has_idea = volunteer_only has_idea = limited_conscription}
+			}
+			add_ideas = { extensive_conscription }
+			add_political_power = -75
+		}
+		add_timed_idea = {
+			idea = FIN_German_support
+			days = 180
+		}
+		add_timed_idea = {
+			idea = FIN_German_advisors
+			days = 730
+		}
+		add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 1.0
+			uses = 2
+			category = land_doctrine	
+		}
+		add_state_claim = 213
+		add_state_claim = 215
+		add_state_claim = 216
+		add_state_claim = 195
+	}
+	
+}
+
+# Event to plug Finland into Axis
+country_event = {
+	id = ContWar.7
+	picture = GFX_report_event_finnish_soldiers_snow
+	title = ContWar.7.t
+	desc = ContWar.7.d
+	
+	trigger = {	
+		original_tag = FIN
+		has_country_flag = FIN_preparing_ww
+		GER = { has_war_with = SOV}
+		NOT = { 
+			OR = { 
+				has_government = communism
+				has_war = yes
+			}	 
+		}
+	}
+	mean_time_to_happen = {
+		days = 65
+	}
+	fire_only_once = yes
+	
+	option = {	#Declare war
+		name = ContWar.7.a
+		#create_wargoal = {
+		#	type = take_claimed_state
+		#	target = SOV
+		#	generator = { 213 215 216 195}
+		#}
+		#GER = { add_to_faction = FIN }
+		declare_war_on = {
+			target = SOV
+			type = take_claimed_state
+			generator = { 213 215 216 195 }
+		}
+
+		hidden_effect = {
+			GER = {
+				news_event = {
+					id = ContWar.8
+					days = 1
+				}
+			}
+			news_event = { days = 2 id = ContWar.20 }
+		}
+	}
+	
+}
+# Germany informed Finland at war
+news_event = {
+	id = ContWar.8
+	picture = GFX_news_event_004
+	title = ContWar.8.t
+	desc = ContWar.8.d
+	
+	is_triggered_only = yes
+	
+	option = {	# Good.
+		name = ContWar.8.a
+	}
+	
+}
+#Finland defeated, surrender?
+country_event = {
+	id = ContWar.9
+	picture = GFX_report_event_soviet_soldiers
+	title = ContWar.9.t
+	desc = ContWar.9.d
+	
+	trigger = {	
+		original_tag = FIN
+		has_capitulated = yes
+		has_country_flag = FIN_preparing_ww
+		has_war_with = SOV
+	}
+	mean_time_to_happen = {
+		days = 90
+	}
+	fire_only_once = yes
+	
+	option = {	#Ask for Armistice
+		name = ContWar.9.a
+		ai_chance = { factor = 100 }
+		SOV = {
+			country_event = {
+				id = ContWar.10
+				days = 2
+			}
+		}
+		add_stability = 0.1
+	}
+	option = {	#Partisans and resistance
+		name = ContWar.9.b
+		ai_chance = { factor = 0 }
+		add_stability = -0.1
+		add_war_support = -0.4
+		
+	}
+}
+# Treaty of Moscow?
+country_event = {
+	id = ContWar.10
+	picture = GFX_report_event_soviet_finnish_pact
+	title = ContWar.10.t
+	desc = ContWar.10.d
+	
+	is_triggered_only = yes
+	
+	option = {	#Accept their surrender
+		name = ContWar.10.a
+		ai_chance = {
+			factor = 70 
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = SOV_baltic_security }
+			}
+		}
+		SOV = { 
+			white_peace = {
+				tag = FIN 
+				message = FIN_agree_peace 
+			}
+			every_other_country = {
+				if = {
+					limit = {
+						has_war_with = FIN
+						OR = {
+							is_faction_leader = yes
+							is_in_faction = no
+						}
+					}
+					white_peace = {
+						tag = FIN 
+						#message = FIN_agree_peace 
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				146 = {
+					is_owned_by = FIN
+				}
+			}
+			transfer_state = 146
+		}
+		if = {
+			limit = {
+				147 = {
+					is_owned_by = FIN
+				}
+			}
+			transfer_state = 147
+		}
+		if = {
+			limit = {
+				722 = {
+					is_owned_by = FIN
+				}
+			}
+			transfer_state = 722
+		}
+		if = {
+				limit = {
+					79 = {
+						is_claimed_by = FIN
+					}
+				}
+				FIN = { remove_state_claim = 79 }
+		}
+		if = {
+				limit = {
+					216 = {
+						is_claimed_by = FIN
+					}
+				}
+				FIN = { remove_state_claim = 216 }
+		}
+		if = {
+				limit = {
+					215 = {
+						is_claimed_by = FIN
+					}
+				}
+				FIN = { remove_state_claim = 215 }
+		}
+		if = {
+				limit = {
+					213 = {
+						is_claimed_by = FIN
+					}
+				}
+				FIN = { remove_state_claim = 213 }
+		}
+		if = {
+				limit = {
+					195 = {
+						is_claimed_by = FIN
+					}
+				}
+				FIN = { remove_state_claim = 195 }
+		}
+		FIN = {
+			if = {
+				limit = {
+					is_in_faction = yes
+				}
+				leave_faction = yes
+			}
+			if = {
+				limit = {
+					has_idea = FIN_German_advisors
+				}
+				remove_ideas = FIN_German_advisors
+			}
+			if = {
+				limit = {
+					has_idea = FIN_strengthen_fascists
+				}
+				remove_ideas = FIN_strengthen_fascists
+			}
+			if = {
+				limit = {
+					has_idea = FIN_German_support
+				}
+				remove_ideas = FIN_German_support
+			}
+			add_ideas = {
+				disarmed_nation
+				civilian_economy
+			}
+			add_timed_idea = {
+				idea = FIN_Treaty_of_Moscow
+				days = 2000
+			}
+			set_political_party = {
+				ideology = fascism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+			set_war_support = 0.30
+			clr_country_flag = FIN_preparing_ww
+		}
+		GER = {
+			diplomatic_relation = {
+				country = FIN
+				relation = military_access
+				active = no
+			}
+			if = {
+				limit = {
+					has_idea = GER_supporting_finns
+				}
+				remove_ideas = GER_supporting_finns
+			}
+		}
+		hidden_effect = {
+			news_event = { days = 1 id = ContWar.21 }
+		} 
+	}
+	option = {	#Accept their surrender but refuse territory
+		name = ContWar.10.b
+		ai_chance = { 
+			factor = 20 
+		}
+		SOV = { 
+			white_peace = {
+				tag = FIN 
+				#message = FIN_agree_peace 
+			}
+			every_other_country = {
+				if = {
+					limit = {
+						has_war_with = FIN
+						OR = {
+							is_faction_leader = yes
+							is_in_faction = no
+						}
+					}
+					white_peace = {
+						tag = FIN 
+						#message = FIN_agree_peace 
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				146 = {
+					is_claimed_by = SOV
+					NOT = { is_owned_by = SOV }
+				}
+			}
+			SOV = { remove_state_claim = 146 }
+		}
+		if = {
+			limit = {
+				147 = {
+					is_claimed_by = SOV
+					NOT = { is_owned_by = SOV }
+				}
+			}
+			SOV = { remove_state_claim = 147 }
+		}
+		if = {
+			limit = {
+				722 = {
+					is_claimed_by = SOV
+					NOT = { is_owned_by = SOV }
+				}
+			}
+			SOV = { remove_state_claim = 722 }
+		}
+		if = {
+				limit = {
+					79 = {
+						is_claimed_by = FIN
+					}
+				}
+				FIN = { remove_state_claim = 79 }
+		}
+		if = {
+				limit = {
+					216 = {
+						is_claimed_by = FIN
+					}
+				}
+				FIN = { remove_state_claim = 216 }
+		}
+		if = {
+				limit = {
+					215 = {
+						is_claimed_by = FIN
+					}
+				}
+				FIN = { remove_state_claim = 215 }
+		}
+		if = {
+				limit = {
+					213 = {
+						is_claimed_by = FIN
+					}
+				}
+				FIN = { remove_state_claim = 213 }
+		}
+		if = {
+				limit = {
+					195 = {
+						is_claimed_by = FIN
+					}
+				}
+				FIN = { remove_state_claim = 195 }
+		}
+		FIN = {
+			if = {
+				limit = {
+					is_in_faction = yes
+				}
+				leave_faction = yes
+			}
+			if = {
+				limit = {
+					has_idea = FIN_German_advisors
+				}
+				remove_ideas = FIN_German_advisors
+			}
+			if = {
+				limit = {
+					has_idea = FIN_strengthen_fascists
+				}
+				remove_ideas = FIN_strengthen_fascists
+			}
+			if = {
+				limit = {
+					has_idea = FIN_German_support
+				}
+				remove_ideas = FIN_German_support
+			}
+			add_ideas = {
+				disarmed_nation
+				civilian_economy
+			}
+			add_timed_idea = {
+				idea = FIN_Treaty_of_Moscow
+				days = 2000
+			}
+			set_political_party = {
+				ideology = fascism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+			set_war_support = 0.00
+			clr_country_flag = FIN_preparing_ww
+		}
+		GER = {
+			diplomatic_relation = {
+				country = FIN
+				relation = military_access
+				active = no
+			}
+			if = {
+				limit = {
+					has_idea = GER_supporting_finns
+				}
+				remove_ideas = GER_supporting_finns
+			}
+		}
+		hidden_effect = {
+			news_event = { days = 1 id = ContWar.21 }
+		} 
+	}
+	option = {	#We have other plans
+		name = ContWar.10.c
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = SOV_baltic_security }
+			}
+		}
+		add_political_power = -25
+		add_war_support = -0.10
+	}
+}
+# World news Finland at war again
+news_event = {
+	id = ContWar.20
+	picture = GFX_news_event_011
+	title = ContWar.20.t
+	desc = ContWar.20.d
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {	#Acknoledge
+		name = ContWar.20.a
+	}
+	
+}
+# Finland Surrenders!
+news_event = {
+	id = ContWar.21
+	picture = GFX_news_event_064
+	title = ContWar.21.t
+	desc = ContWar.21.d
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {	#Acknoledge
+		name = ContWar.21.a
+	}
+	
+}

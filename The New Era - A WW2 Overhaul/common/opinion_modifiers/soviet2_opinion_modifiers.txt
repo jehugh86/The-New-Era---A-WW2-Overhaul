@@ -1,0 +1,40 @@
+opinion_modifiers = {
+	
+	ger_disappointed = {
+		value = -40
+		months = 60
+	}
+	refused_continue_war = {
+		value = 25
+		months = 60
+	}
+	FIN_equipment_received = {
+		value = 40
+		months = 48
+		decay = 1
+	}
+	anti_german_diplomacy_focus = {
+		value = -60
+		months = 60
+		decay = 1
+	}
+	support_mao_angry = {
+		value = -40
+	}
+	support_mao_happy = {
+		value = 25
+	}
+	communist_threat = {
+		value = -30
+	}
+	sov_internal_meddling = {
+		value = -30
+		months = 24
+	}
+	showed_true_socialism = {
+		value = 15
+	}
+	eastern_question_settled = {
+		value = 40
+	}
+}

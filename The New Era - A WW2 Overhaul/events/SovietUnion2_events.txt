@@ -1,0 +1,1169 @@
+﻿###########################
+# New Soviet Events
+###########################
+
+add_namespace = soviet2
+
+country_event = {	#Hidden event (adds starting rubber factories and changes state categories)
+	id = soviet2.0
+	title = soviet2.0.t
+	desc = soviet2.0.d
+	
+	trigger = {
+		country_exists = SOV
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+	fire_only_once = yes
+	immediate = {
+		219 = {		#Moscow
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		223 = {	#Tula
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_state_category = large_town
+		}
+		249 = {	#Kazan
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+				set_state_category = large_town
+			}
+		}
+		137 = {	#Crimea
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = town
+			}
+		}
+		193 = {	#Chernigov
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = large_town
+			}
+		}
+		398 = {	#Perm
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = large_town
+			}
+		}
+		560 = {	#Nikolayevsk
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = pastoral
+			}
+		}
+		570 = {	#Novosibirsk
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = large_town
+			}
+		}
+		572 = {	#Chelyabinsk
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = city
+			}
+		}
+		652 = {	#Orenburg
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = large_town
+			}
+		}
+		214 = {	#Archangelsk
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = rural
+			}
+		}
+		220 = {	#Kursk
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = town
+			}
+		}
+		222 = {	#Orel
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = town
+			}
+		}				
+		226 = {	#Dnitropetrovsk
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = city
+			}
+		}
+		228 = {	#Voroshilovgrad
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = large_town
+			}
+		}
+		232 = {	#Grozny
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = town
+			}
+		}
+		237 = {	#Elista
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = pastoral
+			}
+		}
+		241 = {	#Gomel
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = town
+			}
+		}
+		251 = {	#Samara/Kuibyshev
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = large_town
+			}
+		}
+		253 = {	#Ivanovo
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = large_town
+			}
+		}
+		254 = {	#Ryazan
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = large_town
+			}
+		}
+		257 = {	#Tambov
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = town
+			}
+		}
+		260 = {	#Voronezh
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = large_town
+			}
+		}
+		262 = {	#Pechora
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = wasteland
+			}
+		}
+		578 = {	#Tomsk
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = town
+			}
+		}
+		590 = {	#Akmolinsk
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = rural
+			}
+		}
+		742 = {	#Stalinabad
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = pastoral
+			}
+		}
+		732 = {	#Pamir
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = pastoral
+			}
+		}
+		654 = {	#Gorno-Alta
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = pastoral
+			}
+		}
+		566 = {	#Irkutsk
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = town
+			}
+		}
+		399 = {	#Izhevsk
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = town
+			}
+		}
+		587 = {	#Ust Urt
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = wasteland
+			}
+		}
+		565 = {	#Bodaybo
+			if = {
+				limit = {
+					is_fully_controlled_by = SOV
+				}
+				set_state_category = wasteland
+			}
+		}
+		722 = {	#Petsamo (Owned by Finland, add missing Nickel mining
+			if = {
+				limit = {
+					is_fully_controlled_by = FIN
+				}
+				add_resource = {
+					type = chromium
+					amount = 24
+					state = 722
+				}
+			}
+		}
+	}
+	option = {	#dummy option
+		name = soviet2.0.a
+	}
+	
+}
+
+# Mikhail Koshkin drives his tank to Moscow
+country_event = {
+	id = soviet2.1
+	picture = GFX_report_event_soviet_tank_parade
+	title = soviet2.1.t
+	desc = soviet2.1.d
+	
+	trigger = {
+		date > 1940.01.01
+		original_tag = SOV
+		has_tech = basic_medium_tank
+		NOT = { has_tech = improved_medium_tank }
+	}
+	mean_time_to_happen = {
+		days = 80
+	}
+	fire_only_once = yes
+	
+	option = {	#yes
+		name = soviet2.1.a
+		ai_chance = { factor = 100 }
+		add_political_power = -50
+		set_technology = {
+			improved_medium_tank = 1
+		}
+	}
+	option = {	#no
+		name = soviet2.1.b
+		ai_chance = { factor = 0 }
+		add_political_power = 25
+	}
+}
+#Lost overconfidence after a war
+country_event = {
+	id = soviet2.2
+	picture = GFX_report_event_military_planning
+	title = soviet2.2.t
+	desc = soviet2.2.d
+	
+	trigger = {
+		original_tag = SOV
+		has_country_flag = SOV_war_since_purge
+		has_idea = SOV_Overconfident_Leadership
+	}
+	mean_time_to_happen = {
+		days = 14
+	}
+	fire_only_once = yes
+	
+	option = {	#yes
+		name = soviet2.2.a
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_idea = SOV_Overconfident_Leadership
+			}
+			remove_ideas = SOV_Overconfident_Leadership
+		}
+	}
+	
+}
+#Lost overconfidence during large war
+country_event = {
+	id = soviet2.3
+	picture = GFX_report_event_soviet_soldiers
+	title = soviet2.3.t
+	desc = soviet2.3.d
+	
+	trigger = {
+		original_tag = SOV
+		has_idea = SOV_Overconfident_Leadership
+		has_war = yes
+		casualties > 200000
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	fire_only_once = yes
+	
+	option = {	#yes
+		name = soviet2.3.a
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_idea = SOV_Overconfident_Leadership
+			}
+			remove_ideas = SOV_Overconfident_Leadership
+		}
+	}
+}
+#Hidden event. Give guarantee to POL against GER	(Supplement to 'Offer Poland Protection' Focus
+country_event = {
+	id = soviet2.6
+	picture = GFX_report_event_military_planning
+	title = soviet2.6.t
+	desc = soviet2.6.d
+	
+	trigger = {
+		original_tag = SOV
+		POL = { 
+			has_country_flag = POL_accepted_soviet_protection 
+		}
+		NOT = { has_war_with = POL }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				POL = { 
+					exists = yes
+					has_war = no
+				}
+			}
+			give_guarantee = POL
+		}
+	}
+	option = {
+		name = soviet2.6.a	#dummy
+	}
+	
+}
+#Hidden event, Remove Polish guarantee in case of war, because it doesn't disappear on its own
+country_event = {
+	id = soviet2.7
+	picture = GFX_report_event_military_planning
+	title = soviet2.7.t
+	desc = soviet2.7.d
+	
+	trigger = {
+		original_tag = SOV
+		POL = { 
+			has_country_flag = POL_accepted_soviet_protection 
+			is_guaranteed_by = SOV
+		}
+		has_war_with = POL
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	hidden = yes
+	immediate = {
+		diplomatic_relation = {
+			country = POL
+			relation = guarantee
+			active = no
+		}
+	}
+	option = {
+		name = soviet2.7.a	#dummy
+	}
+	
+}
+
+#Event informing civil war ended and Leon Trotsky new leader
+news_event = {
+	id = soviet2.8
+	picture = GFX_news_event_generic_rally
+	title = soviet2.8.t
+	desc = soviet2.8.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = soviet2.8.a
+		ai_chance = { factor = 100 }
+	}	
+}
+#Devastation Minor after civil war Trotsky
+news_event = {
+	id = soviet2.9
+	picture = GFX_news_event_032
+	title = soviet2.9.t
+	desc = soviet2.9.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = soviet2.9.a
+		ai_chance = { factor = 100 }
+		add_timed_idea = { 
+			idea = SOV_civil_war_devastation_minor 
+			days = 730
+		}
+	}	
+}
+
+#Soviet Republics release event by Focus
+country_event = {
+	id = soviet2.10
+	picture = GFX_report_event_generic_conference
+	title = soviet2.10.t
+	desc = soviet2.10.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet2.10.a	#integrated
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			custom_effect_tooltip = SOV_republics_integrated_tt
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = UKR
+						is_fully_controlled_by = SOV
+					}
+					NOT = { country_exists = UKR }
+				}
+				release = UKR
+				set_autonomy = {
+					target = UKR
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = BLR
+						is_fully_controlled_by = SOV
+					}
+					NOT = { country_exists = BLR }
+				}
+				release = BLR
+				set_autonomy = {
+					target = BLR
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = KAZ
+						is_fully_controlled_by = SOV
+						
+					}
+					NOT = { country_exists = KAZ }
+				}
+				release = KAZ
+				set_autonomy = {
+					target = KAZ
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = GEO
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = GEO }
+				}
+				release = GEO
+				set_autonomy = {
+					target = GEO
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = AZR
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = AZR }
+				}
+				release = AZR
+				set_autonomy = {
+					target = AZR
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = ARM
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = ARM }
+				}
+				release = ARM
+				set_autonomy = {
+					target = ARM
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = MOL
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = MOL }
+				}
+				release = MOL
+				set_autonomy = {
+					target = MOL
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = UZB
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = UZB }
+				}
+				release = UZB
+				set_autonomy = {
+					target = UZB
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = TMS
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = TMS }
+				}
+				release = TMS
+				set_autonomy = {
+					target = TMS
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = TAJ
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = TAJ }
+				}
+				release = TAJ
+				set_autonomy = {
+					target = TAJ
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					732 = {
+						is_core_of = KYR
+						is_fully_controlled_by = SOV
+					}
+				}
+				release = KYR
+				set_autonomy = {
+					target = KYR
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = EST
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = EST }
+				}
+				release = EST
+				set_autonomy = {
+					target = EST
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = LAT
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = LAT }
+				}
+				release = LAT
+				set_autonomy = {
+					target = LAT
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = LIT
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = LIT }
+				}
+				release = LIT
+				set_autonomy = {
+					target = LIT
+					autonomous_state = autonomy_integrated_puppet
+					freedom_level = 0.4
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Together for Victory" }
+			}
+			custom_effect_tooltip = SOV_republics_autonomy_tt
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = UKR
+						}
+						NOT = { country_exists = UKR }
+					}
+					release_puppet = UKR
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = BLR
+						}
+						NOT = { country_exists = BLR }
+					}
+					release_puppet = BLR
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = KAZ	
+						}
+						NOT = { country_exists = KAZ }
+					}
+					release_puppet = KAZ
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = GEO
+						}
+						NOT = { country_exists = GEO }
+					}
+					release_puppet = GEO
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = AZR
+						}
+						NOT = { country_exists = AZR }
+					}
+					release_puppet = AZR
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = ARM
+						}
+						NOT = { country_exists = ARM }
+					}
+					release_puppet = ARM
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = MOL
+						}
+						NOT = { country_exists = MOL }
+					}
+					release_puppet = MOL
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = UZB
+						}
+						NOT = { country_exists = UZB }
+					}
+					release_puppet = UZB
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = TMS
+						}
+						NOT = { country_exists = TMS }
+					}
+					release_puppet = TMS
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = TAJ
+						}
+						NOT = { country_exists = TAJ }
+					}
+					release_puppet = TAJ
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = KYR
+						}
+					}
+					release_puppet = KYR
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = EST
+						}
+						NOT = { country_exists = EST }
+					}
+					release_puppet = EST
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = LAT
+						}
+						NOT = { country_exists = LAT }
+					}
+					release_puppet = LAT
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							is_core_of = LIT
+						}
+						NOT = { country_exists = LIT }
+					}
+					release_puppet = LIT
+				}	
+		}
+		hidden_effect = {
+			every_other_country = {
+				if = {
+					limit = {
+						OR = {
+							tag = UKR
+							tag = BLR
+							tag = KAZ
+							tag = GEO
+							tag = AZR
+							tag = ARM
+							tag = MOL
+							tag = UZB
+							tag = TMS
+							tag = TAJ
+							tag = KYR
+							tag = EST
+							tag = LAT
+							tag = LIT
+						}
+						exists = yes
+						is_subject_of = SOV
+					}
+					set_popularities = {
+						democratic = 20
+						fascism = 5
+						neutrality = 0
+						communism = 75
+					}
+					set_stability = 0.8
+					set_war_support = 0.7
+				}	
+			}		
+		}			
+	}
+	option = {
+		name = soviet2.10.b	#more autonomous (DLC option)
+		trigger = {
+			has_dlc = "Together for Victory"
+		}
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = SOV_republics_autonomy_tt
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = UKR
+						is_fully_controlled_by = SOV
+					}
+					NOT = { country_exists = UKR }
+				}
+				release = UKR
+				set_autonomy = {
+					target = UKR
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = BLR
+						is_fully_controlled_by = SOV
+					}
+					NOT = { country_exists = BLR }
+				}
+				release = BLR
+				set_autonomy = {
+					target = BLR
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = KAZ
+						is_fully_controlled_by = SOV
+						
+					}
+					NOT = { country_exists = KAZ }
+				}
+				release = KAZ
+				set_autonomy = {
+					target = KAZ
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = GEO
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = GEO }
+				}
+				release = GEO
+				set_autonomy = {
+					target = GEO
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = AZR
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = AZR }
+				}
+				release = AZR
+				set_autonomy = {
+					target = AZR
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = ARM
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = ARM }
+				}
+				release = ARM
+				set_autonomy = {
+					target = ARM
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = MOL
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = MOL }
+				}
+				release = MOL
+				set_autonomy = {
+					target = MOL
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = UZB
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = UZB }
+				}
+				release = UZB
+				set_autonomy = {
+					target = UZB
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = TMS
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = TMS }
+				}
+				release = TMS
+				set_autonomy = {
+					target = TMS
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = TAJ
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = TAJ }
+				}
+				release = TAJ
+				set_autonomy = {
+					target = TAJ
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					732 = {
+						is_core_of = KYR
+						is_fully_controlled_by = SOV
+					}
+				}
+				release = KYR
+				set_autonomy = {
+					target = KYR
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = EST
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = EST }
+				}
+				release = EST
+				set_autonomy = {
+					target = EST
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = LAT
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = LAT }
+				}
+				release = LAT
+				set_autonomy = {
+					target = LAT
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = LIT
+						is_fully_controlled_by = SOV	
+					}
+					NOT = { country_exists = LIT }
+				}
+				release = LIT
+				set_autonomy = {
+					target = LIT
+					autonomous_state = autonomy_colony
+					freedom_level = 0.2
+				}
+			}
+			hidden_effect = {
+				every_other_country = {
+					if = {
+						limit = {
+							OR = {
+								tag = UKR
+								tag = BLR
+								tag = KAZ
+								tag = GEO
+								tag = AZR
+								tag = ARM
+								tag = MOL
+								tag = UZB
+								tag = TMS
+								tag = TAJ
+								tag = KYR
+								tag = EST
+								tag = LAT
+								tag = LIT
+							}
+							exists = yes
+							is_subject_of = SOV
+						}
+						set_popularities = {
+							democratic = 20
+							fascism = 5
+							neutrality = 0
+							communism = 75
+						}
+						set_stability = 0.7
+						set_war_support = 0.7
+					}	
+				}
+			}
+			
+	}
+}

@@ -1,0 +1,93 @@
+SOV_alt_historical_plan = {
+	name = "SOV alt history plan"
+	desc = ""
+
+	enable = {
+		original_tag = SOV
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_ALTERNATE
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = ALTERNATE
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		#ASAP
+		SOV_defense_of_moscow
+		SOV_move_industry_to_urals
+		SOV_lessons_of_war
+		SOV_Leningrad_Fort_Region		#new
+		SOV_heroes_of_the_union			#new
+		
+		#1936
+		SOV_finish_five_year_plan
+		SOV_Approve_next_five_year_plan	#new
+		SOV_plan_civilian_focus
+		SOV_production_effort
+		SOV_great_purge
+		#1937
+		SOV_improve_railway
+		SOV_transpolar_flights
+		#1938
+		SOV_ocean_going_navy
+		SOV_expand_navy_industry	#new
+		SOV_stalin_constitution2
+		SOV_collectivist_propaganda
+		SOV_rehabilitated_military
+		SOV_peoples_commissariat
+		SOV_anti_capitalist_diplomacy
+		#1939
+		SOV_reconcile_japan
+		SOV_socialist_realism
+		SOV_extra_tech_slot_early
+		SOV_expand_red_fleet
+		SOV_anti_colonialist_rebels
+		#1940
+		SOV_claim_on_sinkiang
+		SOV_militarized_schools
+		SOV_attack_china			#new
+		SOV_infrastructure_effort
+		SOV_workers_culture
+		SOV_military_reorganization
+		SOV_southern_thrust
+		SOV_claim_on_the_straits
+		#1941
+		SOV_ultimatum_to_greece
+		SOV_Rubber_Industry			#new
+		SOV_State_defense_committee	#new
+		#1942
+		
+	}
+
+	research = {
+		air_equipment = 20
+		engineers_tech = 20
+		naval_equipment = 10
+	}
+
+	ideas = {
+		nevskoye_design_bureau = 10	
+		yakovlev_design_bureau = -50	#dont be idiot AI
+	}
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

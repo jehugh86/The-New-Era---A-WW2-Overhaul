@@ -1,0 +1,108 @@
+SOV_great_patriotic_war = {
+	SOV_Divert_Resources_to_army = {
+
+		icon = generic_industry
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			has_war = yes
+			any_enemy_country = {
+				is_major = yes
+			}
+			NOT = {
+				OR = {
+					has_idea = SOV_Divert_resources_idea1
+					has_idea = SOV_Divert_resources_idea2
+				}
+			}
+			has_civil_war = no
+			num_of_naval_factories > 10
+			num_of_naval_factories < 20
+			surrender_progress > 0.15
+		}
+
+		cost = 50
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+		
+		days_re_enable = 361
+		complete_effect = {
+			add_timed_idea = {
+				idea = SOV_Divert_resources_idea1
+				days = 360
+			} 	
+		} 	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war_with = GER
+				factor = 5
+			}
+			modifier = {	#USA can help
+				factor = 0
+				USA = { has_war_with = GER }
+				has_war_with = GER
+				NOT = { has_war_with = USA }
+			}
+		}
+	}
+	SOV_Divert_Resources_to_army2 = {
+
+		icon = generic_industry
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			has_war = yes
+			any_enemy_country = {
+				is_major = yes
+			}
+			NOT = {
+				OR = {
+					has_idea = SOV_Divert_resources_idea1
+					has_idea = SOV_Divert_resources_idea2
+				}
+			}
+			has_civil_war = no
+			num_of_naval_factories > 19
+			surrender_progress > 0.15
+		}
+
+		cost = 50
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+
+		days_re_enable = 361
+		
+		complete_effect = {
+			add_timed_idea = {
+				idea = SOV_Divert_resources_idea2
+				days = 360
+			} 
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war_with = GER
+				factor = 5
+			}
+			modifier = {	#USA can help
+				factor = 0
+				USA = { has_war_with = GER }
+				has_war_with = GER
+				NOT = { has_war_with = USA }
+			}
+		}
+	}
+
+}

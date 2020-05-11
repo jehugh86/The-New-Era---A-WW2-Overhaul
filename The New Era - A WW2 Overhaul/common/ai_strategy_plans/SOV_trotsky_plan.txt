@@ -1,0 +1,100 @@
+SOV_trotsky_plan = {
+	name = "SOV Trotsky Returns plan"
+	desc = ""
+
+	enable = {
+		original_tag = SOV
+		OR = {
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_TROTSKY
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = TROTSKY
+			}
+		}
+	}
+	abort = {
+		OR = {
+			AND = {
+				has_war = yes
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			is_subject = yes
+		}
+	}
+
+	ai_national_focuses = {
+		#ASAP
+		SOV_defense_of_moscow
+		SOV_Leningrad_Fort_Region			#new
+		SOV_Volga_River_Defense				#new
+		SOV_heroes_of_the_union				#new
+		
+		#1936
+		SOV_finish_five_year_plan
+		SOV_trotsky_plot					#new
+		SOV_permanent_revolution
+		SOV_restore_the_countryside			#new
+		SOV_production_effort
+		SOV_Approve_next_five_year_plan		#new
+		#1937
+		SOV_plan_military_focus
+		SOV_stalin_constitution2
+		SOV_internationalism				#new
+		SOV_support_left_france				#new
+		SOV_baltic_communism				#new
+		#1938
+		SOV_support_left_czechoslovakia		#new
+		SOV_collectivist_propaganda
+		SOV_extra_tech_slot_early
+		SOV_militarized_schools
+		SOV_workers_culture
+		SOV_improve_railway
+		#1939
+		SOV_claims_on_poland
+		SOV_offer_poland_protection
+		SOV_dictatorship_of_the_proletariat		#new
+		SOV_soviet_democracy					#new
+		SOV_rehabilitated_military
+		SOV_military_reorganization
+		#1940
+		SOV_move_industry_to_urals
+		SOV_lessons_of_war
+		SOV_transpolar_flights
+		SOV_continue_urbanisation			#new
+		SOV_plan_construction_effort		#new
+		SOV_ocean_going_navy
+		SOV_expand_navy_industry
+		SOV_Rubber_Industry
+		#??
+		SOV_peoples_commissariat
+		SOV_claim_bessarabia
+		SOV_war_with_germany
+		SOV_State_defense_committee			#new
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		captain_of_industry = 5
+		industrial_concern = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

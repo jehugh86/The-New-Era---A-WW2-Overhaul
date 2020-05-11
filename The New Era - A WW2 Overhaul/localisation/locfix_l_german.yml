@@ -1,0 +1,9 @@
+﻿l_german:
+ SOV_socialist_science2:0 "Patriotische Erziehung"
+ SOV_socialist_science2_desc:0 "Die Welt ist - genau wie der menschliche Verstand - ständig in Bewegung. Die Natur ist in einem Zustand der ständigen Weiterentwicklung. Der Revolution, sogar. Die Grundsätze des dialektalen Materialismus können auf die Naturwissenschaften ebenso angewandt werden wie auf die Sozialwissenschaften ..."
+ patriotic_education_idea:0 "Patriotische Erziehung"
+ SOV_stalin_constitution2:0 "[Root.GetStalinConstitutionName]"
+ SOV_stalin_constitution2_desc:0 "Es ist an der Zeit, unsere alte Verfassung zu erneuern und die Welt mit den Rechten zu beeindrucken, die Arbeiter und Bauern in der Sowjetunion genießen!"
+ SOV_STALIN_CONST_NAME:0 "Stalin-Verfassung"
+ SOV_TROTSKY_CONST_NAME:0 "Trotzki-Verfassung"
+ military_police_tech:0 "Militärpolizei"

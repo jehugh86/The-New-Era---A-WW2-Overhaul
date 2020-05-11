@@ -1,171 +1,89 @@
-spriteTypes = {
-
-
-	### Soviet Aircrafts ###
-	
-	
-	SpriteType = {
-		name = "GFX_SOV_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/sov_sb2m.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_SOV_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/sov_tu2.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_SOV_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/sov_tu-10.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_SOV_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/sov_pe-8.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_strategic_bomber2_medium"
-		texturefile = "gfx/interface/technologies/SOV_pe-10.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_SOV_strategic_bomber3_medium"
-		texturefile = "gfx/interface/technologies/sov_tu-4.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_SOV_CAS1_medium"
-		texturefile = "gfx/interface/technologies/SOV_r10.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_CAS2_medium"
-		texturefile = "gfx/interface/technologies/sov_il-2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_CAS3_medium"
-		texturefile = "gfx/interface/technologies/sov_il-10.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_SOV_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/SOV_pe-2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/SOV_pe-3.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_SOV_heavy_fighter3_medium"
-		texturefile = "gfx/interface/technologies/SOV_tu-2Sch.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_SOV_naval_bomber1_medium"
-		texturefile = "gfx/interface/technologies/sov_db3.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_naval_bomber2_medium"
-		texturefile = "gfx/interface/technologies/sov_il-4.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_naval_bomber3_medium"
-		texturefile = "gfx/interface/technologies/sov_il-6.dds"
-	}	
-
-	
-	SpriteType = {
-		name = "GFX_SOV_fighter1_medium"
-		texturefile = "gfx/interface/technologies/sov_i-16.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_fighter2_medium"
-		texturefile = "gfx/interface/technologies/sov_lagg-3.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_SOV_fighter3_medium"
-		texturefile = "gfx/interface/technologies/sov_yak-3.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/sov_i-15.dds"
+spriteTypes = {	
+	#New Soviet Graphic files
+	SpriteType = {	#SU-14
+		name = "GFX_SOV_basic_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/SOV-SU-14-1.dds"
 	}
 	
-	SpriteType = {
-		name = "GFX_SOV_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/sov_ant4.dds"
+	SpriteType = {	#BT-7A
+		name = "GFX_SOV_improved_light_art_medium"
+		texturefile = "gfx/interface/technologies/SOV-BT-7A.dds"
 	}
 	
-
-	### Sovjet tanks ####	
-
-	SpriteType = {
-		name = "GFX_SOV_gwtank_medium"
-		texturefile = "gfx/interface/technologies/sov_t18.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_SOV_basic_light_tank_medium"
-		texturefile = "gfx/interface/technologies/sov_t26.dds"
+	SpriteType = {	#SU-76
+		name = "GFX_SOV_advanced_light_art_medium"
+		texturefile = "gfx/interface/technologies/SOV-SU-76M.dds"
 	}
 	
-	SpriteType = {
-		name = "GFX_SOV_improved_light_tank_medium"
-		texturefile = "gfx/interface/technologies/sov_BT-7.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_advanced_light_tank_medium"
-		texturefile = "gfx/interface/technologies/sov_t-60.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_basic_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/sov_T28.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_improved_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/sov_T34.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_SOV_advanced_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/sov_t34-85.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_SOV_main_battle_tank_medium"
-		texturefile = "gfx/interface/technologies/sov_T-54.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_SOV_basic_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/sov_T-35.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_SOV_improved_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/sov_KV1.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_SOV_advanced_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/sov_IS-1.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_SOV_super_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/sov_kv4.dds"
+	SpriteType = {	#ZiS-30
+		name = "GFX_SOV_advanced_light_td_medium"
+		texturefile = "gfx/interface/technologies/SOV-ZiS-30.dds"
 	}
 	
+	SpriteType = {	#SU-85
+		name = "GFX_SOV_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/SOV-SU-85.dds"
+	}
+	
+	SpriteType = {	#SU-122
+		name = "GFX_SOV_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/SOV-SU-122.dds"
+	}
+	
+	SpriteType = {	#SU-100
+		name = "GFX_SOV_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/SOV-SU-100.dds"
+	}
+
+	SpriteType = {	#SU-152
+		name = "GFX_SOV_improved_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/SOV-SU-152.dds"
+	}
+	
+	SpriteType = {	#ISU-122
+		name = "GFX_SOV_advanced_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/SOV-ISU-122S.dds"
+	}
+	
+	SpriteType = {	#ISU-152
+		name = "GFX_SOV_advanced_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/SOV-ISU-152.dds"
+	}
+	
+	SpriteType = {	#Obj 263 ("ISU-130")
+		name = "GFX_SOV_super_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/SOV-OBJ263.dds"
+	}
+	
+	SpriteType = {	#Obj 261
+		name = "GFX_SOV_super_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/SOV-OBJ261.dds"
+	}
+	
+	SpriteType = {	#SU-122-54
+		name = "GFX_SOV_modern_td_medium"
+		texturefile = "gfx/interface/technologies/SOV-SU-122-54.dds"
+	}
+	
+	SpriteType = {	#ZSU-57-2
+		name = "GFX_SOV_modern_spaa_medium"
+		texturefile = "gfx/interface/technologies/SOV-ZSU-57-2.dds"
+	}
+	### Icons By stm8022 ###
+	SpriteType = {	#SMK
+		name = "GFX_SOV_basic_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/SOV_tank_smk.dds"
+	}
+	SpriteType = {	#SU-26 (TD)
+		name = "GFX_SOV_basic_light_td_medium"
+		texturefile = "gfx/interface/technologies/SOV_spg_su26.dds"
+	}
+	SpriteType = {	#SU-26
+		name = "GFX_SOV_basic_light_art_medium"
+		texturefile = "gfx/interface/technologies/SOV_spg_su26.dds"
+	}
+	SpriteType = {	#ZSU-37
+		name = "GFX_SOV_advanced_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/SOV_spaa_zsu37.dds"
+	}
 }

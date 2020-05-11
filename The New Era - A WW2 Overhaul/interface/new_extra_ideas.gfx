@@ -1,0 +1,88 @@
+spriteTypes = {	
+	#New Soviet Graphic files
+	SpriteType = {
+		name = "GFX_idea_baltic_works_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_baltic_works_design_bureau.dds"
+
+	}	
+	SpriteType = {
+		name = "GFX_idea_beriev_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_beriev_design_bureau.dds"
+
+	}	
+	SpriteType = {
+		name = "GFX_idea_petlyakov_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_petlyakov_design_bureau.dds"
+
+	}	
+	SpriteType = {
+		name = "GFX_idea_rubin_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_rubin_design_bureau.dds"
+
+	}	
+	SpriteType = {
+		name = "GFX_idea_severnoye_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_severnoye_design_bureau.dds"
+
+	}
+	SpriteType = {
+		name = "GFX_sov_partisansupport"
+		texturefile = "gfx/interface/goals/SOV_partisansupport.dds"
+		
+	}	
+	SpriteType = {
+		name = "GFX_sov_eastern_poland"
+		texturefile = "gfx/interface/goals/SOV_eastern_poland.dds"
+		
+	}
+	SpriteType = {
+		name = "GFX_sov_katyusha"
+		texturefile = "gfx/interface/goals/SOV_katyusha.dds"
+		
+	}
+	SpriteType = {
+		name = "GFX_secure_baltic"
+		texturefile = "gfx/interface/goals/SOV_secure_baltic.dds"
+		
+	}
+	SpriteType = {
+		name = "GFX_focus_sov_kscparty"
+		texturefile = "gfx/interface/goals/focus_sov_kscparty.dds"
+		
+	}
+	SpriteType = {
+		name = "GFX_focus_sov_kvheavy"
+		texturefile = "gfx/interface/goals/focus_sov_kvheavy.dds"
+		
+	}
+	SpriteType = {
+		name = "GFX_focus_sov_il2"
+		texturefile = "gfx/interface/goals/focus_sov_il2.dds"
+		
+	}
+	SpriteType = {
+		name = "GFX_focus_sov_transpolar"
+		texturefile = "gfx/interface/goals/focus_sov_transpolar.dds"
+		
+	}
+	SpriteType = {
+		name = "GFX_focus_sov_aviationcult2"
+		texturefile = "gfx/interface/goals/focus_sov_aviationcult2.dds"
+		
+	}
+	SpriteType = {
+		name = "GFX_focus_sov_railway"
+		texturefile = "gfx/interface/goals/focus_sov_railway.dds"
+		
+	}
+	SpriteType = {
+		name = "GFX_focus_sov_moscowdefense2"
+		texturefile = "gfx/interface/goals/focus_sov_moscowdefense2.dds"
+		
+	}
+	SpriteType = {
+		name = "GFX_focus_sov_smersh2"
+		texturefile = "gfx/interface/goals/focus_sov_smersh2.dds"
+		
+	}
+}

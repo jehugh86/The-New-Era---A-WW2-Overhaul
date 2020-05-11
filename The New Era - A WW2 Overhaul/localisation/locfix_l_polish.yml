@@ -1,0 +1,9 @@
+﻿l_polish:
+ SOV_socialist_science2:0 "Edukacja patriotyczna"
+ SOV_socialist_science2_desc:0 "Świat, podobnie jak umysł, znajduje się w ciągłym ruchu. Natura bez przerwy podlega gwałtownym, wręcz rewolucyjnym zmianom. Zasady materializmu dialektycznego można odnieść do nauk przyrodniczych, ale i społecznych..."
+ patriotic_education_idea:0 "Edukacja patriotyczna"
+ SOV_stalin_constitution2:0 "[Root.GetStalinConstitutionName]"
+ SOV_stalin_constitution2_desc:0 "Pora znowelizować naszą starą konstytucję i zadziwić świat swobodami, jakie przysługują robotnikom i chłopom w Związku Radzieckim!"
+ SOV_STALIN_CONST_NAME:0 "Konstytucja stalinowska"
+ SOV_TROTSKY_CONST_NAME:0 "Konstytucja trockiego"
+ military_police_tech:0 "Żandarmeria"

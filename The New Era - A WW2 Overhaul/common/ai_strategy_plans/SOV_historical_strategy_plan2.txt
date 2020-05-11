@@ -1,0 +1,122 @@
+SOV_historical_plan2 = {
+	name = "SOV Emergency Plan"
+	desc = "In case of war with GER abort stupid focuses and do military"
+
+	enable = {
+		original_tag = SOV
+		OR = {
+			has_war_with = GER
+			has_war_with = JAP
+		}
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = SOV_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_HISTORICAL
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			has_war = no
+		}
+	}
+
+	ai_national_focuses = {
+		#ASAP
+		SOV_defense_of_moscow
+		SOV_move_industry_to_urals
+		SOV_Leningrad_Fort_Region	#new
+		SOV_nkvd_primacy
+		SOV_nkvd_divisions
+		SOV_heroes_of_the_union		#new	IF focus
+		SOV_lessons_of_war
+		SOV_Molotov_Line			#new
+		
+		# WAR PLANS
+		SOV_progress_cult			#instead of SOV_militarized_schools
+		SOV_socialist_science2		#instead of SOV_workers_culture
+		SOV_extra_tech_slot
+		SOV_State_defense_committee		#new
+		SOV_plan_military_focus			#new
+		SOV_War_Production_Targets		#new
+		SOV_the_flying_tank				#new
+		SOV_Air_Combat_Experience		#new
+		SOV_Kazan_Aviation_Factory		#new
+		SOV_Uralvagonzavod				#new
+		SOV_Volga_River_Defense			#new	IF focus
+		SOV_diversify_the_programme
+		SOV_Functional_Engineering		#new
+		SOV_Next_Generation_Aircraft	#new
+		SOV_Industrial_Mass_Production	#new
+		
+		#Less important
+		SOV_aviation_cult			#ADDED
+		SOV_smersh
+		SOV_research_city_experiment
+		SOV_closed_city_network
+		SOV_KV_Heavy_Tank				#new
+		SOV_Develop_Asian_Oil_Deposits	#new	IF focus
+		
+		#1936?
+		SOV_finish_five_year_plan
+		SOV_Approve_next_five_year_plan	#new
+		SOV_Rubber_Industry
+		SOV_stalin_constitution2
+		#1937?
+		SOV_production_effort
+		SOV_improve_railway
+		SOV_great_purge
+		#1938?
+		SOV_transpolar_flights
+		SOV_ocean_going_navy
+		SOV_peoples_commissariat
+		#1939?
+		SOV_anti_fascist_diplomacy
+		SOV_far_east_fortification
+		SOV_operation_zet
+		SOV_improve_stalin_line
+		#1940?
+		SOV_claims_on_baltic
+		SOV_baltic_security
+		SOV_claims_on_poland
+		SOV_claim_bessarabia
+		#1941?
+		SOV_Test_New_Rocket_Weapons		#new	
+	}
+
+	research = {
+		air_equipment = 20
+		armor = 10
+		engineers_tech = 20
+		naval_equipment = -30
+		naval_doctrine = -30
+	}
+
+	ideas = {
+		tot_economic_mobilisation = 10	
+	}
+	traits = {
+		popular_figurehead = 15
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

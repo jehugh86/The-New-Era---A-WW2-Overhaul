@@ -1,0 +1,79 @@
+on_actions = {
+	on_civil_war_end = { 
+		effect = { 
+			if = {
+				limit = {
+					tag = SOV
+					has_country_leader = { 
+						name = "Leon Trotsky"
+						ruling_only = yes 
+					}
+				}
+				add_stability = -0.1
+				country_event = { id = soviet2.9 days = 1 }
+				news_event = { id = soviet2.8 days = 3 }
+				if = {
+					limit = {
+						has_idea = trotskyite_plot_real
+					}
+					swap_ideas = {
+						remove_idea = trotskyite_plot_real
+						add_idea = trotskyite_plot_real_2
+					}
+				}
+				set_country_flag = SOV_war_since_purge
+			}
+		} 
+	}
+	on_declare_war = { 
+		effect = { 
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							tag = GER
+							FROM = { tag = SOV }
+						}
+						AND = {
+							tag = SOV
+							FROM = { tag = GER }
+						}
+					}
+					GER = { 
+						has_completed_focus = GER_ussr_war_goal
+						has_government = fascism
+					}
+					date < 1943.01.01
+					SOV = {
+						NOT = { has_country_flag = sov_guaranteed_pol }
+						#has_defensive_war_with = GER
+						NOT = { 
+							OR = {
+								has_war_with = ENG 
+								has_war_with = POL
+							}
+						}
+					}
+					
+				}
+				SOV = {
+					add_timed_idea = {
+						idea = SOV_Army_Crumbling
+						days = 90
+					}
+					if = {
+						limit = {
+							has_idea = SOV_Overconfident_Leadership
+						}
+						remove_ideas = SOV_Overconfident_Leadership
+					}
+				}
+				hidden_effect = {
+					SOV = { 
+						set_country_flag = sov_army_crumbled_once
+					}
+				}
+			}
+		} 
+	}
+}

@@ -220,20 +220,6 @@ if = {
 
 set_convoys = 300
 
-# DIPLOMACY
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = INC
-		autonomous_state = autonomy_integrated_puppet
-		}
-	}
-}
 
 set_politics = {
 	ruling_party = democratic

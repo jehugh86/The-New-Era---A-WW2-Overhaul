@@ -1,0 +1,67 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+#finland_going_to_continue_war = {
+#	enable = {
+#		tag = FIN
+#		is_in_faction_with = GER
+#		GER = { has_war_with = SOV }
+#	}
+#	abort = {
+#		NOT = {
+#			country_exists = SOV
+#		}
+#	}
+#	
+#	ai_strategy = {
+#		type = antagonize
+#		id = "SOV"			
+#		value = 100
+#	}	
+#}
+
+FIN_we_will_go_to_war_soon = {
+	enable = {
+		tag = FIN
+		has_idea = FIN_German_support
+	}
+	abort = {
+		OR = {
+			has_war_with = SOV
+			NOT = { has_idea = FIN_German_support }
+		}
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SOV"
+		value = 100
+	}
+}
+
+FIN_train_army = {
+	enable = {
+		tag = FIN
+		has_idea = FIN_German_support
+		has_idea = FIN_German_advisors
+		has_manpower > 10000
+		has_war = no
+	}
+	abort = {
+		date > 1943.1.1
+		has_war = no
+	}
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+}

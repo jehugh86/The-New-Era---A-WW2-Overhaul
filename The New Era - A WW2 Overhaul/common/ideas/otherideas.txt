@@ -1,0 +1,101 @@
+ideas = {
+	country = {
+		FIN_strengthen_fascists = {
+			allowed = {
+				original_tag = FIN
+				NOT = { has_government = communism }
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_fascism_drift_2
+			
+			modifier = {
+				fascism_drift = 0.03
+				fascism_acceptance = 50
+				communism_acceptance = -100
+			}
+		}
+		GER_supporting_finns = {
+			allowed = {
+				original_tag = GER
+			}
+			cancel = {
+				has_war_with = FIN
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.10
+			}
+		}
+		FIN_German_support = {
+			allowed = {
+				original_tag = FIN
+			}
+			cancel = {
+				has_war_with = GER
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_exploit_mines
+			
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_speed_buildings_factor = 0.50
+				production_factory_efficiency_gain_factor = 0.20
+				license_purchase_cost = -0.5
+			}
+		}
+		FIN_German_advisors = {
+			allowed = {
+				original_tag = FIN
+			}
+			cancel = {
+				has_war_with = GER
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = german_advisors
+			
+			modifier = {
+				experience_gain_army = 0.05
+				training_time_army_factor = -0.10
+				planning_speed = 0.10
+				
+			}
+		}
+		FIN_Treaty_of_Moscow = {
+			allowed = {
+				original_tag = FIN
+			}
+			cancel = {
+				has_war_with = SOV
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				mobilization_laws_cost_factor = 0.50
+				economy_cost_factor = 0.25
+				consumer_goods_factor = 0.10
+				fascism_acceptance = -100
+				ai_get_ally_desire_factor = -200
+				ai_join_ally_desire_factor = -200
+			}
+		}
+	}
+}

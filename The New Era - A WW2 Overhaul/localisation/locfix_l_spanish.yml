@@ -1,0 +1,9 @@
+﻿l_spanish:
+ SOV_socialist_science2:0 "Educación patriótica"
+ SOV_socialist_science2_desc:0 "El mundo, como la mente, está en constante movimiento. La Naturaleza está en un estado de progreso constante, incluso revolución. Los principios del materialismo dialéctico pueden aplicarse tanto a ciencias naturales como sociales..."
+ patriotic_education_idea:0 "Educación patriótica"
+ SOV_stalin_constitution2:0 "[Root.GetStalinConstitutionName]"
+ SOV_stalin_constitution2_desc:0 "¡Es hora de actualizar nuestra antigua Constitución e impresionar al mundo con los derechos de los obreros y campesinos de la Unión Soviética!"
+ SOV_STALIN_CONST_NAME:0 "Constitución de Stalin"
+ SOV_TROTSKY_CONST_NAME:0 "Constitución de Trotsky"
+ military_police_tech:0 "Policía militar"

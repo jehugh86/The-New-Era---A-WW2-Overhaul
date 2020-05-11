@@ -13,7 +13,7 @@ fire_only_once = yes
 
 	trigger = {
 		tag = USA
-		date > 1936.01.02
+		date > 1942.05.07
 	}
 	
 	option = {

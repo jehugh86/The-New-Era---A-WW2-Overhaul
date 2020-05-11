@@ -1,0 +1,29 @@
+﻿add_namespace = ger
+
+################################################
+## Babi Yar
+################################################
+country_event = {
+	id = ger.300
+	title = ger.300.t
+	desc = ger.300.d
+	picture = GFX_report_event_300
+
+fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1941.09.30
+	}
+	option = {
+		name = ger.300.a
+		add_war_support = 0.03
+		add_stablity = -0.03
+	}
+	
+	option = {
+		name = ger.300.b
+		add_manpower = 33771
+		add_stablity = 0.02
+	}	
+}

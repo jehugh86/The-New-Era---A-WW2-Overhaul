@@ -1,0 +1,2052 @@
+arado_decisions = {
+    ar234_b_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = jet_tactical_bomber1 
+		}            
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ar234_b  = 1 }
+            }
+        }
+    } 
+    ar234_c_contract = {
+        icon = generic_industry
+
+		available = {
+			date > 1945.2.1 
+		}
+        visible = {
+            has_tech = ram_ar234_b
+        }            
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ar234_c  = 1 }
+            }
+        }
+    } 
+}
+dornier_decisions = {
+    do335_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = heavy_fighter3 
+		}            
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_do335  = 1 }
+            }
+        }
+    } 
+    do17_e_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = strategic_bomber1 
+		}            
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_do17_e  = 1 }
+            }
+        }
+    }  
+    do17_z_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1938.1.1
+		}   
+        visible = {
+            has_tech = ram_do17_e
+        }         
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_do17_z  = 1 }
+            }
+        }
+    }  
+    do217_e_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = strategic_bomber2
+		}   
+        visible = {
+        }         
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_do217_e  = 1 }
+            }
+        }
+    }     
+    do217_k_contract = {
+        icon = generic_industry
+
+		available = {
+			date > 1942.8.1
+		}   
+        visible = {
+            has_tech = ram_do217_e
+        }         
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_do217_k  = 1 }
+            }
+        }
+    }                 
+}
+fockewulf_decisions = {
+    #Fighter contracts
+    fw190_a1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1941.1.1
+		}            
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_a1  = 1 }
+            }
+        }
+    }    
+    fw190_a2_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1941.9.1 
+		}  
+        visible = {
+            has_tech = ram_fw190_a1
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_a2  = 1 }
+            }
+        }
+    }
+    fw190_a3_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1942.1.1 
+		}  
+        visible = {
+            has_tech = ram_fw190_a2
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_a3  = 1 }
+            }
+        }
+    }  
+    fw190_a4_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1942.6.1 
+		}  
+        visible = {
+            OR = {
+                has_tech = ram_fw190_a3
+                date > 1942.9.1
+            }
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_a4  = 1 }
+            }
+        }
+    } 
+    fw190_a5_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1942.10.1 
+		}  
+        visible = {
+            has_tech = ram_fw190_a4
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_a5  = 1 }
+            }
+        }
+    } 
+    fw190_a5_u12_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = ram_fw190_a5 
+		}  
+        visible = {
+            has_tech = ram_fw190_a5
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_a5_u12  = 1 }
+            }
+        }
+    }    
+    fw190_a6_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1943.6.1 
+		}  
+        visible = {
+            has_tech = ram_fw190_a5
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_a6  = 1 }
+            }
+        }
+    } 
+    fw190_a7_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1943.10.1 
+		}  
+        visible = {
+            has_tech = ram_fw190_a6
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_a7  = 1 }
+            }
+        }
+    }   
+    fw190_a8_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1944.1.1 
+		}  
+        visible = {
+            OR = {
+                has_tech = ram_fw190_a7
+                date > 1944.4.1
+            }
+        }                       
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_a8  = 1 }
+            }
+        }
+    }     
+    fw190_a9_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1944.8.1 
+		}  
+        visible = {
+            has_tech = ram_fw190_a8
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_a9  = 1 }
+            }
+        }
+    }
+    fw190_a10_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1945.2.1 #production planned for March 1945
+		}  
+        visible = {
+            has_tech = ram_fw190_a9
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_a10  = 1 }
+            }
+        }
+    }  
+    fw190_d9_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1944.7.1 #production started August 1944 
+		}  
+        visible = {
+            has_tech = ram_fw190_a9
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_d9  = 1 }
+            }
+        }
+    }   
+    fw190_d11_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1944.10.1 #guess
+		}  
+        visible = {
+            has_tech = ram_fw190_d9
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_d11  = 1 }
+            }
+        }
+    } 
+    fw190_d13_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+            date > 1945.2.1 #production started march 1945
+		}  
+        visible = {
+            has_tech = ram_fw190_d11
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_d13  = 1 }
+            }
+        }
+    }  
+    fw_ta152_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter3 
+		}  
+        visible = {
+        }                    
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw_ta152  = 1 }
+            }
+        }
+    }                         
+    fw190_f1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+		}  
+        visible = {
+            has_tech = ram_fw190_a4
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_f1  = 1 }
+                set_technology = { ram_fw190_g1  = 1 }
+            }
+        }
+    } 
+    fw190_f2_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+		}  
+        visible = {
+            has_tech = ram_fw190_a5
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_f2  = 1 }
+                set_technology = { ram_fw190_g2  = 1 }
+            }
+        }
+    } 
+    fw190_f3_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+		}  
+        visible = {
+            has_tech = ram_fw190_a6
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_f3  = 1 }
+                set_technology = { ram_fw190_g3  = 1 }
+            }
+        }
+    }     
+    fw190_f8_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+		}  
+        visible = {
+            has_tech = ram_fw190_a8
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_f8  = 1 }
+                set_technology = { ram_fw190_g8  = 1 }
+            }
+        }
+    }
+    fw190_f9_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+		}  
+        visible = {
+            has_tech = ram_fw190_a9
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_f9  = 1 }
+            }
+        }
+    }     
+    #Carrier fighter bombers
+    fw190_a4t_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+		}  
+        visible = {
+            has_tech = ram_fw190_a4
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_a4t  = 1 }
+            }
+        }
+    } 
+    fw190_f9t_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+		}  
+        visible = {
+            has_tech = ram_fw190_f9
+        }                    
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw190_f9t  = 1 }
+            }
+        }
+    }      
+    fw200_c3_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = strategic_bomber1  
+		}                      
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_fw200_c3  = 1 }
+            }
+        }
+    }             
+}
+
+heinkel_decisions = {
+    #Fighter contracts
+    he46_contract = {
+        icon = generic_industry
+
+		available = {
+		}            
+        fire_only_once = yes
+        cost = 0
+        ai_will_do = { factor = 0 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he46 = 1 }
+            }
+        }
+    }     
+    he51_contract = {
+        icon = generic_industry
+
+		available = {
+		}            
+        fire_only_once = yes
+        cost = 0
+        ai_will_do = { factor = 0 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he51 = 1 }
+            }
+        }
+    }      
+    he112_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+		}            
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 0 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he112 = 1 }
+            }
+        }
+    
+    } 
+    he100_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1939.3.1
+		}            
+        visible = {
+            has_tech = ram_he112
+        }              
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 0 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he100 = 1 }
+            }
+        }
+    }   
+    he280_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = jet_fighter1 
+		}            
+        visible = {
+        }              
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 0 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he280= 1 }
+            }
+        }
+    }  
+    #Strategic Bomber contracts
+    he177_a1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = strategic_bomber2 
+		}            
+        fire_only_once = yes
+        cost = 8
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he177_a1 = 1 }
+            }
+        }
+    }     
+    he177_a3_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.10.1
+		} 
+        visible = {
+            has_tech = ram_he177_a1
+        }                   
+        fire_only_once = yes
+        cost = 8
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he177_a3 = 1 }
+            }
+        }
+    }   
+
+    #Tactical Bomber contracts 
+    he111_a0_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = tactical_bomber1 
+		}            
+        fire_only_once = yes
+        cost = 8
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_a0 = 1 }
+            }
+        }
+    } 
+    he111_b2_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1937.3.1
+		}      
+        visible = {
+            has_tech = ram_he111_a0
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_b2 = 1 }
+            }
+        }
+    }
+    he111_e1_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1937.9.1 #guess
+		}      
+        visible = {
+            has_tech = ram_he111_b2
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_e1 = 1 }
+            }
+        }
+    }
+    he111_e3_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1938.1.1 #guess
+		}      
+        visible = {
+            has_tech = ram_he111_e1
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_e3 = 1 }
+            }
+        }
+    }
+    he111_f_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1938.7.1 #guess
+		}      
+        visible = {
+            has_tech = ram_he111_e3
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_f = 1 }
+            }
+        }
+    }
+    he111_p1_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1938.12.1
+		}      
+        visible = {
+            OR = {
+                has_tech = ram_he111_f
+                date > 1939.3.1
+            }
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_p1 = 1 }
+            }
+        }
+    }
+    he111_p2_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1939.1.1
+		}      
+        visible = {
+            has_tech = ram_he111_p1
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_p2 = 1 }
+            }
+        }
+    }
+    he111_p4_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1939.7.1 #introduced after poland
+		}      
+        visible = {
+            has_tech = ram_he111_p2
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_p4 = 1 }
+            }
+        }
+    }
+    he111_h2_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1939.8.1
+		}      
+        visible = {
+            OR = {
+                has_tech = ram_he111_p2
+                date > 1939.11.1
+            }
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_h2 = 1 }
+            }
+        }
+    }
+    he111_h3_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1939.10.1 #production began october 1939
+ 		}      
+        visible = {
+            has_tech = ram_he111_h2
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_h3 = 1 }
+            }
+        }
+    }
+    he111_h5_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1940.12.1
+		}      
+        visible = {
+            has_tech = ram_he111_h3
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_h5 = 1 }
+            }
+        }
+    }
+    he111_h11_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.5.1 #introduced summer of 42
+		}      
+        visible = {
+            has_tech = ram_he111_h5
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_h11 = 1 }
+            }
+        }
+    }
+    he111_h16_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.10.1 #entered production late 1942
+		}      
+        visible = {
+            OR = {
+                has_tech = ram_he111_h11
+                date > 1943.1.1
+            }
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_h16 = 1 }
+            }
+        }
+    }
+    he111_h20_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.12.1
+		}      
+        visible = {
+            has_tech = ram_he111_h16
+        }               
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_h20 = 1 }
+            }
+        }
+    }
+
+    he111_j_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1938.7.1
+		}      
+        visible = {
+            has_tech = ram_he111_f #based on F 
+        }               
+        fire_only_once = yes
+        cost = 5
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_j = 1 }
+            }
+        }
+    }
+    he111_h6_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1940.12.1
+		}      
+        visible = {
+            has_tech = ram_he111_h5 #made from H5 airframes
+        }               
+        fire_only_once = yes
+        cost = 5
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_h6 = 1 }
+            }
+        }
+    }    
+    he111_z2_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.1.1
+		}      
+        visible = {
+            has_tech = ram_he111_h6 #made from H6 airframes
+        }               
+        fire_only_once = yes
+        cost = 5
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_he111_z2 = 1 }
+            }
+        }
+    }    
+
+}
+
+junkers_decisions = { 
+    #CAS contracts
+    ju87_a1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = CAS1 
+            date > 1936.1.1
+		}            
+        fire_only_once = yes
+        cost = 8
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju87_a1 = 1 }
+            }
+        }
+    }
+    ju87_a2_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = CAS1 
+            date > 1936.7.1
+		}    
+        visible = {
+            has_tech = ram_ju87_a1
+        }            
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju87_a2 = 1 }
+            }
+        }
+    }  
+    ju87_b1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = CAS1 
+            date > 1937.10.1 #test flights summer 1937
+		}    
+        visible = {
+            has_tech = ram_ju87_a2
+        }         
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju87_b1 = 1 }
+            }
+        }
+    }  
+    ju87_b2_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = CAS1 
+            date > 1938.4.1 #complete guess
+		}
+        visible = {
+            has_tech = ram_ju87_b1
+        }             
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju87_b2 = 1 }
+            }
+        }
+    }  
+    ju87_r1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = CAS1 
+            date > 1937.10.1 #r1 is a range extende version based on b-1 so same date
+		}    
+        visible = {
+            has_tech = ram_ju87_b1
+        }         
+        fire_only_once = yes
+        cost = 5
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju87_r1 = 1 }
+            }
+        }
+    }  
+    ju87_r2_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = CAS1 
+            date > 1938.4.1 #r2 is a range extende version based on b-2 so same date
+		}    
+        visible = {
+            has_tech = ram_ju87_b2
+        }         
+        fire_only_once = yes
+        cost = 5
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju87_r2 = 1 }
+            }
+        }
+    }  
+    ju87_d1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = CAS1 
+            date > 1941.4.1 #first deliveries were in may 1941
+		}   
+        visible = {
+            has_tech = ram_ju87_b2
+        }          
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju87_d1 = 1 }
+            }
+        }
+    }    
+    ju87_d3_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = CAS1 
+            date > 1942.1.1
+		}
+        visible = {
+            has_tech = ram_ju87_d1
+        }             
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju87_d3 = 1 }
+            }
+        }
+    }  
+    ju87_d5_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = CAS1 
+            date > 1942.12.1
+		}   
+        visible = {
+            has_tech = ram_ju87_d3
+        }          
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju87_d5 = 1 }
+            }
+        }
+    }   
+    ju87_g2_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = CAS1 
+            date > 1943.4.1
+		}    
+        visible = {
+            has_tech = ram_ju87_d3
+        }         
+        fire_only_once = yes
+        cost = 4
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju87_g2 = 1 }
+            }
+        }
+    }   
+    #Junkers Carrier CAS contracts
+    ju87_c_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = cv_fighter1
+		}    
+        visible = {
+            has_tech = ram_ju87_b1
+        }         
+        fire_only_once = yes
+        cost = 5
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju87_c = 1 }
+            }
+        }
+    }      
+    ju87_d4_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = cv_fighter1
+		}    
+        visible = {
+            has_tech = ram_ju87_d3
+        }         
+        fire_only_once = yes
+        cost = 5
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju87_d4 = 1 }
+            }
+        }
+    }  
+    #Junkers tac
+    ju52_contract = {
+        icon = generic_industry
+
+		available = {
+		}            
+        fire_only_once = yes
+        cost = 0
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { 
+                    ram_ju52 = 1 
+                    ram_ju52_transport = 1 
+                }
+            }
+        }
+    }       
+    ju88_a1_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = tactical_bomber2
+		}    
+        visible = {
+        }         
+        fire_only_once = yes
+        cost = 8
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju88_a1 = 1 }
+            }
+        }
+    } 
+    ju88_a4_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1938.2.1
+		}    
+        visible = {
+            has_tech = ram_ju88_a1
+        }         
+        fire_only_once = yes
+        cost = 8
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju88_a4 = 1 }
+            }
+        }
+    } 
+    ju288_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = tactical_bomber3            
+		}    
+        visible = {
+        }         
+        fire_only_once = yes
+        cost = 8
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ju288 = 1 }
+            }
+        }
+    }                
+}
+messerschmitt_decisions = {
+    #Fighter contracts
+    bf109_a_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1936.1.1
+		}    
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_a = 1 }
+            }
+        }
+    }
+    bf109_b2_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1937.1.1 #bf109-b produced 02/1937 to 06/1937 
+		}
+        visible = {
+            has_tech = ram_bf109_a
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_b2 = 1 }
+            }
+        }
+    }  
+    bf109_c1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1937.9.1 #bf109-c production began 09/1937
+		}
+        visible = {
+            has_tech = ram_bf109_b2
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_c1 = 1 }
+            }
+        }
+    }
+    bf109_d1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1938.3.1 #bf109-d production began spring 1938
+		}
+        visible = {
+            OR = {
+                has_tech = ram_bf109_c1
+                date > 1938.6.1
+            }          
+        }
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_d1 = 1 }
+            }
+        }
+    }    
+    bf109_e1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1938.12.1 #bf109-e1 production began in late 1938
+		}
+        visible = {
+            OR = {
+                has_tech = ram_bf109_d1
+                date > 1939.3.1
+            }  
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_e1 = 1 }
+            }
+        }
+    }   
+    bf109_e3_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1939.6.1 #bf109-e3 production began in the middle of 1939
+		}
+        visible = {
+            has_tech = ram_bf109_e1
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_e3 = 1 }
+            }
+        }
+    }
+    bf109_e4_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1940.2.1 #bf109-e4 rough guess
+		}
+        visible = {
+            has_tech = ram_bf109_e3
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_e4 = 1 }
+            }
+        }
+    }
+    bf109_f2_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1940.9.1 #bf109-f2 began production october 1940
+		}
+        visible = {
+            OR = {
+                has_tech = ram_bf109_e4
+                date > 1940.12.1 
+            } 
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_f2 = 1 }
+            }
+        }
+    }
+    bf109_f4_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1941.4.1 #bf109-f4 began production may 1941
+		}
+        visible = {
+            has_tech = ram_bf109_f2
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_f4 = 1 }
+            }
+        }
+    }    
+    bf109_g2_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1942.1.1 #bf109-g2 began production February 1942 
+		}
+        visible = {
+            OR = {
+                has_tech = ram_bf109_f4
+                date > 1942.4.1
+            } 
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_g2 = 1 }
+            }
+        }
+    }
+    bf109_g6_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1943.4.1  #bf109-g-6 began production May 1943
+		}
+        visible = {
+            has_tech = ram_bf109_g2
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_g6 = 1 }
+            }
+        }
+    }    
+    bf109_g10_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1944.10.1 #bf109-g-10 began production October 1944  
+		}
+        visible = {
+            has_tech = ram_bf109_g6
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_g10 = 1 }
+            }
+        }
+    } 
+    bf109_g14_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1944.5.1  #bf109-g-14 began production June 1944 
+		}
+        visible = {
+            has_tech = ram_bf109_g6
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_g14 = 1 }
+            }
+        }
+    } 
+    bf109_k4_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1944.10.1  #bf109-k-4 began production August 1944
+		}
+        visible = {
+            has_tech = ram_bf109_g6
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_k4 = 1 }
+            }
+        }
+    } 
+    bf109_k14_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1945.5.1  #bf109-k-14 airframes were listed as produced in late spring 1945 
+		}
+        visible = {
+            has_tech = ram_bf109_k4
+        }     
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_k14 = 1 }
+            }
+        }
+    } 
+    me262_a1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = jet_fighter1 
+		}  
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_me262_a1 = 1 }
+            }
+        }
+    }  
+    me262_hg_contract = {
+        icon = generic_industry
+
+		available = {
+		}
+        visible = {
+            has_tech = ram_me262_a1
+        }
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        days_remove = 270
+        remove_effect = {
+            hidden_effect = {
+                set_technology = { ram_me262_hg = 1 }
+            }
+        } 
+    } 
+    me1110_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = jet_fighter2
+		}  
+        visible = {
+        }
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_me1110 = 1 }
+            }
+        }
+    }             
+    #messerschmitt fighter-bombers
+    bf109_e1b_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1938.12.1 #bf109-e1 production began in late 1938
+		}
+        visible = {
+            has_tech = ram_bf109_e1
+        }     
+        fire_only_once = yes
+        cost = 5
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_e1b = 1 }
+            }
+        }
+    }     
+    bf109_e4b_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1940.2.1 #bf109-e4 rough guess
+		}
+        visible = {
+            has_tech = ram_bf109_e4
+        }     
+        fire_only_once = yes
+        cost = 5
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_e4b = 1 }
+            }
+        }
+    } 
+    bf109_f4b_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1941.4.1 #bf109-f4 began production may 1941
+		}
+        visible = {
+            has_tech = ram_bf109_f4
+        }     
+        fire_only_once = yes
+        cost = 5
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_f4b = 1 }
+            }
+        }
+    } 
+    bf109_g2_r1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1942.1.1 #bf109-g2 began production February 1942 
+		}
+        visible = {
+            has_tech = ram_bf109_g2
+        }     
+        fire_only_once = yes
+        cost = 5
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_g2_r1 = 1 }
+            }
+        }
+    }    
+    bf109_g6_r1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1943.4.1  #bf109-g-6 began production May 1943
+		}
+        visible = {
+            has_tech = ram_bf109_g6
+        }     
+        fire_only_once = yes
+        cost = 5
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_g6_r1 = 1 }
+            }
+        }
+    }         
+    bf109_g10_r1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1944.10.1 #bf109-g-10 began production October 1944 
+		}
+        visible = {
+            has_tech = ram_bf109_g10
+        }     
+        fire_only_once = yes
+        cost = 5
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_g10_r1 = 1 }
+            }
+        }
+    }  
+    bf109_g14_r1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1944.5.1  #bf109-g-14 began production June 1944 
+		}
+        visible = {
+            has_tech = ram_bf109_g14
+        }     
+        fire_only_once = yes
+        cost = 5
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_g14_r1 = 1 }
+            }
+        }
+    }  
+    bf109_k4_r1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+            date > 1944.10.1  #bf109-k-4 began production August 1944
+		}
+        visible = {
+            has_tech = ram_bf109_k4
+        }     
+        fire_only_once = yes
+        cost = 5
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_k4_r1 = 1 }
+            }
+        }
+    } 
+    me262_a2_contract = {
+        icon = generic_industry
+
+		available = {
+		}  
+        visible = {
+            has_tech = ram_me262_a1
+        }
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_me262_a2 = 1 }
+            }
+        }
+    }      
+    bf109_t1_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = cv_fighter1
+		} 
+        visible = {
+            has_tech = ram_bf109_e4b
+        }     
+        fire_only_once = yes
+        cost = 5
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf109_t1 = 1 }
+            }
+        }
+    } 
+    me155_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = cv_fighter2
+		} 
+        visible = {
+            has_tech = ram_bf109_g2
+        }     
+        fire_only_once = yes
+        cost = 5
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_me155 = 1 }
+            }
+        }
+    }     
+    bf110_b1_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = heavy_fighter1
+		}  
+        visible = {
+        }
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf110_b1 = 1 }
+            }
+        }
+    }    
+    bf110_c1_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1938.4.1        
+		}  
+        visible = {
+            has_tech = ram_bf110_b1
+        }
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf110_c1 = 1 }
+            }
+        }
+    }         
+    bf110_c7b_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1939.1.1                    
+		}  
+        visible = {
+            has_tech = ram_bf110_c1
+        }
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf110_c7b = 1 }
+            }
+        }
+    } 
+    bf110_e1_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1940.1.1                    
+		}  
+        visible = {
+            has_tech = ram_bf110_c7b
+        }
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf110_e1 = 1 }
+            }
+        }
+    }      
+    bf110_f1_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1940.6.1        
+		}  
+        visible = {
+            has_tech = ram_bf110_e1
+        }
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf110_f1 = 1 }
+            }
+        }
+    }  
+    bf110_g2_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1941.3.1                    
+		}  
+        visible = {
+            has_tech = ram_bf110_f1
+        }
+        fire_only_once = yes
+        cost = 4
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_bf110_g2 = 1 }
+            }
+        }
+    }
+    me210_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = heavy_fighter2
+		}  
+        visible = {
+        }
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_me210 = 1 }
+            }
+        }
+    } 
+    me410_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.2.1                    
+		}  
+        visible = {
+            has_tech = ram_me210
+        }
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_me410 = 1 }
+            }
+        }
+    }
+}

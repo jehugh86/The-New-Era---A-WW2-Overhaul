@@ -1,0 +1,1499 @@
+boeing_decisions = {
+    b17_d_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = strategic_bomber1
+		}            
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b17_d  = 1 }
+            }
+        }
+    }  
+    b17_e_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1941.9.1
+		}    
+        visible = {
+            has_tech = ram_b17_d
+        }        
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b17_e  = 1 }
+            }
+        }
+    } 
+    b17_f_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.5.1
+		}  
+        visible = {
+            has_tech = ram_b17_e
+        }                        
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b17_f  = 1 }
+            }
+        }
+    }   
+    b17_g_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.8.1
+		}      
+        visible = {
+            has_tech = ram_b17_f
+        }                   
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b17_g  = 1 }
+            }
+        }
+    }  
+    b29_a_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = strategic_bomber3
+		}            
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b29_a  = 1 }
+            }
+        }
+    }  
+    b47_e_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = jet_tactical_bomber2
+		}            
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b47_e  = 1 }
+            }
+        }
+    }   
+    b52_d_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = jet_strategic_bomber1
+		}            
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b52_d  = 1 }
+            }
+        }
+    }                     
+}
+
+bell_decisions = {
+    p39_c_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2 
+		}            
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p39_c  = 1 }
+            }
+        }
+    } 
+    p400_contract = {
+        icon = generic_industry
+
+        available = {
+            date > 1940.5.1 
+        }       
+        visible = {
+            has_tech = ram_p39_c 
+        }     
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p400  = 1 }
+            }
+        }
+    }     
+    p39_d2_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1941.1.1 
+		}   
+        visible = {
+            has_tech = ram_p400 
+        }                  
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p39_d2  = 1 }
+            }
+        }
+    }     
+    p39_n_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.5.1 
+		}  
+        visible = {
+            has_tech = ram_p39_d2 
+        }                   
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p39_n  = 1 }
+            }
+        }
+    }   
+    p39_q1_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.11.1 
+		}  
+        visible = {
+            has_tech = ram_p39_n 
+        }                   
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p39_q1  = 1 }
+            }
+        }
+    }     
+    p39_q10_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.3.1 
+		} 
+        visible = {
+            has_tech = ram_p39_q1
+        }                    
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p39_q10  = 1 }
+            }
+        }
+    }   
+    p63_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.8.1 
+		}    
+        visible = {
+            has_tech = ram_p39_q10  
+        }                 
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p63  = 1 }
+            }
+        }
+    }                 
+}
+
+consolidated_decisions = {
+    b24_d_contract = {
+        icon = generic_industry
+
+		available = { 
+            has_tech = strategic_bomber2
+		}  
+        visible = {
+        }               
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b24_d  = 1 }
+            }
+        }
+    } 
+    pb4y_contract = {
+        icon = generic_industry
+
+		available = { 
+            has_tech = naval_bomber2
+            has_tech = strategic_bomber2
+		}  
+        visible = {
+        }               
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_pb4y  = 1 }
+            }
+        }
+    } 
+}
+
+douglas_decisions = {
+    sbd_3_contract = {
+        icon = generic_industry
+
+		available = { 
+            has_tech = cv_CAS1
+		}  
+        visible = {
+        }               
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_sbd_3  = 1 }
+            }
+        }
+    } 
+    sbd_5_contract = {
+        icon = generic_industry
+
+		available = { 
+            date > 1943.1.1
+		}  
+        visible = {
+            has_tech = ram_sbd_3
+        }               
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_sbd_5  = 1 }
+            }
+        }
+    } 
+    ad_2_contract = {
+        icon = generic_industry
+
+		available = { 
+            has_tech = cv_CAS3
+		}  
+        visible = {
+        }               
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ad_2  = 1 }
+            }
+        }
+    }  
+    ad_4_contract = {
+        icon = generic_industry
+
+		available = { 
+            date > 1947.1.1 
+		}  
+        visible = {
+            has_tech = ram_ad_2
+        }               
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_ad_4  = 1 }
+            }
+        }
+    }   
+    tbd_contract = {
+        icon = generic_industry
+
+		available = { 
+            has_tech = cv_naval_bomber1
+		}  
+        visible = {
+        }               
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_tbd  = 1 }
+            }
+        }
+    }       
+    btd_contract = {
+        icon = generic_industry
+
+		available = { 
+            has_tech = cv_naval_bomber2
+		}  
+        visible = {
+        }               
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_btd  = 1 }
+            }
+        }
+    }     
+    tb2d_contract = {
+        icon = generic_industry
+
+		available = { 
+            has_tech = cv_naval_bomber3
+		}  
+        visible = {
+        }               
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_tb2d  = 1 }
+            }
+        }
+    }      
+}
+
+grumman_decisions = {
+    #Carrier Fighter contracts
+    f4f_3_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = cv_fighter1
+		}     
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f4f_3  = 1 }
+            }
+        }
+    }  
+    f4f_4_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1941.8.1 
+		}  
+        visible = {
+            has_tech = ram_f4f_3 
+        }                   
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f4f_4  = 1 }
+            }
+        }
+    } 
+    f6f_3_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = cv_fighter2            
+		}                      
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f6f_3  = 1 }
+            }
+        }
+    } 
+    f6f_5_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.8.1 
+		}   
+        visible = {
+            has_tech = ram_f6f_3
+        }                   
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f6f_5  = 1 }
+            }
+        }
+    }
+    f8f_1_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = cv_fighter3              
+		}                    
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f8f_1  = 1 }
+            }
+        }
+    }       
+    f8f_2_contract = {
+        icon = generic_industry
+
+		available = { 
+            date > 1946.12.1 
+		}   
+        visible = {
+            has_tech = ram_f8f_1 
+        }                  
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f8f_2  = 1 }
+            }
+        }
+    }  
+    f9f_2_contract = {
+        icon = generic_industry
+
+		available = { 
+            has_tech = cv_fighter3 
+            has_tech = jet_fighter1
+		}   
+        visible = {
+        }                  
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f9f_2  = 1 }
+            }
+        }
+    }  
+    f9f_5_contract = {
+        icon = generic_industry
+
+		available = { 
+		}   
+        visible = {
+            has_tech = ram_f9f_2 
+        }                  
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        days_remove = 400
+        remove_effect = {
+            hidden_effect = {
+                set_technology = { ram_f9f_5  = 1 }
+            }
+        }  
+    }    
+    f9f_6_contract = {
+        icon = generic_industry
+
+		available = { 
+		}   
+        visible = {
+            has_tech = ram_f9f_5             
+        }                  
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        days_remove = 400
+        remove_effect = {
+            hidden_effect = {
+                set_technology = { ram_f9f_6  = 1 }
+            }
+        }  
+    }  
+    f9f_8_contract = {
+        icon = generic_industry
+
+		available = { 
+		}   
+        visible = {
+            has_tech = ram_f9f_6
+        }                  
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        days_remove = 400
+        remove_effect = {
+            hidden_effect = {
+                set_technology = { ram_f9f_8  = 1 }
+            }
+        }  
+    }  
+    f11_a_contract = {
+        icon = generic_industry
+
+		available = { 
+            has_tech = cv_fighter3
+            has_tech = jet_fighter2
+            has_tech = advanced_computing_machine
+		}   
+        visible = {
+        }                  
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f11_a  = 1 }
+            }
+        }  
+    }   
+    f11_b_contract = {
+        icon = generic_industry
+
+		available = { 
+		}   
+        visible = {
+            has_tech = ram_f11_a
+        }                  
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        days_remove = 400
+        remove_effect = {
+            hidden_effect = {
+                set_technology = { ram_f11_b  = 1 }
+            }
+        }  
+    }                    
+    tbf_1_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = cv_naval_bomber2  
+		}                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_tbf_1  = 1 }
+            }
+        }
+    } 
+    tbf_3_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.6.1 #arbitrary 
+		}  
+        visible = {
+            has_tech = ram_tbf_1 
+        }                   
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_tbf_3  = 1 }
+            }
+        }
+    }                
+}
+lockheed_decisions = {
+    p38_e_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = heavy_fighter1
+		}     
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p38_e  = 1 }
+            }
+        }
+    }    
+    p38_f_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.1.1                    
+		}     
+        visible = {
+            has_tech = ram_p38_e 
+        }
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p38_f  = 1 }
+            }
+        }
+    }   
+    p38_g_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.6.1                    
+		}        
+        visible = {
+            has_tech = ram_p38_f 
+        }
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p38_g  = 1 }
+            }
+        }
+    }      
+    p38_h_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.11.1                    
+		}      
+        visible = {
+            has_tech = ram_p38_g 
+        }
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p38_h  = 1 }
+            }
+        }
+    }         
+    p38_j_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.3.1                    
+		}     
+        visible = {
+            has_tech = ram_p38_h 
+        }
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p38_j  = 1 }
+            }
+        }
+    }   
+    p38_k_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.10.1                    
+		}     
+        visible = {
+            has_tech = ram_p38_j 
+        }
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p38_k  = 1 }
+            }
+        }
+    }         
+}
+north_american_decisions = {
+    p51_a_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter2
+		}     
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p51_a  = 1 }
+            }
+        }
+    }
+    p51_b_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.11.1 
+		}  
+        visible = {
+            has_tech = ram_p51_a
+        }  
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p51_b  = 1 }
+            }
+        }
+    }
+    p51_d5_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.10.1 
+		}   
+        visible = {
+            has_tech = ram_p51_b
+        }  
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p51_d5  = 1 }
+            }
+        }
+    } 
+    p51_d30_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1944.5.1 
+		}  
+        visible = {
+            has_tech = ram_p51_d5
+        }  
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p51_d30  = 1 }
+            }
+        }
+    }   
+    p51_h_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = fighter3
+            date > 1945.1.1 
+		}   
+        visible = {
+        }  
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p51_h  = 1 }
+            }
+        }
+    }  
+    f86_a_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = jet_fighter1
+		}    
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f86_a  = 1 }
+            }
+        }
+    }
+    f86_f25_contract = {
+        icon = generic_industry
+
+		available = {
+		} 
+        visible = {
+            has_tech = ram_f86_a
+        }           
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        days_remove = 400
+        remove_effect = {
+            hidden_effect = {
+                set_technology = { ram_f86_f25  = 1 }
+            }
+        } 
+    } 
+
+
+    f86_f40_contract = {
+        icon = generic_industry
+
+		available = {
+		} 
+        visible = {
+            has_tech = ram_f86_f25
+        }           
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        days_remove = 400
+        remove_effect = {
+            hidden_effect = {
+                set_technology = { ram_f86_f40  = 1 }
+            }
+        } 
+    }
+    f100_d_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = jet_fighter2
+            has_tech = advanced_computing_machine
+            has_tech = advanced_centimetric_radar            
+		}     
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f100_d  = 1 }
+            }
+        }
+    }
+    f82_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = heavy_fighter3 
+		}     
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f82  = 1 }
+            }
+        }
+    }    
+    b25_a_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = tactical_bomber1
+		}     
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b25_a  = 1 }
+            }
+        }
+    }      
+    b25_b_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.2.1 
+		} 
+        visible = {
+            has_tech = ram_b25_a
+        }      
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b25_b  = 1 }
+            }
+        }
+    }  
+    b25_c_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.9.1 
+		} 
+        visible = {
+            has_tech = ram_b25_b
+        }      
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b25_c  = 1 }
+            }
+        }
+    }    
+    b25_g_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.3.1 
+		} 
+        visible = {
+            has_tech = ram_b25_c
+        }      
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b25_g  = 1 }
+            }
+        }
+    }     
+    b45_c_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = jet_tactical_bomber1
+		} 
+        visible = {
+        }      
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b45_c  = 1 }
+            }
+        }
+    }                                                    
+}
+
+
+republic_decisions = {
+    p35_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1
+		}     
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 0 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p35  = 1 }
+            }
+        }
+    }     
+    p43_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1941.3.1 
+		} 
+        visible = {
+            has_tech = ram_p35
+        }     
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p43  = 1 }
+            }
+        }
+    }     
+    p47_b15_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = heavy_fighter2
+		}                          
+
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p47_b15  = 1 }
+            }
+        }
+    }     
+    p47_c_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1942.5.1 
+		} 
+        visible = {
+            has_tech = ram_p47_b15
+        } 
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p47_c  = 1 }
+            }
+        }
+    }     
+    p47_d22_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.1.1 
+		} 
+        visible = {
+            has_tech = ram_p47_c
+        }          
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p47_d22  = 1 }
+            }
+        }
+    }     
+    p47_d30_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.6.1 
+		}     
+        visible = {
+            has_tech = ram_p47_d22
+        }  
+
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p47_d30  = 1 }
+            }
+        }
+    }     
+    p47_d40_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1944.1.1 
+		}    
+        visible = {
+            has_tech = ram_p47_d30
+        }         
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p47_d40  = 1 }
+            }
+        }
+    }     
+    p47_m_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1944.6.1 
+		}     
+        visible = {
+            has_tech = ram_p47_d40
+        }        
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p47_m  = 1 }
+            }
+        }
+    }  
+    p47_n_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1944.12.1 
+		} 
+        visible = {
+            has_tech = ram_p47_m
+        }        
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p47_n  = 1 }
+            }
+        }
+    }        
+    p72_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = heavy_fighter3
+            date > 1945.3.1 
+		} 
+        visible = {
+        }        
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_p72  = 1 }
+            }
+        }
+    }     
+    f84_b_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = jet_fighter1
+		}     
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f84_b  = 1 }
+            }
+        }
+    }     
+    f84_g_contract = {
+        icon = generic_industry
+
+		available = {
+		}  
+        visible = {
+            has_tech = ram_f84_b
+        }
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        days_remove = 400
+        remove_effect = {
+            hidden_effect = {
+                set_technology = { ram_f84_g  = 1 }
+            }
+        }        
+    }  
+    f84_f_contract = {
+        icon = generic_industry
+
+		available = {
+		}  
+        visible = {
+            has_tech = ram_f84_g
+        }
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        days_remove = 400
+        remove_effect = {
+            hidden_effect = {
+                set_technology = { ram_f84_f  = 1 }
+            }
+        }        
+    }         
+    f105_d_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = jet_fighter2
+            has_tech = advanced_computing_machine
+            has_tech = advanced_centimetric_radar            
+		}     
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f105_d  = 1 }
+            }
+        }
+    }    
+}
+
+vought_decisions = {
+    f4u_1a_contract = {
+        icon = generic_industry
+
+		available = {
+            has_tech = cv_fighter2
+		} 
+ 
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f4u_1a  = 1 }
+            }
+        }
+    }             
+    f4u_1d_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.1.1
+		} 
+        visible = {
+            has_tech = ram_f4u_1a
+        }      
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f4u_1d  = 1 }
+            }
+        }
+    }
+    f4u_1c_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1943.6.1
+		} 
+        visible = {
+            has_tech = ram_f4u_1d
+        }      
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f4u_1c  = 1 }
+            }
+        }
+    }     
+    f4u_4b_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1944.9.1
+		}  
+        visible = {
+            has_tech = ram_f4u_1c
+        }      
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f4u_4b  = 1 }
+            }
+        }
+    }   
+    f4u_5_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1945.5.1
+		} 
+        visible = {
+            has_tech = ram_f4u_4b
+        }      
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_f4u_5  = 1 }
+            }
+        }
+    }    
+    f4u_6_contract = {
+        icon = generic_industry
+
+		available = {
+		} 
+        visible = {
+            has_tech = ram_f4u_5
+        }      
+                
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        days_remove = 400
+        remove_effect = {
+            hidden_effect = {
+                set_technology = { ram_f4u_6  = 1 }
+            }
+        } 
+    }               
+}

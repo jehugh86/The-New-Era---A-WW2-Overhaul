@@ -1,0 +1,59 @@
+upgrades = {
+    #rocket pods
+	bf109_r2_upgrade = {
+		max_level = 1
+		
+		cost = air		
+
+        air_attack = 0.1
+        air_ground_attack = 0.1
+		maximum_speed = -0.15
+        build_cost_ic = 0.1
+	}
+    #300L drop tank
+	bf109_r3_upgrade = {
+		max_level = 1
+		
+		cost = air			
+
+		air_range = 0.8
+		air_agility = -0.05
+        build_cost_ic = 0.1
+	}
+    # 2x30MM wing gunpods
+	bf109_r4_upgrade = {
+		max_level = 1
+		
+		cost = air			
+
+		air_attack = 0.2
+		air_agility = -0.20
+		naval_strike_attack = 0.2
+        build_cost_ic = 0.2
+        reliability = -0.05
+	} 
+    # 2x20MM wing gunpods
+	bf109_r6_upgrade = {
+		max_level = 1
+		
+		cost = air			
+
+		air_attack = 0.1
+		air_agility = -0.10
+		naval_strike_attack = 0.1
+        build_cost_ic = 0.1
+        reliability = -0.05
+	}  
+    #tbd   
+    #30MM mk108 nose cannon - not available via equipment designer gui to prevent impossible combinations, use create_equipment_variant instead
+	bf109_u4_upgrade = {
+		max_level = 1
+		
+		cost = air			
+		#air_attack = 0.1
+		#maximum_speed = -0.01
+		#reliability = -0.1
+		#air_agility = -0.05
+	}
+
+}

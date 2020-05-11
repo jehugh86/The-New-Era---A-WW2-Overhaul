@@ -1,0 +1,53 @@
+avia_decisions = {
+    #Fighter contracts
+    b-534_contract = {
+        icon = generic_industry
+
+		available = {
+		}            
+        fire_only_once = yes
+        cost = 0
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b-534  = 1 }
+            }
+        }
+    }     
+    b-35_contract = {
+        icon = generic_industry
+
+		available = {
+			has_tech = fighter1 
+		}                   
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b-35  = 1 }
+            }
+        }
+    }  
+    b-135_contract = {
+        icon = generic_industry
+
+		available = {
+            date > 1939.11.1 
+		}  
+        visible = {
+            has_tech = ram_b-35
+        }                   
+        fire_only_once = yes
+        cost = 8
+        ai_will_do = { factor = 1 } 
+
+        complete_effect = {
+            hidden_effect = {
+                set_technology = { ram_b-135  = 1 }
+            }
+        }
+    }                 
+}

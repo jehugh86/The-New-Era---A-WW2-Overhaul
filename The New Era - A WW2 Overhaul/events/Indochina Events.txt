@@ -8,14 +8,19 @@ country_event = {
     id = inc.1
     title = inc.1.t
     desc = inc.1.d
-    picture = GFX_report_event_1
+    picture = GFX_report_event_finnish_letter
+
+    trigger = {
+        tag = INC
+        has_completed_focus = INC_Form_Indochinese_Democratic_Front
+    }
 
 fire_only_once = yes
     option = {
         name = inc.1.a
         add_popularity = {
-            ideology = Democratic
-             popularity = 0.01
-            }
-    }  
+         ideology = Democratic
+         popularity = 0.01
+         }
+    }
 }

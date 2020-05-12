@@ -230,7 +230,7 @@ if = {
 	}
 	set_autonomy = {
 		target = INC
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_dominion
 	}
 }
 

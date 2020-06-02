@@ -1,0 +1,234 @@
+guiTypes = {
+	@mainmenu_buttons_x = 60
+### Background
+	containerWindowType = {
+		name ="frontend_background"
+		position = { x=0 y =0 }	
+		size = { 
+			width = 1960
+			height = 1440
+			min = { width = 100% height = 100% }
+			preserve_aspect_ratio = yes
+		}
+		Orientation = center
+		Origo = center
+		clipping = no 
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_frontend_bg"
+		}
+	}
+
+	containerWindowType = {
+		name  = "mainmenu_panel_upperleft"
+		position = { x = 0 y = 0 }
+		#size = { width = 620 height = 120 }
+		size = { width = 659 height = 178 }
+		orientation = UPPER_LEFT
+		origo = UPPER_LEFT
+		
+		iconType = {
+			name = "frontend_game_logo"
+			spriteType = "GFX_frontend_game_logo"
+			position = { x = -80 y = 10 }
+			scale = 0.9
+		}
+	}
+
+	### SINGLE PLAYER MENU
+	containerWindowType = {
+		name = "mainmenu_single_player"
+		position = { x=0 y =0 }
+		size = { width = 327 height = 588 }#width = 320 height = 395
+		Orientation = LOWER_LEFT
+		Origo = LOWER_LEFT
+				
+		#background = {
+		#	name = "Background"		
+		#	quadTextureSprite ="GFX_background_window"
+		#}
+
+		#iconType = {
+		#	name = "frontend_game_logo"
+		#	spriteType = "GFX_frontend_game_logo"
+		#	position = { x = 30 y = 18 }
+		#}
+		
+		ButtonType = {
+			name = "sp_continue_button"
+			position = { x = @mainmenu_buttons_x y = -30 }#x = 48 y = 135
+			quadTextureSprite ="GFX_frontend_buttons"	
+			buttonText = "FE_CONTINUE"
+			buttonFont = "Bebas_Neue_45"
+			clicksound = click_default
+			oversound = ui_menu_over
+			format = left
+			scale = 0.8
+		}
+		
+		iconType = {
+			name = "sp_continue_flag_left"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x= 340 y = -7 }#x= 67 y = 158
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "sp_continue_flag_left_overlay"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x= 340 y = -7 }#x= 67 y = 158
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "sp_continue_flag_right"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x= 234 y = 10000 }#x= 253 y = 158
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "sp_continue_flag_right_overlay"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x= 234 y = 10000 }#x= 253 y = 158
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		ButtonType = {
+			name = "sp_new_button"
+			position = { x = @mainmenu_buttons_x y = 33 }#x = 48 y = 215
+			quadTextureSprite ="GFX_frontend_buttons"	
+			buttonText = "FE_NEW"
+			buttonFont = "Bebas_Neue_45"
+			clicksound = click_default
+			oversound = ui_menu_over
+			format = left
+			scale = 0.8
+		}
+		
+		ButtonType = {
+			name = "sp_load_button"
+			position = {  x = @mainmenu_buttons_x y = 96 }# x = 48 y = 298
+			quadTextureSprite ="GFX_frontend_buttons"	
+			buttonText = "MENU_BAR_LOAD"
+			buttonFont = "Bebas_Neue_45"
+			clicksound = click_default
+			oversound = ui_menu_over
+			format = left
+			scale = 0.8
+		}
+		
+		ButtonType = {
+			name = "sp_tutorial_button"
+			position = { x = @mainmenu_buttons_x y = 159 }#x = 48 y = 340
+			quadTextureSprite ="GFX_frontend_buttons"	
+			buttonText = "FE_TUTORIAL"
+			buttonFont = "Bebas_Neue_45"
+			clicksound = click_default
+			oversound = ui_menu_over
+			format = left
+			scale = 0.8
+		}
+		
+		ButtonType = {
+			name = "sp_back_button"
+			position = { x = @mainmenu_buttons_x y = 222 }#x = 48 y = 475
+			quadTextureSprite ="GFX_frontend_buttons"	
+			buttonText = "BACK"
+			buttonFont = "Bebas_Neue_45"
+			clicksound = click_close
+			oversound = ui_menu_over
+			shortcut = "ESCAPE"
+			format = left
+			scale = 0.8
+		}
+	}
+
+	### MAIN MENU PANEL (bottom)
+	containerWindowType = {
+		name ="mainmenu_panel_bottom"
+		position = { x=0 y =0 }
+		size = { width = 327 height = 588 }#width = 320 height = 395
+		Orientation = LOWER_LEFT
+		Origo = LOWER_LEFT
+				
+		#background = {
+		#	name = "Background"		
+		#	quadTextureSprite ="GFX_background_window"
+		#}
+
+		#iconType = {
+		#	name = "frontend_game_logo"
+		#	spriteType = "GFX_frontend_game_logo"
+		#	position = { x = 30 y = 18 }
+		#}
+			
+		ButtonType = {
+			name = "single_player_button"
+			position = { x = @mainmenu_buttons_x y = -30 }#x = 48 y = 135
+			quadTextureSprite ="GFX_frontend_buttons"
+			font = "Bebas_Neue_45"
+			text = "FE_SINGLE_PLAYER"
+			clicksound = click_default
+			oversound = ui_menu_over
+			format = left
+			scale = 0.8
+		}
+		
+		ButtonType = {
+			name = "multi_player_button"
+			position = { x = @mainmenu_buttons_x y = 33 }#x = 48 y = 215
+			quadTextureSprite ="GFX_frontend_buttons"
+			font = "Bebas_Neue_45"
+			text = "FE_MULTI_PLAYER"
+			clicksound = click_default
+			oversound = ui_menu_over
+			format = left
+			scale = 0.8
+		}
+		
+		ButtonType = {
+			name = "settings_button"
+			position = { x = @mainmenu_buttons_x y = 96 }#x = 48 y = 298
+			quadTextureSprite ="GFX_frontend_buttons"	
+			buttonText = "Settings"
+			buttonFont = "Bebas_Neue_45"
+			clicksound = click_default
+			oversound = ui_menu_over
+			format = left
+			scale = 0.8
+		}
+		
+		#Move to off screen so to not cause errors but be unclickable
+		ButtonType = {
+			name = "credits_button"
+			position = {  x = @mainmenu_buttons_x y = 159 }
+			quadTextureSprite ="GFX_frontend_buttons"
+			buttonText = "FE_CREDITS"
+			buttonFont = "Bebas_Neue_45"
+			clicksound = click_default
+			oversound = ui_menu_over
+			format = left
+			scale = 0.8
+		}
+		
+		ButtonType = {
+			name = "exit_button"
+			position = { x = @mainmenu_buttons_x y = 232 }#x = 48 y = 381
+			quadTextureSprite ="GFX_frontend_buttons"
+			font = "Bebas_Neue_45"
+			text = "Exit"
+			clicksound = click_default
+			oversound = ui_menu_over
+			format = left
+			scale = 0.8
+		}
+
+		}
+	}
+}

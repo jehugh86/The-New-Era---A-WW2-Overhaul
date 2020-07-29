@@ -9,7 +9,7 @@
 		}
 	}
 
-		default = no
+	default = no
 
 	focus = {
 		id = INC_Form_Indochinese_Democratic_Front
@@ -26,7 +26,7 @@
 		}
 
 		bypass = {
-			INC = { has_government Democratic }
+			INC = { has_government conservatism }
 		}
 
 		available_if_capitulated = no
@@ -38,7 +38,126 @@
 			}
 		}
 	}
+
+	focus = {
+		id = INC_Rally_Left
+		icon = GFX_goal_generic_national_unity
+		x = -2
+		y = 1
+	
+		cost = 10
+
+		prerequisite = { focus = INC_Form_Indochinese_Democratic_Front}
+
+		ai_will_do = { factor = 1 }
+
+		available = {
+			democratic > 0.25
+		}
+
+		bypass = {
+			INC = { has_government conservatism }
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			INC = { country_event = { id = inc.2 }}
+						complete_tooltip = {
+				custom_effect_tooltip = INC_Rally_Left_tt
+			}
+		}
+	}
+
+	focus = {
+		id = INC_Rally_Center
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+	
+		cost = 10
+
+		prerequisite = { focus = INC_Form_Indochinese_Democratic_Front}
+
+		ai_will_do = { factor = 1 }
+
+		available = {
+			democratic > 0.25
+		}
+
+		bypass = {
+			INC = { has_government conservatism }
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			INC = { country_event = { id = inc.3 }}
+						complete_tooltip = {
+				custom_effect_tooltip = INC_Rally_Center_tt
+			}
+		}
+	}
+
+	focus = {
+		id = INC_Rally_Communists
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 1
+	
+		cost = 10
+
+		prerequisite = { focus = INC_Form_Indochinese_Democratic_Front}
+
+		ai_will_do = { factor = 1 }
+
+		available = {
+			democratic > 0.25
+		}
+
+		bypass = {
+			INC = { has_government conservatism }
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			INC = { country_event = { id = inc.4 }}
+						complete_tooltip = {
+				custom_effect_tooltip = INC_Rally_Communists_tt
+			}
+		}
+	}
+
+	focus = {
+		id = INC_Replace_Rene_Robin
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 2
+	
+		cost = 10
+
+		prerequisite = { focus = INC_Rally_Left }
+		prerequisite = { focus = INC_Rally_Communists }
+		prerequisite = { focus = INC_Rally_Center }
+
+		ai_will_do = { factor = 1 }
+
+		available = {
+			democratic > 0.30
+		}
+
+		bypass = {
+			INC = { has_government conservatism }
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			INC = { country_event = { id = inc.3 }}
+						complete_tooltip = {
+				custom_effect_tooltip = INC_Rally_Center_tt
+			}
+		}
+	}
 }
-
-
-

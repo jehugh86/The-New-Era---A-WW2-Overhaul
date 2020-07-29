@@ -15,4 +15,4 @@ tags={
 	"Map"
 }
 name="The New Era - A WW2 Overhaul"
-supported_version="1.9.2"
+supported_version="1.9.3"
